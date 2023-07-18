@@ -27,6 +27,7 @@ const MockupAppMobile = () => {
 					flexDirection="column"
 					justifyContent="center"
 					gap={5}
+					padding="2rem 0"
 				>
 					<Typography
 						component="h1"

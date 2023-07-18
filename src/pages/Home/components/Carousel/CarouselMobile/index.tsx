@@ -13,7 +13,7 @@ const CarouselMobile = () => {
 			style={{
 				backgroundColor: 'rgb(246, 179, 50)',
 				width: '100%',
-				// height: '50%',
+				height: '70vh',
 			}}
 		>
 			<Carousel.Item
@@ -85,7 +85,7 @@ const CarouselMobile = () => {
 				interval={4000}
 				style={{
 					width: '100%',
-					height: '100vh',
+					height: '100%',
 				}}
 			>
 				<Container
@@ -96,9 +96,9 @@ const CarouselMobile = () => {
 						justifyContent: 'center',
 						alignItems: 'center',
 						width: '100%',
-						// height: '100%',
-						position: 'relative',
-						top: '-7rem',
+						height: '100%',
+						// position: 'relative',
+						// top: '-7rem',
 					}}
 				>
 					<div
@@ -121,10 +121,10 @@ const CarouselMobile = () => {
 						// data-paddingleft="[0,0,0,0]"
 						style={{
 							zIndex: '5',
-							position: 'relative',
-							top: '7rem',
+							// position: 'relative',
+							// top: '7rem',
 							width: '100%',
-							// height: '100%',
+							height: '70vh',
 						}}
 					>
 						<img
@@ -133,6 +133,7 @@ const CarouselMobile = () => {
 							// data-ww="['364px','364px','364px','493px']"
 							// data-hh="['682px','682px','682px','925px']"
 							width="100%"
+							height="100%"
 							// height="100%"
 							// data-no-retina
 						/>
@@ -157,7 +158,7 @@ const CarouselMobile = () => {
 							style={{
 								zIndex: '6',
 								position: 'relative',
-								top: '-40rem',
+								top: '-28rem',
 								textAlign: 'center',
 								transition:
 									'[{"delay":10,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]',
@@ -166,6 +167,8 @@ const CarouselMobile = () => {
 							<img
 								src="https://seuelias.com/v2018/wp-content/uploads/2021/12/unnamed-file.png"
 								alt=""
+								width="70%"
+								// height="50%"
 								// data-ww="['262px','262px','262px','293px']"
 								// data-hh="['177px','177px','177px','198px']"
 								// width="262"
@@ -198,7 +201,7 @@ const CarouselMobile = () => {
 						style={{
 							zIndex: '7',
 							position: 'relative',
-							top: '-30rem',
+							top: '-15rem',
 							transition:
 								'[{"delay":0,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]',
 						}}

@@ -42,12 +42,14 @@ const ServicosMobile = () => {
 				component="main"
 				sx={{
 					width: '100%',
-					height: '40vh',
+					height: '30vh',
 					backgroundColor: '#000',
 					backgroundImage: `url(${BannerInterior})`,
 					backgroundSize: '100% 100%',
 					backgroundPosition: 'center',
 					backgroundRepeat: 'no-repeat',
+					padding: '2rem 0',
+					// margin: '1rem 0',
 				}}
 			>
 				<Container
@@ -66,7 +68,7 @@ const ServicosMobile = () => {
 							<Typography
 								component="h2"
 								color="#fff"
-								fontSize={40}
+								fontSize={30}
 								lineHeight={1}
 								fontFamily="Khand, sans-serif"
 								fontWeight={900}
