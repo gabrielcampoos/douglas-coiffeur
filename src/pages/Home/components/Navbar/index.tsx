@@ -22,7 +22,10 @@ const ButtonAppBar = () => {
 	const mdDown = useMediaQuery(theme.breakpoints.down('md'));
 
 	return (
-		<Box
+		<>
+		{(!smDown && (
+			<>
+			<Box
 			sx={{
 				flexGrow: 1,
 				backgroundColor: '#000',
@@ -47,12 +50,12 @@ const ButtonAppBar = () => {
 							zIndex: '99999',
 						}}
 					>
-						<Box width="15%" padding="0 2%">
+						<Box width="15%">
 							<img src={Logo} alt="Logo Barbearia" width="100%" />
 						</Box>
 
-						{(!smDown && (
-							<>
+					
+							
 								<Box
 									// padding="0 2%"
 									sx={{
@@ -218,12 +221,15 @@ const ButtonAppBar = () => {
 										<InstagramIcon />
 									</IconButton>
 								</Box>
-							</>
-						)) || <SplitButton />}
+							
+						
 					</Toolbar>
 				</AppBar>
 			</Container>
 		</Box>
+		</>
+		)) || <SplitButton />}
+		</>
 	);
 };
 

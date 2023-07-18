@@ -120,7 +120,7 @@ const CarouselMobile = () => {
 						// data-paddingbottom="[0,0,0,0]"
 						// data-paddingleft="[0,0,0,0]"
 						style={{
-							zIndex: '5',
+							// zIndex: '5',
 							// position: 'relative',
 							// top: '7rem',
 							width: '100%',
@@ -156,7 +156,7 @@ const CarouselMobile = () => {
 							// data-paddingbottom="[0,0,0,0]"
 							// data-paddingleft="[0,0,0,0]"
 							style={{
-								zIndex: '6',
+								// zIndex: '6',
 								position: 'relative',
 								top: '-28rem',
 								textAlign: 'center',
@@ -199,7 +199,7 @@ const CarouselMobile = () => {
 						// data-paddingbottom="[0,0,0,0]"
 						// data-paddingleft="[0,0,0,0]"
 						style={{
-							zIndex: '7',
+							// zIndex: '7',
 							position: 'relative',
 							top: '-15rem',
 							transition:

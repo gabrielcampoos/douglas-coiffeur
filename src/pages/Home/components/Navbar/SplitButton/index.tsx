@@ -1,4 +1,5 @@
 import MenuIcon from '@mui/icons-material/Menu';
+import { Box, Container,  AppBar, Toolbar } from '@mui/material';
 import Button from '@mui/material/Button';
 import ButtonGroup from '@mui/material/ButtonGroup';
 import ClickAwayListener from '@mui/material/ClickAwayListener';
@@ -8,6 +9,8 @@ import MenuList from '@mui/material/MenuList';
 import Paper from '@mui/material/Paper';
 import Popper from '@mui/material/Popper';
 import * as React from 'react';
+import Logo from '../../../../../assets/images/logo.png';
+
 
 const options = [
 	'BOOKSY',
@@ -51,6 +54,34 @@ export default function SplitButton() {
 
 	return (
 		<React.Fragment>
+			<Box
+			sx={{
+				flexGrow: 1,
+				backgroundColor: '#000',
+				height: '20vh',
+			}}
+		>
+			<Container>
+				<AppBar
+					position="static"
+					sx={{
+						backgroundColor: '#000',
+						width: '100%',
+					}}
+				>
+					<Toolbar
+						sx={{
+							width: '100%',
+							display: 'flex',
+							alignItems: 'center',
+							justifyContent: 'space-between',
+							height: '20vh',
+							zIndex: '99999',
+						}}
+					>
+						<Box width="15%">
+							<img src={Logo} alt="Logo Barbearia" width="100%" />
+						</Box>
 			<ButtonGroup
 				color="inherit"
 				variant="outlined"
@@ -113,6 +144,10 @@ export default function SplitButton() {
 					</Grow>
 				)}
 			</Popper>
+			</Toolbar>
+			</AppBar>
+			</Container>
+			</Box>
 		</React.Fragment>
 	);
 }

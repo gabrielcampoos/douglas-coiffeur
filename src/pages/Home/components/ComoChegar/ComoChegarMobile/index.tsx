@@ -67,20 +67,16 @@ const ComoChegarMobile = () => {
 							paddingLeft="2rem"
 							zIndex="1"
 						>
-							BARBE
+							BAR <br />
+							BE
 							<br />
-							<span
-								style={{
-									marginLeft: '1rem',
-								}}
-							>
-								ARIA{' '}
-							</span>
+							
+								ARIA
+							
 							<br />
 							<span
 								style={{
 									color: '#f6b332',
-									marginLeft: '2rem',
 								}}
 							>
 								DOUGLAS <br />
