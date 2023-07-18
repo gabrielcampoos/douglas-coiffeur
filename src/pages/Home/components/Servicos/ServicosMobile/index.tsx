@@ -66,7 +66,7 @@ const ServicosMobile = () => {
 							<Typography
 								component="h2"
 								color="#fff"
-								fontSize={60}
+								fontSize={40}
 								lineHeight={1}
 								fontFamily="Khand, sans-serif"
 								fontWeight={900}
@@ -100,7 +100,7 @@ const ServicosMobile = () => {
 								sx={{
 									zIndex: '1',
 									backgroundColor: '#ffde59',
-									padding: '1rem 6rem',
+									// padding: '1rem 6rem',
 									left: '2rem',
 									'&:hover': {
 										color: '#fff',

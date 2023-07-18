@@ -28,6 +28,7 @@ const FooterMobile = () => {
 						borderBottom: '1px solid #fff',
 						boxShadow: 'none',
 						paddingTop: '4rem',
+						textAlign: 'center',
 					}}
 				>
 					<Toolbar
@@ -41,14 +42,15 @@ const FooterMobile = () => {
 						}}
 					>
 						<Box>
-							<img src={Logo} alt="Logo Barbearia" />
+							<img src={Logo} alt="Logo Barbearia" width="70%" />
 						</Box>
 
 						<Box
 							width="50%"
 							sx={{
 								display: 'flex',
-								justifyContent: 'space-evenly',
+								justifyContent: 'space-between',
+								textAlign: 'center',
 							}}
 						>
 							<IconButton
@@ -87,9 +89,9 @@ const FooterMobile = () => {
 					<Typography
 						width="50%"
 						component="p"
-						padding="3rem 0.1rem"
-						color="HighlightText"
-						fontSize="0.9rem"
+						paddingTop="1rem"
+						color="#fff"
+						fontSize="0.6rem"
 					>
 						Copyright © Barbearia Douglas Coiffeur. Todos os
 						Direitos Reservados.
@@ -98,9 +100,9 @@ const FooterMobile = () => {
 					<Typography
 						width="50%"
 						component="p"
-						padding="3rem 0.1rem"
-						color="HighlightText"
-						fontSize="0.7rem"
+						// padding="3rem 0.1rem"
+						color="#fff"
+						fontSize="0.5rem"
 						textAlign="end"
 					>
 						Desenvolvido por:{' '}
@@ -108,7 +110,8 @@ const FooterMobile = () => {
 							style={{
 								backgroundColor: '#000',
 								borderRadius: '3rem',
-								padding: '0.2rem',
+								padding: '0.1rem',
+								color: '#fff',
 							}}
 						>
 							Gabriel Campos Alves

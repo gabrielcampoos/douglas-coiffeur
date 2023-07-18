@@ -58,12 +58,12 @@ const ComoChegarMobile = () => {
 						<Typography
 							component="h1"
 							color="#fff"
-							fontSize={104}
-							lineHeight="5rem"
+							fontSize={50}
+							lineHeight="2.5rem"
 							fontFamily="Khand, sans-serif"
 							fontWeight={900}
 							position="absolute"
-							paddingTop="12rem"
+							paddingTop="10rem"
 							paddingLeft="2rem"
 							zIndex="1"
 						>
@@ -95,7 +95,7 @@ const ComoChegarMobile = () => {
 								position: 'relative',
 								zIndex: '1',
 								backgroundColor: 'darkslategray',
-								padding: '1rem 6rem',
+								// padding: '1rem 6rem',
 								top: '-2.5rem',
 								left: '2rem',
 							}}

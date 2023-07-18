@@ -6,8 +6,9 @@ const MockupAppMobile = () => {
 			component="main"
 			sx={{
 				width: '100%',
-				height: '70vh',
+				height: '100%',
 				backgroundColor: '#ffde59',
+				paddingTop: '3rem',
 			}}
 		>
 			<Container
@@ -82,7 +83,7 @@ const MockupAppMobile = () => {
 						sx={{ backgroundColor: '#2596be' }}
 					>
 						<a
-							href="https://booksy.com/pt-br/instant-experiences/widget/109844?instant_experiences_enabled=true&ig_ix=true&is_fb=1&fbclid=IwAR36ITBFrC5OklYW2VL4KAw8PHKB9vOozRh7pMCfQ6FE4T13569xYHLr-Mc"
+							href=""
 							style={{
 								textDecoration: 'none',
 							}}
