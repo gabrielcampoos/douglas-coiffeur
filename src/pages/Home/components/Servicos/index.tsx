@@ -117,7 +117,7 @@ const Servicos = () => {
 											position: 'relative',
 											zIndex: '1',
 											backgroundColor: '#ffde59',
-											padding: '1rem 6rem',
+											// padding: '1rem 6rem',
 											top: '-2.5rem',
 											left: '2rem',
 											marginTop: '30rem',
@@ -136,7 +136,7 @@ const Servicos = () => {
 												textDecoration: 'none',
 												color: '#000',
 												fontFamily: 'Khand, sans-serif',
-												fontSize: '1.3rem',
+												fontSize: '150%',
 												fontWeight: '600',
 												letterSpacing: '0.1rem',
 											}}

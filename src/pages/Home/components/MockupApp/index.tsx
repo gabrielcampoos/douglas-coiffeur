@@ -1,5 +1,6 @@
 import {
 	Box,
+	Button,
 	Container,
 	Typography,
 	useMediaQuery,
@@ -50,19 +51,19 @@ const MockupApp = () => {
 							backgroundColor: '#ffde59',
 							position: 'absolute',
 							top: '90%',
-							paddingTop: '8rem',
+							paddingTop: '10rem',
 						}}
 					>
 						<Container
 							component="section"
 							sx={{
 								width: '50%',
-								height: '100%',
+								height: '70%',
 								display: 'flex',
 							}}
 						>
 							<Box
-								width="50%"
+								width="100%"
 								height="100%"
 								component="div"
 								display="flex"
@@ -120,44 +121,39 @@ const MockupApp = () => {
 										</a>
 									</Box>
 								</Container>
-								<Box
-									component="button"
-									width="98%"
-									height="11%"
-									border="none"
-									borderRadius="0.5rem"
-									sx={{ backgroundColor: '#2596be' }}
+								<Button
+									variant="contained"
+									href="https://booksy.com/pt-br/instant-experiences/widget/109844?instant_experiences_enabled=true&ig_ix=true&is_fb=1&fbclid=IwAR36ITBFrC5OklYW2VL4KAw8PHKB9vOozRh7pMCfQ6FE4T13569xYHLr-Mc"
+									sx={{
+										containedSecondary: '#2596be',
+										backgroundColor: '#0d6efd',
+										width: '98%',
+										height: '11%',
+										color: 'HighlightText',
+										fontFamily: 'Khand, sans-serif',
+										fontWeight: '700',
+										fontSize: '150%',
+										letterSpacing: '0.1rem',
+										'&.Mui-focused': {
+											backgroundColor: 'white',
+										},
+									}}
 								>
-									<a
-										href="https://booksy.com/pt-br/instant-experiences/widget/109844?instant_experiences_enabled=true&ig_ix=true&is_fb=1&fbclid=IwAR36ITBFrC5OklYW2VL4KAw8PHKB9vOozRh7pMCfQ6FE4T13569xYHLr-Mc"
-										style={{
-											textDecoration: 'none',
-										}}
-									>
-										<Typography
-											color={'HighlightText'}
-											fontFamily="Khand, sans-serif"
-											fontWeight={700}
-											fontSize="2.3rem"
-											letterSpacing="0.1rem"
-										>
-											AGENDAR AGORA
-										</Typography>
-									</a>
-								</Box>
+									AGENDAR AGORA
+								</Button>
 							</Box>
 
 							{/* RIGHT BOX */}
 							<Box
 								width="50%"
-								height="110%"
+								height="100%"
 								component="div"
 								display="flex"
 								justifyContent="center"
 								alignItems="center"
 							>
 								<Section>
-									<img src={Mockup} />
+									<img src={Mockup} width="150%" />
 								</Section>
 							</Box>
 						</Container>

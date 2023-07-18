@@ -45,6 +45,7 @@ export default function Footer() {
 									display: 'flex',
 									alignItems: 'center',
 									justifyContent: 'space-between',
+									width: '100%',
 									height: '20vh',
 									zIndex: '99999',
 								}}
@@ -55,8 +56,9 @@ export default function Footer() {
 
 								<Box
 									sx={{
-										width: '30vw',
+										width: '100%',
 										display: 'flex',
+										flexDirection: 'column',
 										justifyContent: 'space-between',
 										alignItems: 'center',
 										fontFamily: 'Khand, sans-serif',
@@ -134,8 +136,8 @@ export default function Footer() {
 										underline="none"
 										color={'HighlightText'}
 										sx={{
-											width: '5vw',
-											height: '5vh',
+											width: '50%',
+											height: '100%',
 											lineHeight: '5vh',
 											textAlign: 'center',
 											backgroundColor: '#f6b332',
