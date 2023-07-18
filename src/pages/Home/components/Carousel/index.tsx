@@ -178,6 +178,7 @@ export default function CarouselDiv() {
 											alignItems: 'center',
 											width: '100%',
 											height: '100%',
+											paddingTop: '3.5rem',
 										}}
 									>
 										<div
@@ -247,6 +248,7 @@ export default function CarouselDiv() {
 													src="https://seuelias.com/v2018/wp-content/uploads/2021/12/unnamed-file.png"
 													style={{
 														width: '100%',
+														padding: '0 1rem',
 													}}
 												/>
 											</div>
