@@ -70,9 +70,7 @@ const ComoChegarMobile = () => {
 							BAR <br />
 							BE
 							<br />
-							
-								ARIA
-							
+							ARIA
 							<br />
 							<span
 								style={{

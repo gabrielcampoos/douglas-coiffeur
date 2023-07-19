@@ -3,6 +3,7 @@ import ComoChegar from './components/ComoChegar';
 import Footer from './components/Footer';
 import MockupApp from './components/MockupApp';
 import ButtonAppBar from './components/Navbar';
+import PlanosMobile from './components/Planos/PlanosMobile';
 import Servicos from './components/Servicos';
 
 const Home = () => {
@@ -10,6 +11,7 @@ const Home = () => {
 		<>
 			<ButtonAppBar />
 			<CarouselDiv />
+			<PlanosMobile />
 			<MockupApp />
 			<ComoChegar />
 			<Servicos />
