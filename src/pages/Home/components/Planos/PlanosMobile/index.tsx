@@ -1,4 +1,4 @@
-import { Box, Button, Container, Typography } from '@mui/material';
+import { Box, Container, Typography } from '@mui/material';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
 
@@ -57,7 +57,7 @@ const PlanosMobile = () => {
 					<Section transition="all 2s 0.6s">
 						<Typography
 							component="h1"
-							variant='h2'
+							variant="h2"
 							color="#fff"
 							fontSize={70}
 							lineHeight="3.5rem"
@@ -70,11 +70,10 @@ const PlanosMobile = () => {
 						</Typography>
 					</Section>
 
-					<Section transition="all 1s 0.6s"
-					>
+					<Section transition="all 1s 0.6s">
 						<Typography
 							component="h1"
-							variant='h2'
+							variant="h2"
 							color="#fff"
 							fontSize={70}
 							lineHeight="3.5rem"
@@ -88,19 +87,22 @@ const PlanosMobile = () => {
 					<Section transition="all 0.7s 0.6s">
 						<Typography
 							component="h1"
-							variant='h2'
+							variant="h2"
 							color="#fff"
 							fontSize={70}
 							lineHeight="3.5rem"
 							fontFamily="Khand, sans-serif"
 							fontWeight={700}
 							zIndex="1"
-							marginBottom='3rem'
-
+							marginBottom="3rem"
 						>
 							<span style={{ color: '#f6b332' }}>PLANOS</span>
 						</Typography>
-						<Typography component="p" color={'whitesmoke'} marginBottom='3rem'>
+						<Typography
+							component="p"
+							color={'whitesmoke'}
+							marginBottom="3rem"
+						>
 							Ser atendido por ordem de chegada gera filas, isso
 							se tornou algo do passado. Use o Booksy para agendar
 							seus horários a qualquer hora, onde quer que esteja
@@ -109,36 +111,33 @@ const PlanosMobile = () => {
 						</Typography>
 					</Section>
 					<Section transition="all 2s 0.6s">
-					<Box
-					component="button"
-					width="100%"
-					height="11%"
-					border="none"
-					borderRadius="0.5rem"
-					sx={{backgroundColor: '#f6b332'}}
-					
-					
-				>
-					<a
-							href="https://api.whatsapp.com/send/?phone=5518997984039&text=Olá, gostaria de saber mais sobre os planos.&type=phone_number&app_absent=0"
-							style={{
-								textDecoration: 'none',
-							}}
+						<Box
+							component="button"
+							width="100%"
+							height="11%"
+							border="none"
+							borderRadius="0.5rem"
+							sx={{ backgroundColor: '#f6b332' }}
 						>
-						<Typography
-								color={'HighlightText'}
-								fontFamily="Khand, sans-serif"
-								fontWeight={700}
-								fontSize="2.3rem"
-								letterSpacing="0.1rem"
+							<a
+								href="https://api.whatsapp.com/send/?phone=5518997984039&text=Olá, gostaria de saber mais sobre os planos.&type=phone_number&app_absent=0"
+								style={{
+									textDecoration: 'none',
+								}}
 							>
-								CONHECER PLANOS
-							</Typography>
-						</a>
-				</Box>
+								<Typography
+									color={'HighlightText'}
+									fontFamily="Khand, sans-serif"
+									fontWeight={700}
+									fontSize="2.3rem"
+									letterSpacing="0.1rem"
+								>
+									CONHECER PLANOS
+								</Typography>
+							</a>
+						</Box>
 					</Section>
 				</Box>
-				
 			</Container>
 		</Box>
 	);

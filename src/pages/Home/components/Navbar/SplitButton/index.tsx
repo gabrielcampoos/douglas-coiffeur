@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-non-null-assertion */
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import MenuIcon from '@mui/icons-material/Menu';
 import { AppBar, Box, Container, Toolbar } from '@mui/material';
 import Button from '@mui/material/Button';
@@ -40,20 +42,25 @@ const SplitButton = () => {
 		const PlanosMobile = document.getElementById('PlanosMobile');
 		const ComoChegarMobile = document.getElementById('ComoChegarMobile');
 		const ServicosMobile = document.getElementById('ServicosMobile');
+		console.log(options[index]);
 
-		if (options[selectedIndex] === 'BOOKSY') {
+		if (options[index] === 'BOOKSY') {
+			setOpen(false);
 			MockupMobileRef!.scrollIntoView({ behavior: 'smooth' });
 		}
 
-		if (options[selectedIndex] === 'PLANOS') {
+		if (options[index] === 'PLANOS') {
+			setOpen(false);
 			PlanosMobile!.scrollIntoView({ behavior: 'smooth' });
 		}
 
-		if (options[selectedIndex] === 'UNIDADE') {
+		if (options[index] === 'UNIDADE') {
+			setOpen(false);
 			ComoChegarMobile!.scrollIntoView({ behavior: 'smooth' });
 		}
 
-		if (options[selectedIndex] === 'SERVIÇOS') {
+		if (options[index] === 'SERVIÇOS') {
+			setOpen(false);
 			ServicosMobile!.scrollIntoView({ behavior: 'smooth' });
 		}
 

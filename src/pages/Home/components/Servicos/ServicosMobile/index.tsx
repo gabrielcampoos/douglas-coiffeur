@@ -43,14 +43,15 @@ const ServicosMobile = () => {
 				component="main"
 				sx={{
 					width: '100%',
-					height: '40vh',
+					height: '35vh',
 					backgroundColor: '#000',
 					backgroundImage: `url(${BannerInterior})`,
-					backgroundSize: 'cover',
-					backgroundPosition: '100%',
+					backgroundSize: '100% 70%',
+					backgroundPosition: '100% 100%',
 					backgroundRepeat: 'no-repeat',
 					padding: '2rem 0',
 					// margin: '1rem 0',
+					border: 'none'
 				}}
 			>
 				<Container
@@ -62,6 +63,7 @@ const ServicosMobile = () => {
 						flexDirection: 'column',
 						alignItems: 'center',
 						justifyContent: 'center',
+						border: 'none'
 					}}
 				>
 					<Box width="100%" component="div">
