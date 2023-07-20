@@ -16,10 +16,10 @@ import Logo from '../../../../../assets/images/logo.png';
 
 const options = [
 	'PLANOS',
+	'ASSINATURAS',
 	'BOOKSY',
 	'UNIDADE',
 	'SERVIÇOS',
-	'INSTITUTO COIFFEUR',
 	'AGENDAR',
 ];
 
@@ -62,6 +62,11 @@ const SplitButton = () => {
 		if (options[index] === 'SERVIÇOS') {
 			setOpen(false);
 			ServicosMobile!.scrollIntoView({ behavior: 'smooth' });
+		}
+
+		if (options[index] === 'AGENDAR') {
+			setOpen(false);
+			MockupMobileRef!.scrollIntoView({ behavior: 'smooth' });
 		}
 
 		setSelectedIndex(index);

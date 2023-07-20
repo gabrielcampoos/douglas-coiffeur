@@ -81,7 +81,7 @@ const PlanosMobile = () => {
 							fontWeight={700}
 							zIndex="1"
 						>
-							NOSSOS <br />
+							NOSSA <br />
 						</Typography>
 					</Section>
 					<Section transition="all 0.7s 0.6s">
@@ -96,7 +96,7 @@ const PlanosMobile = () => {
 							zIndex="1"
 							marginBottom="3rem"
 						>
-							<span style={{ color: '#f6b332' }}>PLANOS</span>
+							<span style={{ color: '#f6b332' }}>ASSINATURA</span>
 						</Typography>
 						<Typography
 							component="p"

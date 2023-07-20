@@ -1,3 +1,4 @@
+import AssinaturasMobile from './components/Assinaturas/AssinaturasMobile';
 import CarouselDiv from './components/Carousel';
 import ComoChegar from './components/ComoChegar';
 import Footer from './components/Footer';
@@ -12,6 +13,7 @@ const Home = () => {
 			<ButtonAppBar />
 			<CarouselDiv />
 			<PlanosMobile />
+			<AssinaturasMobile />
 			<MockupApp />
 			<ComoChegar />
 			<Servicos />
