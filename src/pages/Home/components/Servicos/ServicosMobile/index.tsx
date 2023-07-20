@@ -43,11 +43,11 @@ const ServicosMobile = () => {
 				component="main"
 				sx={{
 					width: '100%',
-					height: '30vh',
+					height: '40vh',
 					backgroundColor: '#000',
 					backgroundImage: `url(${BannerInterior})`,
-					backgroundSize: '100% 100%',
-					backgroundPosition: 'center',
+					backgroundSize: 'cover',
+					backgroundPosition: '100%',
 					backgroundRepeat: 'no-repeat',
 					padding: '2rem 0',
 					// margin: '1rem 0',

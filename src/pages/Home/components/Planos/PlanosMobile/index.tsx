@@ -132,7 +132,7 @@ const PlanosMobile = () => {
 								fontSize="2.3rem"
 								letterSpacing="0.1rem"
 							>
-								SAIBA MAIS
+								CONHECER PLANOS
 							</Typography>
 						</a>
 				</Box>
