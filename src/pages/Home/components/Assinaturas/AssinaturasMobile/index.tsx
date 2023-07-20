@@ -65,20 +65,24 @@ const AssinaturasMobile = () => {
 						color={'whitesmoke'}
 						textAlign="justify"
 					>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit.
-						Temporibus, recusandae quasi impedit sed repellat
-						dignissimos, fuga odit eaque vero consequatur culpa
-						molestiae eligendi unde laudantium omnis! Unde et quia
-						repudiandae accusamus deleniti repellat quis distinctio
-						autem, qui iste dolor illo aliquid obcaecati, voluptas,
-						consequatur atque consequuntur ratione! Blanditiis error
-						adipisci quos quo esse, sit deleniti vero quaerat,
-						maiores beatae reiciendis veniam fuga explicabo quae
-						illo atque sunt nisi corrupti assumenda officiis eos
-						dolores enim. Amet, ratione. Tempora sequi sint sed,
-						alias maxime voluptas recusandae praesentium voluptate
-						totam magnam saepe suscipit delectus ea quisquam impedit
-						tempore veniam. Facilis totam neque quia?
+						Sabe aquele dia em que você tem um evento importante,
+						uma reunião, festinha com amigos ou jantar com alguém
+						especial e fica sentindo-se mal pois percebeu que está
+						com o cabelo desajeitado ou com o “pézinho” mal feito e
+						cheio de pelos no pescoço? Ou quando você está em casa e
+						se lembra que precisa fazer a barba, mas aí bate uma
+						preguiça só de pensar em pegar no presto barba, deixar a
+						pia toda suja de pelos, aquela zona no banheiro! Uma
+						solução para essas situações seria você fazer a barba
+						toda semana na barbearia ou cortar o cabelo com maior
+						frequência, certo? Certo! Mas aí o custo para manter sua
+						imagem pessoal ficaria alto não é mesmo? Errado! E se eu
+						te disser que temos a solução perfeita pra você! Um
+						clube de assinatura de cabelo e barba! Que tal vir na
+						barbearia alinhar sua barba e seu cabelo toda semana e
+						pagar apenas um valor fixo por mês pra isso? Sem
+						pegadinha, corte e barba toda semana por um único valor
+						mensal!
 					</Typography>
 				</Box>
 				<Box
