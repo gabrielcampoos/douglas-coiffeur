@@ -3,6 +3,7 @@ import { Box, Container, Typography } from '@mui/material';
 const MockupAppMobile = () => {
 	return (
 		<Box
+			id="MockupMobileRef"
 			component="main"
 			sx={{
 				width: '100%',

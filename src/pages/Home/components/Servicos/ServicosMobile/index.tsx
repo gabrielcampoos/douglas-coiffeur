@@ -39,6 +39,7 @@ const ServicosMobile = () => {
 	return (
 		<>
 			<Box
+				id="ServicosMobile"
 				component="main"
 				sx={{
 					width: '100%',
@@ -101,7 +102,7 @@ const ServicosMobile = () => {
 							<Button
 								sx={{
 									zIndex: '1',
-									backgroundColor: '#ffde59',
+									backgroundColor: '#f6b332',
 									// padding: '1rem 6rem',
 									left: '2rem',
 									'&:hover': {

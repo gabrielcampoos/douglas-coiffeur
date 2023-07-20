@@ -1,4 +1,4 @@
-import { Box, Container, Typography, Button } from '@mui/material';
+import { Box, Button, Container, Typography } from '@mui/material';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
 
@@ -29,6 +29,7 @@ const PlanosMobile = () => {
 	return (
 		<Box
 			component="main"
+			id="PlanosMobile"
 			width="100%"
 			height="70vh"
 			sx={{
@@ -40,13 +41,14 @@ const PlanosMobile = () => {
 					width: '100%',
 					height: '100%',
 					display: 'flex',
+					flexDirection: 'column',
 					alignItems: 'center',
 					justifyContent: 'center',
 				}}
 			>
 				<Box
-					width="60%"
-					height="100%"
+					width="100%"
+					height="70%"
 					display="flex"
 					flexDirection="column"
 					alignItems="center"
@@ -61,7 +63,6 @@ const PlanosMobile = () => {
 							fontFamily="Khand, sans-serif"
 							fontWeight={900}
 							zIndex="1"
-							marginLeft="2rem"
 						>
 							{' '}
 							CONHEÇA <br />
@@ -96,21 +97,28 @@ const PlanosMobile = () => {
 					</Section>
 				</Box>
 				<Box
-					width="40%"
-					height="90%"
+					width="100%"
+					height="30%"
 					display="flex"
 					flexDirection="column"
 					alignItems="center"
-					justifyContent="flex-end"
+					justifyContent="center"
 				>
 					<Section transition="all 2s 0.6s">
 						<Button
-							href="https://api.whatsapp.com/send/?phone=5518997984039&text='Olá, gostaria de saber mais sobre os planos.'&type=phone_number&app_absent=0"
+							href="https://api.whatsapp.com/send/?phone=5518997984039&text=Olá, gostaria de saber mais sobre os planos.&type=phone_number&app_absent=0"
 							variant="contained"
 							sx={{
 								backgroundColor: '#f6b332',
-								color: '#fff',
+								color: '#000',
 								width: '100%',
+								height: '70%',
+								border: 'none',
+								borderRadius: '0.5rem',
+								fontFamily: 'Khand, sans-serif',
+								fontWeight: 700,
+								fontSize: '2.3rem',
+								letterSpacing: '0.1rem',
 							}}
 						>
 							SAIBA MAIS
