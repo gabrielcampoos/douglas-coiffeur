@@ -42,19 +42,19 @@ const SplitButton = () => {
 		const ServicosMobile = document.getElementById('ServicosMobile');
 
 		if (options[selectedIndex] === 'BOOKSY') {
-			MockupMobileRef.scrollIntoView({ behavior: 'smooth' });
+			MockupMobileRef!.scrollIntoView({ behavior: 'smooth' });
 		}
 
 		if (options[selectedIndex] === 'PLANOS') {
-			PlanosMobile.scrollIntoView({ behavior: 'smooth' });
+			PlanosMobile!.scrollIntoView({ behavior: 'smooth' });
 		}
 
 		if (options[selectedIndex] === 'UNIDADE') {
-			ComoChegarMobile.scrollIntoView({ behavior: 'smooth' });
+			ComoChegarMobile!.scrollIntoView({ behavior: 'smooth' });
 		}
 
 		if (options[selectedIndex] === 'SERVIÇOS') {
-			ServicosMobile.scrollIntoView({ behavior: 'smooth' });
+			ServicosMobile!.scrollIntoView({ behavior: 'smooth' });
 		}
 
 		setSelectedIndex(index);
