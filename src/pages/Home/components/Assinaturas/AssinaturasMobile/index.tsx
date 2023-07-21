@@ -20,7 +20,7 @@ const AssinaturasMobile = () => {
 					color={'white'}
 					fontFamily="Khand, sans-serif"
 					fontWeight={700}
-					fontSize="2.3rem"
+					fontSize="2rem"
 					letterSpacing="0.1rem"
 					textAlign="center"
 					zIndex="2"
