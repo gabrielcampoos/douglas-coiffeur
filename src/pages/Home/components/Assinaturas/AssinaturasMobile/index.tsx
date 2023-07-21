@@ -15,17 +15,23 @@ const AssinaturasMobile = () => {
 				padding: '3rem 0',
 			}}
 		>
-			<Box width="100%" height="10vh">
+			<Box
+				width="100%"
+				height="10vh"
+				display="flex"
+				alignContent="center"
+				alignItems="center"
+			>
 				<Typography
+					width="100%"
 					color={'white'}
 					fontFamily="Khand, sans-serif"
 					fontWeight={700}
 					fontSize="2rem"
 					letterSpacing="0.1rem"
-					textAlign="center"
 					zIndex="2"
 					position="absolute"
-					padding="0.7rem 4.5rem "
+					textAlign="center"
 				>
 					DOUGLA&apos;S CLUB
 				</Typography>
