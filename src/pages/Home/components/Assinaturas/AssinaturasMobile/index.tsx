@@ -10,14 +10,14 @@ const AssinaturasMobile = () => {
 			id="AssinaturasMobile"
 			width="100%"
 			height="100%"
+			padding="2rem 0"
 			sx={{
 				backgroundColor: '#000',
-				padding: '3rem 0',
 			}}
 		>
 			<Box
 				width="100%"
-				height="10vh"
+				height="15vh"
 				display="flex"
 				alignContent="center"
 				alignItems="center"
@@ -27,7 +27,7 @@ const AssinaturasMobile = () => {
 					color={'white'}
 					fontFamily="Khand, sans-serif"
 					fontWeight={700}
-					fontSize="2rem"
+					fontSize="2.3rem"
 					letterSpacing="0.1rem"
 					zIndex="2"
 					position="absolute"
@@ -37,7 +37,7 @@ const AssinaturasMobile = () => {
 				</Typography>
 				<Box
 					width="100%"
-					height="10vh"
+					height="100%"
 					position="relative"
 					sx={{
 						backgroundImage: `url(${Local})`,
@@ -125,11 +125,11 @@ const AssinaturasMobile = () => {
 						para essas situações seria você fazer a barba toda
 						semana na barbearia ou cortar o cabelo com maior
 						frequência, certo?{' '}
-						<span style={{ color: '#f6b332' }}>Certo!</span>
-						Mas aí o custo para manter sua imagem pessoal ficaria
-						alto não é mesmo?{' '}
-						<span style={{ color: '#f6b332' }}>Errado!</span>
-						E se eu te disser que temos a solução perfeita pra você!
+						<span style={{ color: '#f6b332' }}>Certo!</span> Mas aí
+						o custo para manter sua imagem pessoal ficaria alto não
+						é mesmo?{' '}
+						<span style={{ color: '#f6b332' }}>Errado!</span> E se
+						eu te disser que temos a solução perfeita pra você!
 						<br />
 						<br />{' '}
 						<span style={{ color: '#f6b332' }}>

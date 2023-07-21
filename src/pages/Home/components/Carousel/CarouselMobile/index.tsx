@@ -35,7 +35,7 @@ const CarouselMobile = () => {
 							style={{
 								fontSize: '5rem',
 								fontWeight: '700',
-								color: 'rgb(66, 58, 56)',
+								color: '#000',
 								fontFamily: 'Khand, sans-serif',
 								textTransform: 'uppercase',
 								transform:
@@ -68,20 +68,28 @@ const CarouselMobile = () => {
 						</h1>
 						<p
 							style={{
-								fontSize: '1.6rem',
+								fontSize: '1.7rem',
+								letterSpacing: '0.07rem',
 								fontFamily: 'Khand, sans-serif',
 								color: '#fff',
+								// fontWeight: 'bold',
 							}}
 						>
-							e um <strong>ambiente</strong>
+							e um{' '}
+							<span style={{ color: '#000', fontWeight: '600' }}>
+								ambiente
+							</span>
 							<br />
-							pensado em <strong>você</strong>
+							pensado em{' '}
+							<span style={{ color: '#000', fontWeight: '600' }}>
+								você
+							</span>
 						</p>
 					</Container>
 				</CustomAnimation>
 			</Carousel.Item>
 
-			<Carousel.Item
+			{/* <Carousel.Item
 				interval={4000}
 				style={{
 					width: '100%',
@@ -217,6 +225,88 @@ const CarouselMobile = () => {
 						/>
 					</div>
 				</Container>
+			</Carousel.Item> */}
+			<Carousel.Item
+				interval={4000}
+				style={{
+					width: '100%',
+					height: '70vh',
+					backgroundColor: '#000',
+				}}
+			>
+				<CustomAnimation>
+					<Container
+						style={{
+							display: 'flex',
+							flexDirection: 'column',
+							justifyContent: 'center',
+							alignItems: 'center',
+							width: '100%',
+							height: '100%',
+							backgroundColor: '#000',
+						}}
+					>
+						<h1
+							style={{
+								fontSize: '5rem',
+								fontWeight: '700',
+								color: '#fff',
+								fontFamily: 'Khand, sans-serif',
+								textTransform: 'uppercase',
+								transform:
+									'matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)',
+								transformOrigin: ' 50% 50% 0px',
+								whiteSpace: 'nowrap',
+								marginBottom: '2rem',
+								marginTop: '6rem',
+								letterSpacing: '0px',
+								padding: '0px',
+								lineHeight: '4.5rem',
+								borderWidth: '0px',
+								minHeight: ' 0px',
+								minWidth: ' 0px',
+								maxHeight: 'none',
+								maxWidth: 'none',
+							}}
+						>
+							Se torne
+							<br />
+							<span
+								style={{
+									color: '#f6b332',
+								}}
+							>
+								membro
+							</span>
+							<br />
+							do{' '}
+							<span
+								style={{
+									color: '#f6b332',
+								}}
+							>
+								clube
+							</span>
+						</h1>
+						<p
+							style={{
+								fontSize: '1.6rem',
+								fontFamily: 'Khand, sans-serif',
+								color: '#fff',
+							}}
+						>
+							conheça nossos{' '}
+							<span
+								style={{
+									color: '#f6b332',
+									fontWeight: '600',
+								}}
+							>
+								planos
+							</span>
+						</p>
+					</Container>
+				</CustomAnimation>
 			</Carousel.Item>
 		</Carousel>
 	);
