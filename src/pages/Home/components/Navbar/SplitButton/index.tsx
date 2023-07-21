@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-non-null-assertion */
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import MenuIcon from '@mui/icons-material/Menu';
-import { AppBar, Box, Container, Toolbar } from '@mui/material';
+import { AppBar, Box, Container, Toolbar, Typography } from '@mui/material';
 import Button from '@mui/material/Button';
 import ButtonGroup from '@mui/material/ButtonGroup';
 import ClickAwayListener from '@mui/material/ClickAwayListener';
@@ -13,6 +13,7 @@ import Popper from '@mui/material/Popper';
 import * as React from 'react';
 
 import Logo from '../../../../../assets/images/logo.png';
+import Aviso from '../../Aviso';
 
 const options = ['ASSINATURAS', 'BOOKSY', 'UNIDADE', 'SERVIÇOS', 'AGENDAR'];
 
@@ -193,6 +194,27 @@ const SplitButton = () => {
 						</Toolbar>
 					</AppBar>
 				</Container>
+				<Box
+					width="100%"
+					height="2vh"
+					sx={{
+						backgroundColor: 'red',
+						zIndex: '999999999999999999',
+						position: 'relative',
+					}}
+				>
+					<Typography
+						gutterBottom
+						color="whitesmoke"
+						fontFamily="Khand, sans-serif"
+						fontWeight={700}
+						fontSize="0.6rem"
+						letterSpacing="0.1rem"
+						textAlign="center"
+					>
+						<Aviso />
+					</Typography>
+				</Box>
 			</Box>
 		</React.Fragment>
 	);
