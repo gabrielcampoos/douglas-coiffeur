@@ -12,8 +12,8 @@ const Home = () => {
 		<>
 			<ButtonAppBar />
 			<CarouselDiv />
-			<PlanosMobile />
 			<AssinaturasMobile />
+			<PlanosMobile />
 			<MockupApp />
 			<ComoChegar />
 			<Servicos />

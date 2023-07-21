@@ -54,7 +54,7 @@ const ButtonAppBar = () => {
 										<img
 											src={Logo}
 											alt="Logo Barbearia"
-											width="100%"
+											width="60%"
 										/>
 									</Box>
 

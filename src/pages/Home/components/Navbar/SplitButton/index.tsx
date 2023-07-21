@@ -14,14 +14,7 @@ import * as React from 'react';
 
 import Logo from '../../../../../assets/images/logo.png';
 
-const options = [
-	'PLANOS',
-	'ASSINATURAS',
-	'BOOKSY',
-	'UNIDADE',
-	'SERVIÇOS',
-	'AGENDAR',
-];
+const options = ['ASSINATURAS', 'BOOKSY', 'UNIDADE', 'SERVIÇOS', 'AGENDAR'];
 
 const SplitButton = () => {
 	const [open, setOpen] = React.useState(false);
@@ -39,19 +32,19 @@ const SplitButton = () => {
 		index: number,
 	) => {
 		const MockupMobileRef = document.getElementById('MockupMobileRef');
-		const PlanosMobile = document.getElementById('PlanosMobile');
+		const AssinaturasMobile = document.getElementById('AssinaturasMobile');
 		const ComoChegarMobile = document.getElementById('ComoChegarMobile');
 		const ServicosMobile = document.getElementById('ServicosMobile');
-		console.log(options[index]);
+		// console.log(options[index]);
 
 		if (options[index] === 'BOOKSY') {
 			setOpen(false);
 			MockupMobileRef!.scrollIntoView({ behavior: 'smooth' });
 		}
 
-		if (options[index] === 'PLANOS') {
+		if (options[index] === 'ASSINATURAS') {
 			setOpen(false);
-			PlanosMobile!.scrollIntoView({ behavior: 'smooth' });
+			AssinaturasMobile!.scrollIntoView({ behavior: 'smooth' });
 		}
 
 		if (options[index] === 'UNIDADE') {

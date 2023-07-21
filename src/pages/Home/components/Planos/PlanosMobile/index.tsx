@@ -103,11 +103,17 @@ const PlanosMobile = () => {
 							color={'whitesmoke'}
 							marginBottom="3rem"
 						>
-							Ser atendido por ordem de chegada gera filas, isso
-							se tornou algo do passado. Use o Booksy para agendar
-							seus horários a qualquer hora, onde quer que esteja
-							e assim continue aproveitando da melhor maneira os
-							serviços que você adora.
+							Descubra a liberdade de personalizar seu plano
+							mensal na nossa barbearia! Com os nossos planos
+							personalizados, você tem o poder de escolher os
+							serviços que deseja aproveitar a cada mês. Selecione
+							entre uma variedade de opções, desde cortes de
+							cabelo e barba, até tratamentos de spa e serviços
+							exclusivos. Montar o seu plano é fácil e flexível, e
+							o melhor de tudo, você receberá um valor especial e
+							sob medida para suas preferências. Experimente a
+							comodidade e a conveniência de um plano de
+							assinatura.
 						</Typography>
 					</Section>
 					<Section transition="all 2s 0.6s">

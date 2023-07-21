@@ -1,15 +1,17 @@
-import { CardActionArea, Container, Box } from '@mui/material';
+import { Box, CardActionArea, Container } from '@mui/material';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 
-import ControlledRadioButtonsGroup from '../RadioButton';
+import {
+	default as ControlledRadioButtonsGroup,
+	default as ListaServico,
+} from '../ListaServico';
 
 export default function ActionAreaCard() {
 	return (
 		<>
-		{/* PLUS */}
+			{/* PLUS */}
 			<Card
 				sx={{
 					width: '100%',
@@ -78,6 +80,7 @@ export default function ActionAreaCard() {
 						</CardContent>
 					</CardActionArea>
 					<ControlledRadioButtonsGroup />
+
 					<Box
 						component="button"
 						width="70%"
@@ -91,27 +94,33 @@ export default function ActionAreaCard() {
 							backgroundColor: '#000',
 						}}
 					>
-						<Box
-							width="95%"
-							height="90%"
-							border="0.15rem solid #f6b332"
-							borderRadius="0.5rem"
-							position="absolute"
-							top="0.2rem"
-							left="0.3rem"
-							sx={{
-								backgroundColor: 'transparent',
-							}}
-						></Box>
-						<Typography
-							color={'whitesmoke'}
-							fontFamily="Khand, sans-serif"
-							fontWeight={700}
-							fontSize="1.5rem"
-							letterSpacing="0.1rem"
+						<a
+							href="https://api.whatsapp.com/send/?phone=5518997984039&text=Olá, gostaria de saber mais sobre o plano PLUS.&type=phone_number&app_absent=0"
+							style={{ textDecoration: 'none' }}
 						>
-							ASSINAR
-						</Typography>
+							<Box
+								width="95%"
+								height="90%"
+								border="0.15rem solid #f6b332"
+								borderRadius="0.5rem"
+								position="absolute"
+								top="0.2rem"
+								left="0.3rem"
+								sx={{
+									backgroundColor: 'transparent',
+								}}
+							></Box>
+
+							<Typography
+								color={'whitesmoke'}
+								fontFamily="Khand, sans-serif"
+								fontWeight={700}
+								fontSize="1.5rem"
+								letterSpacing="0.1rem"
+							>
+								ASSINAR
+							</Typography>
+						</a>
 					</Box>
 				</Container>
 			</Card>
@@ -184,7 +193,7 @@ export default function ActionAreaCard() {
 							</Typography>
 						</CardContent>
 					</CardActionArea>
-					<ControlledRadioButtonsGroup />
+					<ListaServico />
 					<Box
 						component="button"
 						width="70%"
@@ -198,31 +207,36 @@ export default function ActionAreaCard() {
 							backgroundColor: '#000',
 						}}
 					>
-						<Box
-							width="95%"
-							height="90%"
-							border="0.15rem solid #f6b332"
-							borderRadius="0.5rem"
-							position="absolute"
-							top="0.2rem"
-							left="0.3rem"
-							sx={{
-								backgroundColor: 'transparent',
-							}}
-						></Box>
-						<Typography
-							color={'whitesmoke'}
-							fontFamily="Khand, sans-serif"
-							fontWeight={700}
-							fontSize="1.5rem"
-							letterSpacing="0.1rem"
+						<a
+							href="https://api.whatsapp.com/send/?phone=5518997984039&text=Olá, gostaria de saber mais sobre o plano PREMIUM.&type=phone_number&app_absent=0"
+							style={{ textDecoration: 'none' }}
 						>
-							ASSINAR
-						</Typography>
+							<Box
+								width="95%"
+								height="90%"
+								border="0.15rem solid #f6b332"
+								borderRadius="0.5rem"
+								position="absolute"
+								top="0.2rem"
+								left="0.3rem"
+								sx={{
+									backgroundColor: 'transparent',
+								}}
+							></Box>
+							<Typography
+								color={'whitesmoke'}
+								fontFamily="Khand, sans-serif"
+								fontWeight={700}
+								fontSize="1.5rem"
+								letterSpacing="0.1rem"
+							>
+								ASSINAR
+							</Typography>
+						</a>
 					</Box>
 				</Container>
 			</Card>
-			
+
 			{/* PRO */}
 			<Card
 				sx={{
@@ -305,27 +319,32 @@ export default function ActionAreaCard() {
 							backgroundColor: '#000',
 						}}
 					>
-						<Box
-							width="95%"
-							height="90%"
-							border="0.15rem solid #f6b332"
-							borderRadius="0.5rem"
-							position="absolute"
-							top="0.2rem"
-							left="0.3rem"
-							sx={{
-								backgroundColor: 'transparent',
-							}}
-						></Box>
-						<Typography
-							color={'whitesmoke'}
-							fontFamily="Khand, sans-serif"
-							fontWeight={700}
-							fontSize="1.5rem"
-							letterSpacing="0.1rem"
+						<a
+							href="https://api.whatsapp.com/send/?phone=5518997984039&text=Olá, gostaria de saber mais sobre o plano PRO.&type=phone_number&app_absent=0"
+							style={{ textDecoration: 'none' }}
 						>
-							ASSINAR
-						</Typography>
+							<Box
+								width="95%"
+								height="90%"
+								border="0.15rem solid #f6b332"
+								borderRadius="0.5rem"
+								position="absolute"
+								top="0.2rem"
+								left="0.3rem"
+								sx={{
+									backgroundColor: 'transparent',
+								}}
+							></Box>
+							<Typography
+								color={'whitesmoke'}
+								fontFamily="Khand, sans-serif"
+								fontWeight={700}
+								fontSize="1.5rem"
+								letterSpacing="0.1rem"
+							>
+								ASSINAR
+							</Typography>
+						</a>
 					</Box>
 				</Container>
 			</Card>
