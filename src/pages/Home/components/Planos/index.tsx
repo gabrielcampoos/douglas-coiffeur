@@ -75,7 +75,7 @@ const Planos = () => {
 										variant="h2"
 										color="#fff"
 										fontSize={70}
-										lineHeight="3.5rem"
+										lineHeight="5rem"
 										fontFamily="Khand, sans-serif"
 										fontWeight={700}
 										zIndex="1"
@@ -91,7 +91,7 @@ const Planos = () => {
 										variant="h2"
 										color="#fff"
 										fontSize={70}
-										lineHeight="3.5rem"
+										lineHeight="5rem"
 										fontFamily="Khand, sans-serif"
 										fontWeight={700}
 										zIndex="1"
@@ -105,7 +105,7 @@ const Planos = () => {
 										variant="h2"
 										color="#fff"
 										fontSize={70}
-										lineHeight="7rem"
+										lineHeight="5rem"
 										fontFamily="Khand, sans-serif"
 										fontWeight={700}
 										zIndex="1"

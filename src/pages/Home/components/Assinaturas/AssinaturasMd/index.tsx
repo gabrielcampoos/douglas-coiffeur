@@ -7,7 +7,7 @@ const AssinaturasMd = () => {
 	return (
 		<Box
 			component="main"
-			id="AssinaturasMobile"
+			id="AssinaturasMd"
 			width="100%"
 			height="100%"
 			padding="2rem 0"

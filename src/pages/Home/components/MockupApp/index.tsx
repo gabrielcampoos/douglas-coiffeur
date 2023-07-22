@@ -44,6 +44,7 @@ const MockupApp = () => {
 			{(!smDown && (
 				<>
 					<Box
+						id="MockupApp"
 						component="main"
 						sx={{
 							width: '100%',

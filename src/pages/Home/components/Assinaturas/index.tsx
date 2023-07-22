@@ -30,7 +30,7 @@ const Assinaturas = () => {
 					<>
 						<Box
 							component="main"
-							id="AssinaturasMobile"
+							id="Assinaturas"
 							width="100%"
 							height="100%"
 							padding="2rem 0"

@@ -1,6 +1,7 @@
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import {
+	Button,
 	Container,
 	IconButton,
 	Link,
@@ -50,13 +51,13 @@ export default function Footer() {
 									zIndex: '99999',
 								}}
 							>
-								<Box>
+								<Box width="25%">
 									<img src={Logo} alt="Logo Barbearia" />
 								</Box>
 
 								<Box
 									sx={{
-										width: '100%',
+										width: '50%',
 										display: 'flex',
 										flexDirection: 'column',
 										justifyContent: 'space-between',
@@ -67,7 +68,20 @@ export default function Footer() {
 									}}
 								>
 									<Link
-										href="#"
+										href="https://api.whatsapp.com/send/?phone=5518997984039&text=Olá, gostaria de saber mais sobre os planos.&type=phone_number&app_absent=0"
+										underline="none"
+										color={'HighlightText'}
+										sx={{
+											'&:hover': {
+												color: '#ffde59',
+											},
+										}}
+									>
+										{'ASSINATURAS'}
+									</Link>
+
+									<Link
+										href="https://booksy.com/pt-br/instant-experiences/widget/109844?instant_experiences_enabled=true&ig_ix=true&is_fb=1&fbclid=IwAR36ITBFrC5OklYW2VL4KAw8PHKB9vOozRh7pMCfQ6FE4T13569xYHLr-Mc"
 										underline="none"
 										color={'HighlightText'}
 										sx={{
@@ -80,7 +94,7 @@ export default function Footer() {
 									</Link>
 
 									<Link
-										href="#"
+										href="https://www.google.com/maps/place/Dougla's+Coiffeur/@-22.6515273,-50.4194907,17z/data=!3m1!4b1!4m5!3m4!1s0x949539104f13fd7d:0xf3996aef55392f08!8m2!3d-22.6515345!4d-50.4173573"
 										underline="none"
 										color={'HighlightText'}
 										sx={{
@@ -93,7 +107,7 @@ export default function Footer() {
 									</Link>
 
 									<Link
-										href="#"
+										href="https://booksy.com/pt-br/instant-experiences/widget/109844?instant_experiences_enabled=true&ig_ix=true&is_fb=1&fbclid=IwAR36ITBFrC5OklYW2VL4KAw8PHKB9vOozRh7pMCfQ6FE4T13569xYHLr-Mc"
 										underline="none"
 										color={'HighlightText'}
 										sx={{
@@ -105,62 +119,43 @@ export default function Footer() {
 										{'SERVIÇOS'}
 									</Link>
 
-									<Link
-										href="#"
-										underline="none"
-										color={'HighlightText'}
+									<Button
 										sx={{
-											'&:hover': {
-												color: '#ffde59',
-											},
-										}}
-									>
-										{'INSTITUTO COIFFEUR'}
-									</Link>
-
-									<Link
-										href="#"
-										underline="none"
-										color={'HighlightText'}
-										sx={{
-											'&:hover': {
-												color: '#ffde59',
-											},
-										}}
-									>
-										{'CONTATO'}
-									</Link>
-
-									<Link
-										href="#"
-										underline="none"
-										color={'HighlightText'}
-										sx={{
-											width: '50%',
-											height: '100%',
-											lineHeight: '5vh',
-											textAlign: 'center',
-											backgroundColor: '#f6b332',
-											color: '#000',
-											fontWeight: 'bold',
-											borderRadius: '0.5rem',
+											// position: 'relative',
+											zIndex: '1',
+											backgroundColor: 'darkslategrey',
+											// padding: '1rem 6rem',
+											// top: '-2.5rem',
+											// left: '2rem',
+											// marginTop: '30rem',
 											'&:hover': {
 												color: '#fff',
-												backgroundColor:
-													'darkslategrey',
+												backgroundColor: '#f6b332',
 												transition:
 													'color 0.5s ease-out',
 											},
 										}}
 									>
-										{'AGENDAR'}
-									</Link>
+										<a
+											href="https://booksy.com/pt-br/instant-experiences/widget/109844?instant_experiences_enabled=true&ig_ix=true&is_fb=1&fbclid=IwAR36ITBFrC5OklYW2VL4KAw8PHKB9vOozRh7pMCfQ6FE4T13569xYHLr-Mc"
+											style={{
+												textDecoration: 'none',
+												color: '#fff',
+												fontFamily: 'Khand, sans-serif',
+												fontSize: '150%',
+												fontWeight: '600',
+												letterSpacing: '0.1rem',
+											}}
+										>
+											AGENDAR
+										</a>
+									</Button>
 								</Box>
 								<Box
-									width="5vw"
+									width="25%"
 									sx={{
 										display: 'flex',
-										justifyContent: 'space-between',
+										justifyContent: 'initial',
 									}}
 								>
 									<IconButton

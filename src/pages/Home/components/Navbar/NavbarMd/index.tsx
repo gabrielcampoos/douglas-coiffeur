@@ -7,6 +7,7 @@ import Grid from '@mui/material/Grid';
 import Toolbar from '@mui/material/Toolbar';
 
 import Logo from '../../../../../assets/images/logo.png';
+import Aviso from '../../Aviso';
 
 const NavbarMd = () => {
 	return (
@@ -41,12 +42,11 @@ const NavbarMd = () => {
 
 						<Grid
 							container
-							spacing={0.5}
-							direction="row"
-							justifyContent="center"
+							spacing={{ xs: 1, md: 12 }}
+							columns={{ xs: 1, sm: 25, md: 2 }}
 							alignItems="center"
-							paddingLeft="4rem"
-							// textAlign="center"
+							justifyContent="center"
+							// padding="0 2rem"
 
 							// sx={{
 							// 	width: '75%',
@@ -58,16 +58,45 @@ const NavbarMd = () => {
 							// 	letterSpacing: '0.09rem',
 							// }}
 						>
-							<Grid
-								item
-								xs={4}
-								alignItems="center"
-								justifyContent="center"
-							>
-								<Button href="#" sx={{ padding: '0' }}>
+							<Grid item xs={2} sm={5} md={4}>
+								<Button
+									sx={{ padding: '0' }}
+									onClick={() => {
+										const AssinaturasMd =
+											document.getElementById(
+												'AssinaturasMd',
+											);
+										AssinaturasMd?.scrollIntoView();
+									}}
+								>
 									<Typography
 										variant="button"
-										textAlign="center"
+										fontSize="0.7rem"
+										color="HighlightText"
+										sx={{
+											'&:hover': {
+												color: '#ffde59',
+											},
+										}}
+									>
+										{'ASSINATURAS'}
+									</Typography>
+								</Button>
+							</Grid>
+
+							<Grid item xs={2} sm={5} md={4}>
+								<Button
+									onClick={() => {
+										const MockupApp =
+											document.getElementById(
+												'MockupApp',
+											);
+										MockupApp?.scrollIntoView();
+									}}
+									sx={{ padding: '0' }}
+								>
+									<Typography
+										variant="button"
 										fontSize="0.7rem"
 										color="HighlightText"
 										sx={{
@@ -81,17 +110,20 @@ const NavbarMd = () => {
 								</Button>
 							</Grid>
 
-							<Grid
-								item
-								xs={4}
-								alignItems="center"
-								justifyContent="center"
-							>
-								<Button href="#" sx={{ padding: '0' }}>
+							<Grid item xs={2} sm={5} md={4}>
+								<Button
+									onClick={() => {
+										const ComoChegarMd =
+											document.getElementById(
+												'ComoChegarMd',
+											);
+										ComoChegarMd?.scrollIntoView();
+									}}
+									sx={{ padding: '0' }}
+								>
 									<Typography
 										variant="button"
 										fontSize="0.7rem"
-										textAlign="center"
 										color="HighlightText"
 										sx={{
 											'&:hover': {
@@ -104,17 +136,18 @@ const NavbarMd = () => {
 								</Button>
 							</Grid>
 
-							<Grid
-								item
-								xs={4}
-								alignItems="center"
-								justifyContent="center"
-							>
-								<Button href="#" sx={{ padding: '0' }}>
+							<Grid item xs={2} sm={5} md={4}>
+								<Button
+									onClick={() => {
+										const Servicos =
+											document.getElementById('Servicos');
+										Servicos?.scrollIntoView();
+									}}
+									sx={{ padding: '0' }}
+								>
 									<Typography
 										variant="button"
 										fontSize="0.7rem"
-										textAlign="center"
 										color="HighlightText"
 										sx={{
 											'&:hover': {
@@ -127,36 +160,15 @@ const NavbarMd = () => {
 								</Button>
 							</Grid>
 
-							<Grid
-								item
-								xs={4}
-								alignItems="center"
-								justifyContent="center"
-							>
-								<Button href="#" sx={{ padding: '0' }}>
-									<Typography
-										variant="button"
-										fontSize="0.7rem"
-										color="HighlightText"
-										sx={{
-											'&:hover': {
-												color: '#ffde59',
-											},
-										}}
-									>
-										{'INSTITUTO COIFFEUR'}
-									</Typography>
-								</Button>
-							</Grid>
-
-							<Grid
-								item
-								xs={8}
-								alignItems="center"
-								justifyContent="center"
-							>
+							<Grid item xs={2} sm={5} md={4}>
 								<Button
-									href="#"
+									onClick={() => {
+										const MockupApp =
+											document.getElementById(
+												'MockupApp',
+											);
+										MockupApp?.scrollIntoView();
+									}}
 									sx={{
 										padding: '0',
 									}}
@@ -166,7 +178,7 @@ const NavbarMd = () => {
 										variant="button"
 										fontSize="0.7rem"
 										sx={{
-											lineHeight: '5vh',
+											lineHeight: '3vh',
 											textAlign: 'center',
 											backgroundColor: '#f6b332',
 											color: '#000',
@@ -187,11 +199,11 @@ const NavbarMd = () => {
 							</Grid>
 						</Grid>
 						<Box
-							width="10%"
+							width="15%"
 							// padding="0 2%"
 							sx={{
 								display: 'flex',
-								justifyContent: 'space-evenly',
+								justifyContent: 'space-around',
 							}}
 						>
 							<IconButton
@@ -199,6 +211,7 @@ const NavbarMd = () => {
 								aria-label="facebook"
 								color="inherit"
 								sx={{
+									width: '20%',
 									'&:hover': {
 										color: '#ffde59',
 									},
@@ -211,6 +224,7 @@ const NavbarMd = () => {
 								aria-label="instagram"
 								color="inherit"
 								sx={{
+									width: '20%',
 									'&:hover': {
 										color: '#ffde59',
 									},
@@ -222,8 +236,33 @@ const NavbarMd = () => {
 					</Toolbar>
 				</AppBar>
 			</Container>
+			<Box
+				width="100%"
+				height="2vh"
+				sx={{
+					backgroundColor: 'red',
+					zIndex: '2',
+					position: 'relative',
+				}}
+			>
+				<Typography
+					gutterBottom
+					color="whitesmoke"
+					fontFamily="Khand, sans-serif"
+					fontWeight={700}
+					fontSize="0.6rem"
+					letterSpacing="0.1rem"
+					textAlign="center"
+				>
+					<Aviso />
+				</Typography>
+			</Box>
 		</Box>
 	);
 };
+
+const AssinaturasMobile = document.getElementById('AssinaturasMobile');
+const ComoChegarMobile = document.getElementById('ComoChegarMobile');
+const ServicosMobile = document.getElementById('ServicosMobile');
 
 export default NavbarMd;

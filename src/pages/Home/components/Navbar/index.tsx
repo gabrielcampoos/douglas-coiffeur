@@ -11,9 +11,11 @@ import {
 } from '@mui/material';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
+import Grid from '@mui/material/Grid';
 import Toolbar from '@mui/material/Toolbar';
 
 import Logo from '../../../../assets/images/logo.png';
+import Aviso from '../Aviso';
 import NavbarMd from './NavbarMd';
 import SplitButton from './SplitButton';
 
@@ -68,139 +70,168 @@ const ButtonAppBar = () => {
 											/>
 										</Box>
 
-										<Box
-											// padding="0 2%"
-											sx={{
-												width: '75%',
-												display: 'flex',
-												justifyContent: 'space-between',
-												alignItems: 'center',
-												fontFamily: 'Khand, sans-serif',
-												fontWeight: '600',
-												letterSpacing: '0.09rem',
-											}}
+										<Grid
+											container
+											spacing={{ xs: 1, md: 5 }}
+											columns={{ xs: 1, sm: 25, md: 20 }}
+											alignItems="center"
+											justifyContent="center"
+											// padding="0 2rem"
+
+											// sx={{
+											// 	width: '75%',
+											// 	display: 'flex',
+											// 	justifyContent: 'space-between',
+											// 	alignItems: 'center',
+											// 	fontFamily: 'Khand, sans-serif',
+											// 	fontWeight: '600',
+											// 	letterSpacing: '0.09rem',
+											// }}
 										>
-											<Button
-												href="#"
-												sx={{
-													width: '50%',
-												}}
-											>
-												<Typography
-													textOverflow="ellipsis"
-													overflow="hidden"
-													whiteSpace="nowrap"
-													variant="button"
-													color="HighlightText"
-													sx={{
-														'&:hover': {
-															color: '#ffde59',
-														},
+											<Grid item xs={2} sm={5} md={4}>
+												<Button
+													sx={{ padding: '0' }}
+													onClick={() => {
+														const Assinaturas =
+															document.getElementById(
+																'Assinaturas',
+															);
+														Assinaturas?.scrollIntoView();
 													}}
 												>
-													{'BOOKSY'}
-												</Typography>
-											</Button>
+													<Typography
+														variant="button"
+														fontSize="0.7rem"
+														color="HighlightText"
+														sx={{
+															'&:hover': {
+																color: '#ffde59',
+															},
+														}}
+													>
+														{'ASSINATURAS'}
+													</Typography>
+												</Button>
+											</Grid>
 
-											<Button
-												href="#"
-												sx={{
-													width: '50%',
-												}}
-											>
-												<Typography
-													textOverflow="ellipsis"
-													overflow="hidden"
-													whiteSpace="nowrap"
-													variant="button"
-													color="HighlightText"
+											<Grid item xs={2} sm={5} md={4}>
+												<Button
+													onClick={() => {
+														const MockupApp =
+															document.getElementById(
+																'MockupApp',
+															);
+														MockupApp?.scrollIntoView();
+													}}
+													sx={{ padding: '0' }}
+												>
+													<Typography
+														variant="button"
+														fontSize="0.7rem"
+														color="HighlightText"
+														sx={{
+															'&:hover': {
+																color: '#ffde59',
+															},
+														}}
+													>
+														{'BOOKSY'}
+													</Typography>
+												</Button>
+											</Grid>
+
+											<Grid item xs={2} sm={5} md={4}>
+												<Button
+													onClick={() => {
+														const ComoChegar =
+															document.getElementById(
+																'ComoChegar',
+															);
+														ComoChegar?.scrollIntoView();
+													}}
+													sx={{ padding: '0' }}
+												>
+													<Typography
+														variant="button"
+														fontSize="0.7rem"
+														color="HighlightText"
+														sx={{
+															'&:hover': {
+																color: '#ffde59',
+															},
+														}}
+													>
+														{'UNIDADE'}
+													</Typography>
+												</Button>
+											</Grid>
+
+											<Grid item xs={2} sm={5} md={4}>
+												<Button
+													onClick={() => {
+														const Servicos =
+															document.getElementById(
+																'Servicos',
+															);
+														Servicos?.scrollIntoView();
+													}}
+													sx={{ padding: '0' }}
+												>
+													<Typography
+														variant="button"
+														fontSize="0.7rem"
+														color="HighlightText"
+														sx={{
+															'&:hover': {
+																color: '#ffde59',
+															},
+														}}
+													>
+														{'SERVIÇOS'}
+													</Typography>
+												</Button>
+											</Grid>
+
+											<Grid item xs={2} sm={5} md={4}>
+												<Button
+													onClick={() => {
+														const MockupApp =
+															document.getElementById(
+																'MockupApp',
+															);
+														MockupApp?.scrollIntoView();
+													}}
 													sx={{
-														'&:hover': {
-															color: '#ffde59',
-														},
+														padding: '0',
 													}}
 												>
-													{'UNIDADE'}
-												</Typography>
-											</Button>
-
-											<Button
-												href="#"
-												sx={{
-													width: '50%',
-												}}
-											>
-												<Typography
-													textOverflow="ellipsis"
-													overflow="hidden"
-													whiteSpace="nowrap"
-													variant="button"
-													color="HighlightText"
-													sx={{
-														'&:hover': {
-															color: '#ffde59',
-														},
-													}}
-												>
-													{'SERVIÇOS'}
-												</Typography>
-											</Button>
-
-											<Button
-												href="#"
-												sx={{
-													width: '100%',
-												}}
-											>
-												<Typography
-													textOverflow="ellipsis"
-													overflow="hidden"
-													whiteSpace="nowrap"
-													variant="button"
-													color="HighlightText"
-													sx={{
-														'&:hover': {
-															color: '#ffde59',
-														},
-													}}
-												>
-													{'INSTITUTO COIFFEUR'}
-												</Typography>
-											</Button>
-
-											<Button
-												href="#"
-												sx={{
-													width: '100%',
-												}}
-											>
-												<Typography
-													textOverflow="ellipsis"
-													overflow="hidden"
-													whiteSpace="nowrap"
-													variant="button"
-													width="50%"
-													sx={{
-														lineHeight: '5vh',
-														textAlign: 'center',
-														backgroundColor:
-															'#f6b332',
-														color: '#000',
-														fontWeight: 'bold',
-														borderRadius: '0.5rem',
-														'&:hover': {
-															color: '#fff',
+													<Typography
+														width="100%"
+														variant="button"
+														fontSize="0.7rem"
+														sx={{
+															lineHeight: '3vh',
+															textAlign: 'center',
 															backgroundColor:
-																'darkslategrey',
-															transition:
-																'color 0.5s ease-out',
-														},
-													}}
-												>
-													{'AGENDAR'}
-												</Typography>
-											</Button>
-										</Box>
+																'#f6b332',
+															color: '#000',
+															fontWeight: 'bold',
+															borderRadius:
+																'0.5rem',
+															'&:hover': {
+																color: '#fff',
+																backgroundColor:
+																	'darkslategrey',
+																transition:
+																	'color 0.5s ease-out',
+															},
+														}}
+													>
+														{'AGENDAR'}
+													</Typography>
+												</Button>
+											</Grid>
+										</Grid>
 										<Box
 											width="10%"
 											// padding="0 2%"
@@ -237,6 +268,27 @@ const ButtonAppBar = () => {
 									</Toolbar>
 								</AppBar>
 							</Container>
+							<Box
+								width="100%"
+								height="2vh"
+								sx={{
+									backgroundColor: 'red',
+									zIndex: '2',
+									position: 'relative',
+								}}
+							>
+								<Typography
+									gutterBottom
+									color="whitesmoke"
+									fontFamily="Khand, sans-serif"
+									fontWeight={700}
+									fontSize="0.6rem"
+									letterSpacing="0.1rem"
+									textAlign="center"
+								>
+									<Aviso />
+								</Typography>
+							</Box>
 						</Box>
 					</>
 				)}

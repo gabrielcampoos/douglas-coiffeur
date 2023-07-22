@@ -64,6 +64,7 @@ const ComoChegar = () => {
 				)) || (
 					<>
 						<Box
+							id="ComoChegar"
 							component="main"
 							sx={{
 								width: '100%',

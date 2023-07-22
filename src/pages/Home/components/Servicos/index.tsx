@@ -53,6 +53,7 @@ const Servicos = () => {
 			{(!smDown && (
 				<>
 					<Box
+						id="Servicos"
 						component="main"
 						sx={{
 							width: '100%',
@@ -134,7 +135,7 @@ const Servicos = () => {
 											href="https://booksy.com/pt-br/instant-experiences/widget/109844?instant_experiences_enabled=true&ig_ix=true&is_fb=1&fbclid=IwAR36ITBFrC5OklYW2VL4KAw8PHKB9vOozRh7pMCfQ6FE4T13569xYHLr-Mc"
 											style={{
 												textDecoration: 'none',
-												color: '#000',
+												color: '#fff',
 												fontFamily: 'Khand, sans-serif',
 												fontSize: '150%',
 												fontWeight: '600',
