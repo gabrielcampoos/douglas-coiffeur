@@ -49,7 +49,7 @@ const MockupApp = () => {
 							width: '100%',
 							height: '70vh',
 							backgroundColor: '#ffde59',
-							position: 'absolute',
+							// position: 'absolute',
 							top: '90%',
 							paddingTop: '10rem',
 						}}
@@ -57,7 +57,7 @@ const MockupApp = () => {
 						<Container
 							component="section"
 							sx={{
-								width: '50%',
+								width: '90%',
 								height: '70%',
 								display: 'flex',
 							}}
@@ -151,6 +151,7 @@ const MockupApp = () => {
 								display="flex"
 								justifyContent="center"
 								alignItems="center"
+								padding="1rem 2rem"
 							>
 								<Section>
 									<img src={Mockup} width="150%" />

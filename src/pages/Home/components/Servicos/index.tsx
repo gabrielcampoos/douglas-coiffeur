@@ -81,12 +81,12 @@ const Servicos = () => {
 									<Typography
 										component="h2"
 										color="#fff"
-										fontSize={72}
+										fontSize="4rem"
 										lineHeight="4rem"
 										fontFamily="Khand, sans-serif"
 										fontWeight={900}
 										position="absolute"
-										paddingTop="13rem"
+										paddingTop="11rem"
 										zIndex="1"
 									>
 										CORTE DE CABELO <br />
@@ -116,7 +116,7 @@ const Servicos = () => {
 										sx={{
 											position: 'relative',
 											zIndex: '1',
-											backgroundColor: '#ffde59',
+											backgroundColor: '#f6b332',
 											// padding: '1rem 6rem',
 											top: '-2.5rem',
 											left: '2rem',

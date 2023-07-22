@@ -1,9 +1,9 @@
 import { Box, Container, Typography } from '@mui/material';
 
 import Local from '../../../../../assets/images/local.jpeg';
-import CardGrid from '../../Card';
+import ActionAreaCard from '../../Card';
 
-const AssinaturasMobile = () => {
+const AssinaturasMd = () => {
 	return (
 		<Box
 			component="main"
@@ -180,10 +180,26 @@ const AssinaturasMobile = () => {
 						ASSINATURAS
 					</Typography>
 				</Box>
-				<CardGrid />
+				<Box
+					width="100%"
+					display="flex"
+					alignItems="center"
+					justifyContent="center"
+				>
+					<Container
+						disableGutters
+						sx={{
+							display: 'flex',
+							alignItems: 'center',
+							justifyContent: 'center',
+						}}
+					>
+						<ActionAreaCard />
+					</Container>
+				</Box>
 			</Container>
 		</Box>
 	);
 };
 
-export default AssinaturasMobile;
+export default AssinaturasMd;

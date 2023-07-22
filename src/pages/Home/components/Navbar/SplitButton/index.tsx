@@ -116,6 +116,26 @@ const SplitButton = () => {
 									width="100%"
 								/>
 							</Box>
+							<Box width="70%">
+								<Typography
+									component="h1"
+									variant="h6"
+									color="#fff"
+									fontSize={20}
+									lineHeight="3.5rem"
+									fontFamily="Khand, sans-serif"
+									fontWeight={700}
+									zIndex="1"
+									textAlign="center"
+								>
+									<span style={{ color: '#f6b332' }}>[</span>{' '}
+									DOUGLAS{' '}
+									<span style={{ color: '#f6b332' }}>
+										COIFFEUR
+									</span>{' '}
+									]
+								</Typography>
+							</Box>
 							<ButtonGroup
 								color="inherit"
 								variant="outlined"
@@ -199,7 +219,7 @@ const SplitButton = () => {
 					height="2vh"
 					sx={{
 						backgroundColor: 'red',
-						zIndex: '999999999999999999',
+						zIndex: '2',
 						position: 'relative',
 					}}
 				>

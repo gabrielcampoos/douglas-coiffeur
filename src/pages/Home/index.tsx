@@ -1,10 +1,10 @@
-import AssinaturasMobile from './components/Assinaturas/AssinaturasMobile';
+import Assinaturas from './components/Assinaturas';
 import CarouselDiv from './components/Carousel';
 import ComoChegar from './components/ComoChegar';
 import Footer from './components/Footer';
 import MockupApp from './components/MockupApp';
 import ButtonAppBar from './components/Navbar';
-import PlanosMobile from './components/Planos/PlanosMobile';
+import Planos from './components/Planos';
 import Servicos from './components/Servicos';
 
 const Home = () => {
@@ -12,8 +12,8 @@ const Home = () => {
 		<>
 			<ButtonAppBar />
 			<CarouselDiv />
-			<AssinaturasMobile />
-			<PlanosMobile />
+			<Assinaturas />
+			<Planos />
 			<MockupApp />
 			<ComoChegar />
 			<Servicos />

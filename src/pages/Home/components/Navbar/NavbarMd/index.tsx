@@ -41,7 +41,12 @@ const NavbarMd = () => {
 
 						<Grid
 							container
-							spacing={3}
+							spacing={0.5}
+							direction="row"
+							justifyContent="center"
+							alignItems="center"
+							paddingLeft="4rem"
+							// textAlign="center"
 
 							// sx={{
 							// 	width: '75%',
@@ -53,15 +58,17 @@ const NavbarMd = () => {
 							// 	letterSpacing: '0.09rem',
 							// }}
 						>
-							<Grid item xs={4}>
-								<Button
-									href="#"
-									sx={{
-										width: '50%',
-									}}
-								>
+							<Grid
+								item
+								xs={4}
+								alignItems="center"
+								justifyContent="center"
+							>
+								<Button href="#" sx={{ padding: '0' }}>
 									<Typography
 										variant="button"
+										textAlign="center"
+										fontSize="0.7rem"
 										color="HighlightText"
 										sx={{
 											'&:hover': {
@@ -74,15 +81,17 @@ const NavbarMd = () => {
 								</Button>
 							</Grid>
 
-							<Grid item xs={4}>
-								<Button
-									href="#"
-									sx={{
-										width: '50%',
-									}}
-								>
+							<Grid
+								item
+								xs={4}
+								alignItems="center"
+								justifyContent="center"
+							>
+								<Button href="#" sx={{ padding: '0' }}>
 									<Typography
 										variant="button"
+										fontSize="0.7rem"
+										textAlign="center"
 										color="HighlightText"
 										sx={{
 											'&:hover': {
@@ -95,15 +104,17 @@ const NavbarMd = () => {
 								</Button>
 							</Grid>
 
-							<Grid item xs={4}>
-								<Button
-									href="#"
-									sx={{
-										width: '50%',
-									}}
-								>
+							<Grid
+								item
+								xs={4}
+								alignItems="center"
+								justifyContent="center"
+							>
+								<Button href="#" sx={{ padding: '0' }}>
 									<Typography
 										variant="button"
+										fontSize="0.7rem"
+										textAlign="center"
 										color="HighlightText"
 										sx={{
 											'&:hover': {
@@ -116,15 +127,16 @@ const NavbarMd = () => {
 								</Button>
 							</Grid>
 
-							<Grid item xs={4}>
-								<Button
-									href="#"
-									sx={{
-										width: '100%',
-									}}
-								>
+							<Grid
+								item
+								xs={4}
+								alignItems="center"
+								justifyContent="center"
+							>
+								<Button href="#" sx={{ padding: '0' }}>
 									<Typography
 										variant="button"
+										fontSize="0.7rem"
 										color="HighlightText"
 										sx={{
 											'&:hover': {
@@ -137,16 +149,22 @@ const NavbarMd = () => {
 								</Button>
 							</Grid>
 
-							<Grid item xs={8}>
+							<Grid
+								item
+								xs={8}
+								alignItems="center"
+								justifyContent="center"
+							>
 								<Button
 									href="#"
 									sx={{
-										width: '100%',
+										padding: '0',
 									}}
 								>
 									<Typography
+										width="100%"
 										variant="button"
-										width="50%"
+										fontSize="0.7rem"
 										sx={{
 											lineHeight: '5vh',
 											textAlign: 'center',
