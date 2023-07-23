@@ -88,6 +88,10 @@ const Servicos = () => {
 										// position="absolute"
 										paddingTop="11rem"
 										zIndex="1"
+										sx={{
+											WebkitTextStrokeWidth: '0.2rem',
+											WebkitTextStrokeColor: '#000',
+										}}
 									>
 										CORTE DE CABELO <br />
 										<span

@@ -77,6 +77,10 @@ const ServicosMobile = () => {
 								fontWeight={900}
 								zIndex="1"
 								paddingTop={16}
+								sx={{
+									WebkitTextStrokeWidth: '0.1rem',
+									WebkitTextStrokeColor: '#000',
+								}}
 							>
 								CORTE DE CABELO <br />
 								<span
