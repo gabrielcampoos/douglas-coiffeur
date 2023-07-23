@@ -13,7 +13,7 @@ const CarouselMd = () => {
 			style={{
 				backgroundColor: 'rgb(246, 179, 50)',
 				width: '100%',
-				height: '70vh',
+				// height: '70vh',
 			}}
 		>
 			<Carousel.Item
@@ -28,7 +28,7 @@ const CarouselMd = () => {
 							justifyContent: 'center',
 							alignItems: 'center',
 							width: '100%',
-							height: '100%',
+							// height: '100%',
 						}}
 					>
 						<h1
@@ -230,7 +230,7 @@ const CarouselMd = () => {
 				interval={4000}
 				style={{
 					width: '100%',
-					height: '70vh',
+					height: '100%',
 					backgroundColor: '#000',
 				}}
 			>
@@ -242,7 +242,7 @@ const CarouselMd = () => {
 							justifyContent: 'center',
 							alignItems: 'center',
 							width: '100%',
-							height: '100%',
+							// height: '100%',
 							backgroundColor: '#000',
 						}}
 					>

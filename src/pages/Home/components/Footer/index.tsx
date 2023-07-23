@@ -1,10 +1,8 @@
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import {
-	Button,
 	Container,
 	IconButton,
-	Link,
 	Typography,
 	useMediaQuery,
 	useTheme,
@@ -28,7 +26,7 @@ export default function Footer() {
 					sx={{
 						flexGrow: 1,
 						backgroundColor: 'darkslategrey',
-						height: '40vh',
+						// height: '40vh',
 					}}
 				>
 					<Container>
@@ -47,15 +45,28 @@ export default function Footer() {
 									alignItems: 'center',
 									justifyContent: 'space-between',
 									width: '100%',
-									height: '20vh',
+									// height: '20vh',
 									zIndex: '99999',
 								}}
 							>
-								<Box width="25%">
-									<img src={Logo} alt="Logo Barbearia" />
-								</Box>
+								<Container
+									sx={{
+										width: '100%',
+										display: 'flex',
+										alignItems: 'center',
+										justifyContent: 'space-evenly',
+										textAlign: 'center',
+									}}
+								>
+									<Box width="50%" padding="1rem 0">
+										<img
+											src={Logo}
+											width="20%"
+											alt="Logo Barbearia"
+										/>
+									</Box>
 
-								<Box
+									{/* <Box
 									sx={{
 										width: '50%',
 										display: 'flex',
@@ -149,40 +160,42 @@ export default function Footer() {
 										>
 											AGENDAR
 										</a>
-									</Button>
-								</Box>
-								<Box
-									width="25%"
-									sx={{
-										display: 'flex',
-										justifyContent: 'initial',
-									}}
-								>
-									<IconButton
-										href="https://www.facebook.com/douglascoiffeurr/"
-										aria-label="facebook"
-										color="inherit"
+										</Button>
+								</Box> */}
+									<Box
+										width="50%"
 										sx={{
-											'&:hover': {
-												color: '#ffde59',
-											},
+											display: 'flex',
+											alignItems: 'center',
+											justifyContent: 'center',
 										}}
 									>
-										<FacebookIcon />
-									</IconButton>
-									<IconButton
-										href="https://www.instagram.com/douglascoiffeursp/"
-										aria-label="instagram"
-										color="inherit"
-										sx={{
-											'&:hover': {
-												color: '#ffde59',
-											},
-										}}
-									>
-										<InstagramIcon />
-									</IconButton>
-								</Box>
+										<IconButton
+											href="https://www.facebook.com/douglascoiffeurr/"
+											aria-label="facebook"
+											color="inherit"
+											sx={{
+												'&:hover': {
+													color: '#ffde59',
+												},
+											}}
+										>
+											<FacebookIcon />
+										</IconButton>
+										<IconButton
+											href="https://www.instagram.com/douglascoiffeursp/"
+											aria-label="instagram"
+											color="inherit"
+											sx={{
+												'&:hover': {
+													color: '#ffde59',
+												},
+											}}
+										>
+											<InstagramIcon />
+										</IconButton>
+									</Box>
+								</Container>
 							</Toolbar>
 						</AppBar>
 						<Box

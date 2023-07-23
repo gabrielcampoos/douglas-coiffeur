@@ -68,36 +68,46 @@ const ComoChegar = () => {
 							component="main"
 							sx={{
 								width: '100%',
-								height: '80vh',
+								// height: '80vh',
 								backgroundColor: '#000',
-								padding: '8rem 1rem 0 1rem',
+								padding: '1rem 1rem 1rem 1rem',
+								zIndex: '2',
+								// position: 'absolute',
 							}}
 						>
 							<Container
 								component="section"
 								sx={{
 									width: '100%',
-									height: '100%',
+									// height: '80vh',
 									display: 'flex',
 									alignItems: 'center',
 									justifyContent: 'center',
 									padding: '3rem 0',
 									border: '0.15rem solid #f6b332',
+									position: 'relative',
+									zIndex: '99',
 								}}
 							>
-								<Box width="50%" height="100%" component="div">
+								<Box
+									// width="100%"
+									// height="100%"
+									position="absolute"
+									paddingTop="4rem"
+									// paddingRight="35rem"
+								>
 									<Section translate="Typography">
 										<Typography
 											component="h1"
 											color="#fff"
-											fontSize="6rem"
-											lineHeight="5rem"
+											fontSize="4rem"
+											lineHeight="3rem"
 											fontFamily="Khand, sans-serif"
 											fontWeight={900}
-											position="absolute"
-											paddingTop="12rem"
-											paddingLeft="2rem"
-											zIndex="1"
+											position="relative"
+											// padding="10rem 3rem"
+											right="17rem"
+											zIndex="999999"
 										>
 											BAR <br />
 											BE <br />
@@ -112,6 +122,20 @@ const ComoChegar = () => {
 											</span>
 										</Typography>
 									</Section>
+								</Box>
+								<Box
+									width="50%"
+									// // height="80vh"
+									// sx={{
+									// 	backgroundImage: `url(${Local})`,
+									// 	backgroundPosition: '100% 100%',
+									// 	backgroundSize: 'cover',
+									// 	backgroundRepeat: 'no-repeat',
+									// 	opacity: '50%',
+									// 	// zIndex: '999999',
+									// 	position: 'relative',
+									// }}
+								>
 									<img
 										src={Local}
 										width="100%"
@@ -119,12 +143,13 @@ const ComoChegar = () => {
 										style={{ opacity: '50%' }}
 									/>
 								</Box>
-								<Box width="50%" height="100%" component="div">
-									<img
-										src={Mapa}
-										width="100%"
-										height="100%"
-									/>
+
+								<Box
+									// width="50%"
+									// height="100%"
+									position="absolute"
+									// padding="5rem 2rem"
+								>
 									<Section translate="Button">
 										<Button
 											style={{
@@ -132,9 +157,9 @@ const ComoChegar = () => {
 												zIndex: '1',
 												backgroundColor:
 													'darkslategray',
-												padding: '1rem 6rem',
-												top: '-2.5rem',
-												left: '2rem',
+												// padding: '1rem 2rem',
+												top: '8rem',
+												left: '6rem',
 											}}
 										>
 											<a
@@ -153,6 +178,9 @@ const ComoChegar = () => {
 											</a>
 										</Button>
 									</Section>
+								</Box>
+								<Box width="50%">
+									<img src={Mapa} width="88%" height="100%" />
 								</Box>
 							</Container>
 						</Box>

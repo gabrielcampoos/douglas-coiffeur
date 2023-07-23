@@ -30,7 +30,7 @@ export default function CarouselDiv() {
 							style={{
 								backgroundColor: 'rgb(246, 179, 50)',
 								width: '100%',
-								height: '70vh',
+								// height: '70vh',
 							}}
 						>
 							<Carousel.Item
@@ -257,7 +257,7 @@ export default function CarouselDiv() {
 								interval={4000}
 								style={{
 									width: '100%',
-									height: '70vh',
+									// height: '70vh',
 									backgroundColor: '#000',
 								}}
 							>

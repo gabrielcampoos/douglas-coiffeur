@@ -1,6 +1,5 @@
 import { Box, Container, Typography } from '@mui/material';
 
-import Local from '../../../../../assets/images/local.jpeg';
 import ActionAreaCard from '../../Card';
 
 const AssinaturasMd = () => {
@@ -15,7 +14,7 @@ const AssinaturasMd = () => {
 				backgroundColor: '#000',
 			}}
 		>
-			<Box
+			{/* <Box
 				width="100%"
 				height="15vh"
 				display="flex"
@@ -41,14 +40,14 @@ const AssinaturasMd = () => {
 					position="relative"
 					sx={{
 						backgroundImage: `url(${Local})`,
-						backgroundSize: 'cover',
+						backgroundSize: 'contain',
 						backgroundPosition: ' 100% 50% ',
 						backgroundRepeat: 'no-repeat',
 						opacity: '50%',
 						zIndex: '1',
 					}}
-				></Box>
-			</Box>
+				></Box> 
+			</Box> */}
 
 			<Container
 				component="main"

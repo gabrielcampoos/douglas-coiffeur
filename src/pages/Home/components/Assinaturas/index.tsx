@@ -6,7 +6,6 @@ import {
 	useTheme,
 } from '@mui/material';
 
-import Local from '../../../../assets/images/local.jpeg';
 import CardGrid from '../../components/Card';
 import AssinaturasMd from './AssinaturasMd';
 import AssinaturasMobile from './AssinaturasMobile';
@@ -38,7 +37,7 @@ const Assinaturas = () => {
 								backgroundColor: '#000',
 							}}
 						>
-							<Box
+							{/* <Box
 								width="100%"
 								height="15vh"
 								display="flex"
@@ -71,7 +70,7 @@ const Assinaturas = () => {
 										zIndex: '1',
 									}}
 								></Box>
-							</Box>
+							</Box> */}
 
 							<Container
 								component="main"

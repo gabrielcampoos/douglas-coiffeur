@@ -34,7 +34,7 @@ const ListaServico = () => {
 				<ListItemIcon>
 					<CircleIcon />
 				</ListItemIcon>
-				<ListItemText primary="Depilação nariz orelha" />
+				<ListItemText primary="Depilação nariz ou orelha" />
 			</ListItem>
 			<ListItem>
 				<ListItemIcon>

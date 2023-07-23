@@ -2,7 +2,7 @@ import { Box, Button, Container, Typography } from '@mui/material';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
 
-import BannerInterior from '../../../../../assets/images/banner-interior.png';
+import NewBannerInterior from '../../../../../assets/images/new-banner-interior.jpg';
 
 interface Props {
 	children: React.ReactNode;
@@ -45,13 +45,13 @@ const ServicosMobile = () => {
 					width: '100%',
 					height: '35vh',
 					backgroundColor: '#000',
-					backgroundImage: `url(${BannerInterior})`,
-					backgroundSize: '100% 70%',
-					backgroundPosition: '100% 100%',
+					backgroundImage: `url(${NewBannerInterior})`,
+					backgroundSize: 'cover',
+					backgroundPosition: '100% 57%',
 					backgroundRepeat: 'no-repeat',
-					padding: '2rem 0',
+					// padding: '2rem 0',
 					// margin: '1rem 0',
-					border: 'none'
+					border: 'none',
 				}}
 			>
 				<Container
@@ -63,7 +63,7 @@ const ServicosMobile = () => {
 						flexDirection: 'column',
 						alignItems: 'center',
 						justifyContent: 'center',
-						border: 'none'
+						border: 'none',
 					}}
 				>
 					<Box width="100%" component="div">

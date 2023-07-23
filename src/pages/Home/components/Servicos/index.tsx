@@ -9,7 +9,7 @@ import {
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
 
-import BannerInterior from '../../../../assets/images/banner-interior.png';
+import NewBannerInterior from '../../../../assets/images/new-banner-interior.jpg';
 import ServicosMobile from './ServicosMobile';
 
 interface Props {
@@ -57,12 +57,11 @@ const Servicos = () => {
 						component="main"
 						sx={{
 							width: '100%',
-							height: '70vh',
 							backgroundColor: '#000',
-							paddingTop: '8rem',
-							backgroundImage: `url(${BannerInterior})`,
-							backgroundSize: '100% 90%',
-							backgroundPosition: 'center',
+							// paddingTop: '8rem',
+							backgroundImage: `url(${NewBannerInterior})`,
+							backgroundSize: 'cover',
+							backgroundPosition: '100% 45%',
 							backgroundRepeat: 'no-repeat',
 						}}
 					>
@@ -70,23 +69,23 @@ const Servicos = () => {
 							component="section"
 							sx={{
 								width: '100%',
-								height: '100%',
+								// height: '100%',
 								display: 'flex',
 								alignItems: 'center',
 								justifyContent: 'center',
-								paddingTop: '2rem',
+								// paddingTop: '2rem',
 							}}
 						>
-							<Box width="50%" height="100%" component="div">
+							<Box width="50%" component="div">
 								<Section translate="Typography">
 									<Typography
 										component="h2"
 										color="#fff"
-										fontSize="4rem"
-										lineHeight="4rem"
+										fontSize="3rem"
+										lineHeight="3rem"
 										fontFamily="Khand, sans-serif"
 										fontWeight={900}
-										position="absolute"
+										// position="absolute"
 										paddingTop="11rem"
 										zIndex="1"
 									>
@@ -120,7 +119,7 @@ const Servicos = () => {
 											backgroundColor: '#f6b332',
 											// padding: '1rem 6rem',
 											top: '-2.5rem',
-											left: '2rem',
+											// left: '5rem',
 											marginTop: '30rem',
 											'&:hover': {
 												color: '#fff',
@@ -152,7 +151,6 @@ const Servicos = () => {
 					<Box
 						component="div"
 						width="100%"
-						height="10vh"
 						sx={{
 							backgroundColor: '#000',
 						}}

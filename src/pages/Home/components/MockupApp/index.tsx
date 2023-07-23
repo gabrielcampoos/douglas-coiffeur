@@ -48,24 +48,24 @@ const MockupApp = () => {
 						component="main"
 						sx={{
 							width: '100%',
-							height: '70vh',
+							// height: '70vh',
 							backgroundColor: '#ffde59',
 							// position: 'absolute',
-							top: '90%',
-							paddingTop: '10rem',
+							// top: '90%',
+							padding: '2rem 0',
 						}}
 					>
 						<Container
 							component="section"
 							sx={{
-								width: '90%',
+								width: '100%',
 								height: '70%',
 								display: 'flex',
 							}}
 						>
 							<Box
 								width="100%"
-								height="100%"
+								// height="100%"
 								component="div"
 								display="flex"
 								flexDirection="column"
@@ -146,8 +146,8 @@ const MockupApp = () => {
 
 							{/* RIGHT BOX */}
 							<Box
-								width="50%"
-								height="100%"
+								width="100%"
+								// height="100%"
 								component="div"
 								display="flex"
 								justifyContent="center"
@@ -155,7 +155,7 @@ const MockupApp = () => {
 								padding="1rem 2rem"
 							>
 								<Section>
-									<img src={Mockup} width="150%" />
+									<img src={Mockup} width="100%" />
 								</Section>
 							</Box>
 						</Container>
