@@ -15,7 +15,14 @@ import * as React from 'react';
 import Logo from '../../../../../assets/images/logo.png';
 import Aviso from '../../Aviso';
 
-const options = ['ASSINATURAS', 'BOOKSY', 'UNIDADE', 'SERVIÇOS', 'AGENDAR'];
+const options = [
+	'ASSINATURAS',
+	'BOOKSY',
+	'UNIDADE',
+	'SERVIÇOS',
+	'ESTRUTURAS',
+	'AGENDAR',
+];
 
 const SplitButton = () => {
 	const [open, setOpen] = React.useState(false);

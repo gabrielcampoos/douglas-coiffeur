@@ -227,6 +227,46 @@ const ButtonAppBar = () => {
 															},
 														}}
 													>
+														{'ESTRUTURAS'}
+													</Typography>
+												</Button>
+											</Grid>
+
+											<Grid item xs={2} sm={5} md={4}>
+												<Button
+													onClick={() => {
+														const MockupApp =
+															document.getElementById(
+																'MockupApp',
+															);
+														MockupApp?.scrollIntoView();
+													}}
+													sx={{
+														padding: '0',
+													}}
+												>
+													<Typography
+														width="100%"
+														variant="button"
+														fontSize="0.7rem"
+														sx={{
+															lineHeight: '3vh',
+															textAlign: 'center',
+															backgroundColor:
+																'#f6b332',
+															color: '#000',
+															fontWeight: 'bold',
+															borderRadius:
+																'0.5rem',
+															'&:hover': {
+																color: '#fff',
+																backgroundColor:
+																	'darkslategrey',
+																transition:
+																	'color 0.5s ease-out',
+															},
+														}}
+													>
 														{'AGENDAR'}
 													</Typography>
 												</Button>

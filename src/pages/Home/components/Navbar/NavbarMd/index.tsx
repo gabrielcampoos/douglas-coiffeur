@@ -163,6 +163,30 @@ const NavbarMd = () => {
 							<Grid item xs={2} sm={5} md={4}>
 								<Button
 									onClick={() => {
+										const Servicos =
+											document.getElementById('Servicos');
+										Servicos?.scrollIntoView();
+									}}
+									sx={{ padding: '0' }}
+								>
+									<Typography
+										variant="button"
+										fontSize="0.7rem"
+										color="HighlightText"
+										sx={{
+											'&:hover': {
+												color: '#ffde59',
+											},
+										}}
+									>
+										{'ESTRUTURAS'}
+									</Typography>
+								</Button>
+							</Grid>
+
+							<Grid item xs={2} sm={5} md={4}>
+								<Button
+									onClick={() => {
 										const MockupApp =
 											document.getElementById(
 												'MockupApp',
