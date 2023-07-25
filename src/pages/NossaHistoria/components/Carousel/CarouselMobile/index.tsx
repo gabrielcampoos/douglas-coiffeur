@@ -309,7 +309,6 @@
 
 import { Container } from '@mui/material';
 import Carousel from 'react-grid-carousel';
-declare module 'react-grid-carousel';
 
 const CarouselMobile = () => {
 	return (
