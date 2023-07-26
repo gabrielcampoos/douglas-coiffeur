@@ -51,31 +51,57 @@ const MockupAppMobile = () => {
 						você adora.
 					</Typography>
 
-					<Box
-						component="button"
-						width="100%"
-						height="11%"
-						border="none"
-						borderRadius="0.5rem"
-						sx={{ backgroundColor: '#2596be' }}
+					<Container
+						disableGutters
+						component="section"
+						sx={{
+							width: '100%',
+							display: 'flex',
+							flexDirection: 'column',
+							alignItems: 'center',
+							justifyContent: 'center',
+							gap: '0.5rem',
+						}}
 					>
-						<a
-							href="https://booksy.com/pt-br/instant-experiences/widget/109844?instant_experiences_enabled=true&ig_ix=true&is_fb=1&fbclid=IwAR36ITBFrC5OklYW2VL4KAw8PHKB9vOozRh7pMCfQ6FE4T13569xYHLr-Mc"
-							style={{
-								textDecoration: 'none',
+						<Typography
+							sx={{
+								color: '#000',
+								fontFamily: 'Khand, sans-serif',
+								fontSize: '1.2rem',
+								fontWeight: '600',
+								letterSpacing: '0.1rem',
+								textAlign: 'center',
 							}}
 						>
-							<Typography
-								color={'HighlightText'}
-								fontFamily="Khand, sans-serif"
-								fontWeight={700}
-								fontSize="2.3rem"
-								letterSpacing="0.1rem"
+							Agende pelo link
+						</Typography>
+
+						<Box
+							component="button"
+							width="100%"
+							height="11%"
+							border="none"
+							borderRadius="0.5rem"
+							sx={{ backgroundColor: '#2596be' }}
+						>
+							<a
+								href="https://booksy.com/pt-br/instant-experiences/widget/109844?instant_experiences_enabled=true&ig_ix=true&is_fb=1&fbclid=IwAR36ITBFrC5OklYW2VL4KAw8PHKB9vOozRh7pMCfQ6FE4T13569xYHLr-Mc"
+								style={{
+									textDecoration: 'none',
+								}}
 							>
-								AGENDAR PELO LINK
-							</Typography>
-						</a>
-					</Box>
+								<Typography
+									color={'HighlightText'}
+									fontFamily="Khand, sans-serif"
+									fontWeight={700}
+									fontSize="2.3rem"
+									letterSpacing="0.1rem"
+								>
+									AGENDAR AGORA
+								</Typography>
+							</a>
+						</Box>
+					</Container>
 					<Container
 						disableGutters
 						component="section"
@@ -149,6 +175,10 @@ const MockupAppMobile = () => {
 							display="flex"
 							alignItems="center"
 							justifyContent="center"
+							height="11%"
+							border="none"
+							borderRadius="0.5rem"
+							sx={{ backgroundColor: '#2596be' }}
 						>
 							{/* <Box component="a" width="50%">
 								<a href="https://api.whatsapp.com/send/?phone=5518997984039&text&type=phone_number&app_absent=0">
@@ -177,19 +207,19 @@ const MockupAppMobile = () => {
 								// }}
 							>
 								<WhatsAppIcon
-									fontSize="medium"
+									fontSize="large"
 									aria-label="Whatsapp"
 								/>
 								<Typography
 									component="p"
 									// padding="0 0.5rem"
-									color="#000"
-									fontSize="1.2rem"
-									fontFamily="Khand, sans-serif"
-									fontWeight="400"
-									letterSpacing="0.1rem"
 									// textAlign="end"
 									paddingLeft="0.5rem"
+									color={'HighlightText'}
+									fontFamily="Khand, sans-serif"
+									fontWeight={700}
+									fontSize="1.2rem"
+									letterSpacing="0.1rem"
 								>
 									(18) 99798-4039
 								</Typography>
