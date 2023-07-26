@@ -1,6 +1,7 @@
 import Assinaturas from './components/Assinaturas';
 import CarouselDiv from './components/Carousel';
 import ComoChegar from './components/ComoChegar';
+import FloatingButton from './components/FloatingButton';
 import Footer from './components/Footer';
 import MockupApp from './components/MockupApp';
 import ButtonAppBar from './components/Navbar';
@@ -20,6 +21,7 @@ const Home = () => {
 			<ComoChegar />
 			<Servicos />
 			<Footer />
+			<FloatingButton />
 		</>
 	);
 };

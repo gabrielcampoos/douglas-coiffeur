@@ -5,7 +5,7 @@ const QuemSomosMobile = () => {
 	const navigate = useNavigate();
 
 	return (
-		<Box component="main" bgcolor="#000">
+		<Box component="main" bgcolor="#000" id="SobreMobile">
 			<Container
 				component="section"
 				sx={{
@@ -82,6 +82,10 @@ const QuemSomosMobile = () => {
 					}}
 				>
 					<Box
+						onClick={() => {
+							navigate('/sobre');
+							window.scrollTo(0, 0);
+						}}
 						component="button"
 						width="70%"
 						height="9vh"
@@ -90,7 +94,6 @@ const QuemSomosMobile = () => {
 						borderRadius="0.5rem"
 						zIndex="999999999999"
 						position="relative"
-						onClick={() => navigate('/sobre')}
 						sx={{
 							backgroundColor: '#000',
 						}}

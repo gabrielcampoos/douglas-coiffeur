@@ -4,7 +4,14 @@ import ReactSimplyCarousel from 'react-simply-carousel';
 const CarouselMobile = () => {
 	const [activeSlideIndex, setActiveSlideIndex] = useState(0);
 	return (
-		<div style={{width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
+		<div
+			style={{
+				width: '100%',
+				display: 'flex',
+				alignItems: 'center',
+				justifyContent: 'center',
+			}}
+		>
 			<ReactSimplyCarousel
 				centerMode={true}
 				preventScrollOnSwipe={true}
@@ -30,7 +37,7 @@ const CarouselMobile = () => {
 						textAlign: 'center',
 						width: 30,
 						position: 'absolute',
-						right: '1',
+						right: '0',
 						zIndex: '9999',
 					},
 					children: <span>{`>`}</span>,

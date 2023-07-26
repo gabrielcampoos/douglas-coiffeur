@@ -12,7 +12,7 @@ import Paper from '@mui/material/Paper';
 import Popper from '@mui/material/Popper';
 import * as React from 'react';
 
-import Logo from '../../../../../assets/images/logo.png';
+import Logo from '../../../../../assets/images/logo-douglas.png';
 import Aviso from '../../Aviso';
 
 const options = [
@@ -20,7 +20,7 @@ const options = [
 	'BOOKSY',
 	'UNIDADE',
 	'SERVIÇOS',
-	'ESTRUTURAS',
+	'SOBRE',
 	'AGENDAR',
 ];
 
@@ -43,6 +43,7 @@ const SplitButton = () => {
 		const AssinaturasMobile = document.getElementById('AssinaturasMobile');
 		const ComoChegarMobile = document.getElementById('ComoChegarMobile');
 		const ServicosMobile = document.getElementById('ServicosMobile');
+		const SobreMobile = document.getElementById('SobreMobile');
 		// console.log(options[index]);
 
 		if (options[index] === 'BOOKSY') {
@@ -63,6 +64,11 @@ const SplitButton = () => {
 		if (options[index] === 'SERVIÇOS') {
 			setOpen(false);
 			ServicosMobile!.scrollIntoView({ behavior: 'smooth' });
+		}
+
+		if (options[index] === 'SOBRE') {
+			setOpen(false);
+			SobreMobile!.scrollIntoView({ behavior: 'smooth' });
 		}
 
 		if (options[index] === 'AGENDAR') {
@@ -116,15 +122,8 @@ const SplitButton = () => {
 								zIndex: '99999',
 							}}
 						>
-							<Box width="15%">
-								<img
-									src={Logo}
-									alt="Logo Barbearia"
-									width="100%"
-								/>
-							</Box>
-							<Box width="70%">
-								<Typography
+							<Box width="90%" textAlign="center">
+								{/* <Typography
 									component="h1"
 									variant="h6"
 									color="#fff"
@@ -141,83 +140,98 @@ const SplitButton = () => {
 										COIFFEUR
 									</span>{' '}
 									]
-								</Typography>
+								</Typography> */}
+
+								<img
+									width="100%"
+									alt="Logo Douglas Coiffeur"
+									src={Logo}
+									style={{
+										padding: '3.3rem 0 2rem 3rem',
+									}}
+								/>
 							</Box>
-							<ButtonGroup
-								color="inherit"
-								variant="outlined"
-								ref={anchorRef}
-								aria-label="split button"
-							>
-								{/* <Button onClick={handleClick}>
+							<Box alignSelf="flex-end" width="5%">
+								<ButtonGroup
+									color="inherit"
+									variant="outlined"
+									ref={anchorRef}
+									aria-label="split button"
+								>
+									{/* <Button onClick={handleClick}>
 									{options[selectedIndex]}
 								</Button> */}
-								<Button
-									size="small"
-									aria-controls={
-										open ? 'split-button-menu' : undefined
-									}
-									aria-expanded={open ? 'true' : undefined}
-									aria-label="select merge strategy"
-									aria-haspopup="menu"
-									onClick={handleToggle}
-								>
-									<MenuIcon />
-								</Button>
-							</ButtonGroup>
-							<Popper
-								sx={{
-									zIndex: 1,
-								}}
-								open={open}
-								anchorEl={anchorRef.current}
-								role={undefined}
-								transition
-								disablePortal
-							>
-								{({ TransitionProps, placement }) => (
-									<Grow
-										{...TransitionProps}
-										style={{
-											transformOrigin:
-												placement === 'bottom'
-													? 'center top'
-													: 'center bottom',
-										}}
+									<Button
+										size="small"
+										aria-controls={
+											open
+												? 'split-button-menu'
+												: undefined
+										}
+										aria-expanded={
+											open ? 'true' : undefined
+										}
+										aria-label="select merge strategy"
+										aria-haspopup="menu"
+										onClick={handleToggle}
 									>
-										<Paper>
-											<ClickAwayListener
-												onClickAway={handleClose}
-											>
-												<MenuList
-													id="split-button-menu"
-													autoFocusItem
+										<MenuIcon fontSize="small" />
+									</Button>
+								</ButtonGroup>
+								<Popper
+									sx={{
+										zIndex: 1,
+									}}
+									open={open}
+									anchorEl={anchorRef.current}
+									role={undefined}
+									transition
+									disablePortal
+								>
+									{({ TransitionProps, placement }) => (
+										<Grow
+											{...TransitionProps}
+											style={{
+												transformOrigin:
+													placement === 'bottom'
+														? 'center top'
+														: 'center bottom',
+											}}
+										>
+											<Paper>
+												<ClickAwayListener
+													onClickAway={handleClose}
 												>
-													{options.map(
-														(option, index) => (
-															<MenuItem
-																key={option}
-																// disabled={index === 2}
-																// selected={index === selectedIndex}
-																onClick={(
-																	event,
-																) =>
-																	handleMenuItemClick(
+													<MenuList
+														id="split-button-menu"
+														autoFocusItem
+													>
+														{options.map(
+															(option, index) => (
+																<MenuItem
+																	key={option}
+																	// disabled={index === 2}
+																	// selected={index === selectedIndex}
+																	onClick={(
 																		event,
-																		index,
-																	)
-																}
-															>
-																{option}
-															</MenuItem>
-														),
-													)}
-												</MenuList>
-											</ClickAwayListener>
-										</Paper>
-									</Grow>
-								)}
-							</Popper>
+																	) =>
+																		handleMenuItemClick(
+																			event,
+																			index,
+																		)
+																	}
+																>
+																	{option}
+																</MenuItem>
+															),
+														)}
+													</MenuList>
+												</ClickAwayListener>
+											</Paper>
+										</Grow>
+									)}
+								</Popper>
+							</Box>
 						</Toolbar>
 					</AppBar>
 				</Container>

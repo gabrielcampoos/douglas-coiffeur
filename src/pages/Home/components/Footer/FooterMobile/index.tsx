@@ -16,7 +16,7 @@ const FooterMobile = () => {
 		<Box
 			sx={{
 				flexGrow: 1,
-				backgroundColor: 'darkslategrey',
+				backgroundColor: '#000',
 				height: '40vh',
 			}}
 		>
@@ -24,7 +24,7 @@ const FooterMobile = () => {
 				<AppBar
 					position="static"
 					sx={{
-						backgroundColor: 'darkslategrey',
+						backgroundColor: '#000',
 						borderBottom: '1px solid #fff',
 						boxShadow: 'none',
 						paddingTop: '4rem',
