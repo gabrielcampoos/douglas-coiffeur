@@ -46,10 +46,10 @@ const FooterMobile = () => {
 						</Box>
 
 						<Box
-							width="50%"
+							width="100%"
 							sx={{
 								display: 'flex',
-								justifyContent: 'space-between',
+								justifyContent: 'space-evenly',
 								textAlign: 'center',
 							}}
 						>
@@ -63,7 +63,16 @@ const FooterMobile = () => {
 									},
 								}}
 							>
-								<FacebookIcon />
+								<FacebookIcon aria-label="Facebook" />
+								<Typography
+									component="p"
+									// padding="0 0.5rem"
+									color="#fff"
+									fontSize="0.7rem"
+									textAlign="end"
+								>
+									Facebook
+								</Typography>
 							</IconButton>
 							<IconButton
 								href="https://www.instagram.com/douglascoiffeursp/"
@@ -76,6 +85,15 @@ const FooterMobile = () => {
 								}}
 							>
 								<InstagramIcon />
+								<Typography
+									component="p"
+									// padding="0 0.5rem"
+									color="#fff"
+									fontSize="0.7rem"
+									textAlign="end"
+								>
+									Instagram
+								</Typography>
 							</IconButton>
 						</Box>
 					</Toolbar>
