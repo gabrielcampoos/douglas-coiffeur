@@ -6,7 +6,7 @@ export default function FloatingButton() {
 		<Fab
 			color="success"
 			aria-label="add"
-			size="small"
+			size="medium"
 			href="https://api.whatsapp.com/send/?phone=5518997984039&text&type=phone_number&app_absent=0"
 			sx={{
 				position: 'fixed',
@@ -17,7 +17,7 @@ export default function FloatingButton() {
 				marginBottom: '1rem',
 			}}
 		>
-			<WhatsAppIcon />
+			<WhatsAppIcon fontSize="medium" />
 		</Fab>
 	);
 }

@@ -1,4 +1,5 @@
 import FacebookIcon from '@mui/icons-material/Facebook';
+import GoogleIcon from '@mui/icons-material/Google';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import {
 	AppBar,
@@ -66,7 +67,7 @@ const FooterMobile = () => {
 								<FacebookIcon aria-label="Facebook" />
 								<Typography
 									component="p"
-									// padding="0 0.5rem"
+									padding="0 0.3rem"
 									color="#fff"
 									fontSize="0.7rem"
 									textAlign="end"
@@ -87,12 +88,33 @@ const FooterMobile = () => {
 								<InstagramIcon />
 								<Typography
 									component="p"
-									// padding="0 0.5rem"
+									padding="0 0.3rem"
 									color="#fff"
 									fontSize="0.7rem"
 									textAlign="end"
 								>
 									Instagram
+								</Typography>
+							</IconButton>
+							<IconButton
+								href="https://www.google.com/maps/place/Barbearia+Dougla's+Coiffeur/@-22.6515273,-50.417302,17z/data=!4m8!3m7!1s0x949539104f13fd7d:0xf3996aef55392f08!8m2!3d-22.6515273!4d-50.417302!9m1!1b1!16s%2Fg%2F11g0lf7yt8?entry=ttu"
+								aria-label="instagram"
+								color="inherit"
+								sx={{
+									'&:hover': {
+										color: '#ffde59',
+									},
+								}}
+							>
+								<GoogleIcon />
+								<Typography
+									component="p"
+									padding="0 0.3rem"
+									color="#fff"
+									fontSize="0.7rem"
+									textAlign="end"
+								>
+									Nos avalie
 								</Typography>
 							</IconButton>
 						</Box>
