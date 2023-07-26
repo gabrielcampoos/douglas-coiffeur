@@ -49,33 +49,7 @@ const MockupAppMobile = () => {
 						continue aproveitando da melhor maneira os serviços que
 						você adora.
 					</Typography>
-					<Container
-						disableGutters
-						component="section"
-						sx={{
-							width: '100%',
-							display: 'flex',
-							alignItems: 'center',
-							justifyContent: 'flex-start',
-						}}
-					>
-						<Box component="a" width="50%">
-							<a href="https://play.google.com/store/apps/details?id=net.booksy.customer&hl=pt_BR&gl=US">
-								<img
-									src="https://play.google.com/intl/pt-BR/badges/static/images/badges/pt-br_badge_web_generic.png"
-									width="90%"
-								/>
-							</a>
-						</Box>
-						<Box component="a" width="50%">
-							<a href="https://apps.apple.com/br/app/booksy-aplicativo-de-reservas/id723961236">
-								<img
-									src="https://www.gov.br/pt-br/imagens-de-servicos/apple.png"
-									width="100%"
-								/>
-							</a>
-						</Box>
-					</Container>
+					
 					<Box
 						component="button"
 						width="100%"
@@ -101,6 +75,45 @@ const MockupAppMobile = () => {
 							</Typography>
 						</a>
 					</Box>
+					<Container
+						disableGutters
+						component="section"
+						sx={{
+							width: '100%',
+							display: 'flex',
+							flexDirection: 'column',
+							alignItems: 'center',
+							justifyContent: 'center',
+						}}
+					>
+						<Typography sx={{
+							color: '#000',
+							fontFamily: 'Khand, sans-serif',
+							fontSize: '1.2rem',
+							fontWeight: '600',
+							letterSpacing: '0.1rem',
+						}}>
+							Disponível também para Android e IOS
+							</Typography>
+							<Box width='100%' display='flex' alignItems='center' justifyContent='center'>
+						<Box component="a" width="50%">
+							<a href="https://play.google.com/store/apps/details?id=net.booksy.customer&hl=pt_BR&gl=US">
+								<img
+									src="https://play.google.com/intl/pt-BR/badges/static/images/badges/pt-br_badge_web_generic.png"
+									width="90%"
+								/>
+							</a>
+						</Box>
+						<Box component="a" width="50%">
+							<a href="https://apps.apple.com/br/app/booksy-aplicativo-de-reservas/id723961236">
+								<img
+									src="https://www.gov.br/pt-br/imagens-de-servicos/apple.png"
+									width="100%"
+								/>
+							</a>
+						</Box>
+						</Box>
+					</Container>
 				</Box>
 			</Container>
 		</Box>

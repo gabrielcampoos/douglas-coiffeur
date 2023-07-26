@@ -43,15 +43,8 @@ const ServicosMobile = () => {
 				component="main"
 				sx={{
 					width: '100%',
-					height: '35vh',
 					backgroundColor: '#000',
-					backgroundImage: `url(${NewBannerInterior})`,
-					backgroundSize: 'cover',
-					backgroundPosition: '100% 57%',
-					backgroundRepeat: 'no-repeat',
-					// padding: '2rem 0',
-					// margin: '1rem 0',
-					border: 'none',
+					
 				}}
 			>
 				<Container
@@ -66,21 +59,22 @@ const ServicosMobile = () => {
 						border: 'none',
 					}}
 				>
-					<Box width="100%" component="div">
+					<Box width="100%" height='100%' component="div">
 						<Section translate="Typography">
 							<Typography
-								component="h2"
+								component="h1"
 								color="#fff"
-								fontSize={30}
-								lineHeight={1}
+								fontSize={43}
+								lineHeight='2.5rem'
 								fontFamily="Khand, sans-serif"
 								fontWeight={900}
 								zIndex="1"
-								paddingTop={16}
-								sx={{
-									WebkitTextStrokeWidth: '0.1rem',
-									WebkitTextStrokeColor: '#000',
-								}}
+								paddingTop='13rem'
+								paddingLeft='1rem'
+
+
+								position='absolute'
+								
 							>
 								CORTE DE CABELO <br />
 								<span
@@ -102,6 +96,12 @@ const ServicosMobile = () => {
 								</span>
 							</Typography>
 						</Section>
+						<img
+						src={NewBannerInterior}
+						width="100%"
+						height="100%"
+						style={{ opacity: '50%' }}
+					/>
 					</Box>
 					<Box width="100%" component="div">
 						<Section translate="Typography">
@@ -110,7 +110,8 @@ const ServicosMobile = () => {
 									zIndex: '1',
 									backgroundColor: '#f6b332',
 									// padding: '1rem 6rem',
-									left: '2rem',
+									left: '1rem',
+									top: '-1rem',
 									'&:hover': {
 										color: '#fff',
 										backgroundColor: 'darkslategrey',

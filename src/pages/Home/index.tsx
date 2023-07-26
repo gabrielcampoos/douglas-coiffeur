@@ -14,9 +14,9 @@ const Home = () => {
 		<>
 			<ButtonAppBar />
 			<CarouselDiv />
+			<QuemSomosMobile />
 			<Assinaturas />
 			<Planos />
-			<QuemSomosMobile />
 			<MockupApp />
 			<ComoChegar />
 			<Servicos />
