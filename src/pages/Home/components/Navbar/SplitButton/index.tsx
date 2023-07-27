@@ -101,28 +101,42 @@ const SplitButton = () => {
 				sx={{
 					flexGrow: 1,
 					backgroundColor: '#000',
+					width: '100%',
 					height: '20vh',
 				}}
 			>
-				<Container>
-					<AppBar
-						position="static"
+				<AppBar
+					sx={{
+						position: 'static',
+						backgroundColor: '#000',
+						width: '100%',
+						height: '100%',
+					}}
+				>
+					<Container
 						sx={{
-							backgroundColor: '#000',
 							width: '100%',
+							height: '100%',
 						}}
 					>
 						<Toolbar
 							sx={{
 								width: '100%',
+								height: '100%',
 								display: 'flex',
 								alignItems: 'center',
 								justifyContent: 'space-between',
-								height: '20vh',
 								zIndex: '99999',
 							}}
 						>
-							<Box width="90%" textAlign="center">
+							<Box
+								width="90%"
+								height="100%"
+								textAlign="center"
+								display="flex"
+								alignItems="center"
+								justifyContent="center"
+							>
 								{/* <Typography
 									component="h1"
 									variant="h6"
@@ -144,13 +158,16 @@ const SplitButton = () => {
 
 								<img
 									width="100%"
+									// height="100vh"
 									alt="Logo Douglas Coiffeur"
 									src={Logo}
 									style={{
 										padding: '3.3rem 0 2rem 3rem',
+										textAlign: 'center',
 									}}
 								/>
 							</Box>
+
 							<Box alignSelf="flex-end" width="5%">
 								<ButtonGroup
 									color="inherit"
@@ -233,8 +250,8 @@ const SplitButton = () => {
 								</Popper>
 							</Box>
 						</Toolbar>
-					</AppBar>
-				</Container>
+					</Container>
+				</AppBar>
 				<Box
 					width="100%"
 					height="2vh"

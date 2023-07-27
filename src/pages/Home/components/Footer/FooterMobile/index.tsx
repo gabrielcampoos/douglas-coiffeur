@@ -18,7 +18,7 @@ const FooterMobile = () => {
 			sx={{
 				flexGrow: 1,
 				backgroundColor: '#000',
-				height: '40vh',
+				// height: '40vh',
 			}}
 		>
 			<Container>
@@ -38,11 +38,11 @@ const FooterMobile = () => {
 							flexDirection: 'column',
 							alignItems: 'center',
 							justifyContent: 'space-between',
-							height: '20vh',
+							// height: '20vh',
 							zIndex: '99999',
 						}}
 					>
-						<Box>
+						<Box padding="0 0 2rem 0">
 							<img src={Logo} alt="Logo Barbearia" width="70%" />
 						</Box>
 
