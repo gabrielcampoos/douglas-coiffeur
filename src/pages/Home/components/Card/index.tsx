@@ -28,6 +28,7 @@ export default function CardGrid() {
 						container
 						spacing={{ xs: 4, md: 3 }}
 						columns={{ xs: 1, sm: 8, md: 12 }}
+						pt={3}
 					>
 						<Grid item xs={2} sm={4} md={4}>
 							{/* PLUS */}
@@ -108,7 +109,7 @@ export default function CardGrid() {
 									<Box
 										component="button"
 										width="70%"
-										height="9vh"
+										height="100%"
 										margin="1rem 0"
 										border="none"
 										borderRadius="0.5rem"
@@ -230,7 +231,7 @@ export default function CardGrid() {
 									<Box
 										component="button"
 										width="70%"
-										height="9vh"
+										height="100%"
 										margin="1rem 0"
 										border="none"
 										borderRadius="0.5rem"
@@ -351,7 +352,7 @@ export default function CardGrid() {
 									<Box
 										component="button"
 										width="70%"
-										height="9vh"
+										height="100%"
 										margin="1rem 0"
 										border="none"
 										borderRadius="0.5rem"

@@ -1,7 +1,8 @@
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import {
 	Box,
-	Button,
 	Container,
+	IconButton,
 	Typography,
 	useMediaQuery,
 	useTheme,
@@ -101,6 +102,77 @@ const MockupApp = () => {
 									sx={{
 										width: '100%',
 										display: 'flex',
+										flexDirection: 'column',
+										alignItems: 'center',
+										justifyContent: 'center',
+										gap: '0.5rem',
+									}}
+								>
+									<Typography
+										sx={{
+											color: '#000',
+											fontFamily: 'Khand, sans-serif',
+											fontSize: '1.2rem',
+											fontWeight: '600',
+											// letterSpacing: '0.1rem',
+											textAlign: 'center',
+										}}
+									>
+										Agende pelo link
+									</Typography>
+
+									<Box
+										component="button"
+										width="100%"
+										// height="11%"
+										border="none"
+										borderRadius="0.5rem"
+										sx={{ backgroundColor: '#2596be' }}
+									>
+										<a
+											href="https://booksy.com/pt-br/instant-experiences/widget/109844?instant_experiences_enabled=true&ig_ix=true&is_fb=1&fbclid=IwAR36ITBFrC5OklYW2VL4KAw8PHKB9vOozRh7pMCfQ6FE4T13569xYHLr-Mc"
+											style={{
+												textDecoration: 'none',
+											}}
+										>
+											<Typography
+												color={'HighlightText'}
+												fontFamily="Khand, sans-serif"
+												fontWeight={700}
+												fontSize="2rem"
+												letterSpacing="0.1rem"
+											>
+												AGENDAR AGORA
+											</Typography>
+										</a>
+									</Box>
+								</Container>
+								{/* <Button
+									variant="contained"
+									href="https://booksy.com/pt-br/instant-experiences/widget/109844?instant_experiences_enabled=true&ig_ix=true&is_fb=1&fbclid=IwAR36ITBFrC5OklYW2VL4KAw8PHKB9vOozRh7pMCfQ6FE4T13569xYHLr-Mc"
+									sx={{
+										containedSecondary: '#2596be',
+										backgroundColor: '#0d6efd',
+										width: '98%',
+										height: '11%',
+										color: 'HighlightText',
+										fontFamily: 'Khand, sans-serif',
+										fontWeight: '700',
+										fontSize: '150%',
+										letterSpacing: '0.1rem',
+										'&.Mui-focused': {
+											backgroundColor: 'white',
+										},
+									}}
+								>
+									AGENDAR AGORA
+								</Button> */}
+								{/* <Container
+									disableGutters
+									component="section"
+									sx={{
+										width: '100%',
+										display: 'flex',
 										alignItems: 'center',
 										justifyContent: 'flex-start',
 									}}
@@ -121,27 +193,142 @@ const MockupApp = () => {
 											/>
 										</a>
 									</Box>
-								</Container>
-								<Button
-									variant="contained"
-									href="https://booksy.com/pt-br/instant-experiences/widget/109844?instant_experiences_enabled=true&ig_ix=true&is_fb=1&fbclid=IwAR36ITBFrC5OklYW2VL4KAw8PHKB9vOozRh7pMCfQ6FE4T13569xYHLr-Mc"
+								</Container> */}
+								<Container
+									disableGutters
+									component="section"
 									sx={{
-										containedSecondary: '#2596be',
-										backgroundColor: '#0d6efd',
-										width: '98%',
-										height: '11%',
-										color: 'HighlightText',
-										fontFamily: 'Khand, sans-serif',
-										fontWeight: '700',
-										fontSize: '150%',
-										letterSpacing: '0.1rem',
-										'&.Mui-focused': {
-											backgroundColor: 'white',
-										},
+										width: '100%',
+										display: 'flex',
+										flexDirection: 'column',
+										alignItems: 'center',
+										justifyContent: 'center',
+										gap: 1,
 									}}
 								>
-									AGENDAR AGORA
-								</Button>
+									<Typography
+										sx={{
+											color: '#000',
+											fontFamily: 'Khand, sans-serif',
+											fontSize: '1.2rem',
+											fontWeight: '600',
+											// letterSpacing: '0.1rem',
+										}}
+									>
+										Disponível para Android e IOS
+									</Typography>
+									<Box
+										width="100%"
+										display="flex"
+										alignItems="center"
+										justifyContent="center"
+										mb={3}
+									>
+										<Box component="a" width="50%">
+											<a href="https://play.google.com/store/apps/details?id=net.booksy.customer&hl=pt_BR&gl=US">
+												<img
+													src="https://play.google.com/intl/pt-BR/badges/static/images/badges/pt-br_badge_web_generic.png"
+													width="90%"
+												/>
+											</a>
+										</Box>
+										<Box component="a" width="50%">
+											<a href="https://apps.apple.com/br/app/booksy-aplicativo-de-reservas/id723961236">
+												<img
+													src="https://www.gov.br/pt-br/imagens-de-servicos/apple.png"
+													width="100%"
+												/>
+											</a>
+										</Box>
+									</Box>
+									<Container
+										disableGutters
+										component="section"
+										sx={{
+											width: '100%',
+											display: 'flex',
+											flexDirection: 'column',
+											alignItems: 'center',
+											justifyContent: 'center',
+											gap: 1,
+										}}
+									>
+										<Typography
+											sx={{
+												color: '#000',
+												fontFamily: 'Khand, sans-serif',
+												fontSize: '1.2rem',
+												fontWeight: '600',
+												// letterSpacing: '0.1rem',
+											}}
+										>
+											Entre em contato pelo Whatsapp
+										</Typography>
+										<Box
+											width="100%"
+											display="flex"
+											alignItems="center"
+											justifyContent="center"
+											// height="11%"
+											border="none"
+											borderRadius="0.5rem"
+											sx={{ backgroundColor: '#2596be' }}
+										>
+											{/* <Box component="a" width="50%">
+								<a href="https://api.whatsapp.com/send/?phone=5518997984039&text&type=phone_number&app_absent=0">
+									<WhatsAppIcon />
+									<Typography
+										sx={{
+											color: '#000',
+											fontFamily: 'Khand, sans-serif',
+											fontSize: '1rem',
+											fontWeight: '600',
+											letterSpacing: '0.1rem',
+										}}
+									>
+										(18) 99798-4039
+									</Typography>
+								</a>
+							</Box> */}
+											<IconButton
+												href="https://api.whatsapp.com/send/?phone=5518997984039&text&type=phone_number&app_absent=0"
+												aria-label="Whatsapp"
+												// sx={{
+												// 	'&:hover': {
+												// 		color: '#ffde59',
+												// 	},
+												// }}
+											>
+												<WhatsAppIcon
+													fontSize="large"
+													aria-label="Whatsapp"
+													htmlColor="#fff"
+												/>
+												<Typography
+													component="p"
+													// padding="0 0.5rem"
+													// textAlign="end"
+													paddingLeft="0.5rem"
+													color={'HighlightText'}
+													fontFamily="Khand, sans-serif"
+													fontWeight={700}
+													fontSize="1.2rem"
+													letterSpacing="0.1rem"
+												>
+													(18) 99798-4039
+												</Typography>
+											</IconButton>
+											{/* <Box component="a" width="50%">
+								<a href="https://apps.apple.com/br/app/booksy-aplicativo-de-reservas/id723961236">
+									<img
+										src="https://www.gov.br/pt-br/imagens-de-servicos/apple.png"
+										width="100%"
+									/>
+								</a>
+							</Box> */}
+										</Box>
+									</Container>
+								</Container>
 							</Box>
 
 							{/* RIGHT BOX */}

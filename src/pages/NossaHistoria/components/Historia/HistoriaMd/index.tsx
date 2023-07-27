@@ -9,10 +9,10 @@ import {
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 
-import CarouselMobile from '../../Carousel/CarouselMobile';
+import Carousel from '../../Carousel';
 import EstruturaMobile from '../../Estrutura/EstruturaMobile';
 
-const HistoriaMobile = () => {
+const HistoriaMd = () => {
 	return (
 		<Box component="main" bgcolor="#000">
 			<Container
@@ -40,7 +40,7 @@ const HistoriaMobile = () => {
 				>
 					<Box
 						width="100%"
-						height="9vh"
+						height="100%"
 						border="0.15rem solid #f6b332"
 						borderRadius="0.5rem"
 						position="absolute"
@@ -203,7 +203,7 @@ const HistoriaMobile = () => {
 								</a>
 							</CardContent>
 						</CardActionArea>
-						<CarouselMobile />
+						<Carousel />
 					</Container>
 				</Card>
 				<EstruturaMobile />
@@ -212,4 +212,4 @@ const HistoriaMobile = () => {
 	);
 };
 
-export default HistoriaMobile;
+export default HistoriaMd;

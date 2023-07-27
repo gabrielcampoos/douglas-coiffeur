@@ -1,7 +1,7 @@
 import { Box, Container, Typography } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 
-const QuemSomosMobile = () => {
+const QuemSomos = () => {
 	const navigate = useNavigate();
 
 	return (
@@ -56,7 +56,8 @@ const QuemSomosMobile = () => {
 						component="p"
 						color={'whitesmoke'}
 						textAlign="justify"
-						mb={5}
+						mb={4}
+						mt={4}
 					>
 						Lorem ipsum dolor sit amet, consectetur adipisicing
 						elit. Laboriosam, aliquid? Illum iusto fuga nisi nam
@@ -88,7 +89,7 @@ const QuemSomosMobile = () => {
 						}}
 						component="button"
 						width="70%"
-						// height="100%"
+						// height="9vh"
 						margin="1rem 0"
 						border="none"
 						borderRadius="0.5rem"
@@ -99,13 +100,13 @@ const QuemSomosMobile = () => {
 						}}
 					>
 						<Box
-							width="100%%"
+							width="100%"
 							height="100%"
 							border="0.15rem solid #f6b332"
 							borderRadius="0.5rem"
 							position="absolute"
-							top="0.2rem"
 							left="0.3rem"
+							top="0.2rem"
 							sx={{
 								backgroundColor: 'transparent',
 							}}
@@ -127,4 +128,4 @@ const QuemSomosMobile = () => {
 	);
 };
 
-export default QuemSomosMobile;
+export default QuemSomos;

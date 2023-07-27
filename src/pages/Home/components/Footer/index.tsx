@@ -1,4 +1,5 @@
 import FacebookIcon from '@mui/icons-material/Facebook';
+import GoogleIcon from '@mui/icons-material/Google';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import {
 	Container,
@@ -37,165 +38,108 @@ export default function Footer() {
 								borderBottom: '1px solid #fff',
 								boxShadow: 'none',
 								paddingTop: '4rem',
+								textAlign: 'center',
 							}}
 						>
 							<Toolbar
 								sx={{
 									display: 'flex',
+									flexDirection: 'column',
 									alignItems: 'center',
 									justifyContent: 'space-between',
-									width: '100%',
 									// height: '20vh',
 									zIndex: '99999',
 								}}
 							>
-								<Container
+								<Box width="100%" paddingBottom="3rem">
+									<img
+										src={Logo}
+										alt="Logo Barbearia"
+										width="20%"
+									/>
+								</Box>
+
+								<Box
+									width="100%"
 									sx={{
-										width: '100%',
 										display: 'flex',
-										alignItems: 'center',
 										justifyContent: 'space-evenly',
 										textAlign: 'center',
 									}}
 								>
-									<Box width="50%" padding="1rem 0">
-										<img
-											src={Logo}
-											width="20%"
-											alt="Logo Barbearia"
+									<IconButton
+										href="https://www.facebook.com/douglascoiffeurr/"
+										aria-label="facebook"
+										color="inherit"
+										sx={{
+											'&:hover': {
+												color: '#ffde59',
+											},
+										}}
+									>
+										<FacebookIcon
+											aria-label="Facebook"
+											fontSize="large"
 										/>
-									</Box>
-
-									{/* <Box
-									sx={{
-										width: '50%',
-										display: 'flex',
-										flexDirection: 'column',
-										justifyContent: 'space-between',
-										alignItems: 'center',
-										fontFamily: 'Khand, sans-serif',
-										fontWeight: '600',
-										letterSpacing: '0.09rem',
-									}}
-								>
-									<Link
-										href="https://api.whatsapp.com/send/?phone=5518997984039&text=Olá, gostaria de saber mais sobre os planos.&type=phone_number&app_absent=0"
-										underline="none"
-										color={'HighlightText'}
-										sx={{
-											'&:hover': {
-												color: '#ffde59',
-											},
-										}}
-									>
-										{'ASSINATURAS'}
-									</Link>
-
-									<Link
-										href="https://booksy.com/pt-br/instant-experiences/widget/109844?instant_experiences_enabled=true&ig_ix=true&is_fb=1&fbclid=IwAR36ITBFrC5OklYW2VL4KAw8PHKB9vOozRh7pMCfQ6FE4T13569xYHLr-Mc"
-										underline="none"
-										color={'HighlightText'}
-										sx={{
-											'&:hover': {
-												color: '#ffde59',
-											},
-										}}
-									>
-										{'BOOKSY'}
-									</Link>
-
-									<Link
-										href="https://www.google.com/maps/place/Dougla's+Coiffeur/@-22.6515273,-50.4194907,17z/data=!3m1!4b1!4m5!3m4!1s0x949539104f13fd7d:0xf3996aef55392f08!8m2!3d-22.6515345!4d-50.4173573"
-										underline="none"
-										color={'HighlightText'}
-										sx={{
-											'&:hover': {
-												color: '#ffde59',
-											},
-										}}
-									>
-										{'UNIDADE'}
-									</Link>
-
-									<Link
-										href="https://booksy.com/pt-br/instant-experiences/widget/109844?instant_experiences_enabled=true&ig_ix=true&is_fb=1&fbclid=IwAR36ITBFrC5OklYW2VL4KAw8PHKB9vOozRh7pMCfQ6FE4T13569xYHLr-Mc"
-										underline="none"
-										color={'HighlightText'}
-										sx={{
-											'&:hover': {
-												color: '#ffde59',
-											},
-										}}
-									>
-										{'SERVIÇOS'}
-									</Link>
-
-									<Button
-										sx={{
-											// position: 'relative',
-											zIndex: '1',
-											backgroundColor: 'darkslategrey',
-											// padding: '1rem 6rem',
-											// top: '-2.5rem',
-											// left: '2rem',
-											// marginTop: '30rem',
-											'&:hover': {
-												color: '#fff',
-												backgroundColor: '#f6b332',
-												transition:
-													'color 0.5s ease-out',
-											},
-										}}
-									>
-										<a
-											href="https://booksy.com/pt-br/instant-experiences/widget/109844?instant_experiences_enabled=true&ig_ix=true&is_fb=1&fbclid=IwAR36ITBFrC5OklYW2VL4KAw8PHKB9vOozRh7pMCfQ6FE4T13569xYHLr-Mc"
-											style={{
-												textDecoration: 'none',
-												color: '#fff',
-												fontFamily: 'Khand, sans-serif',
-												fontSize: '150%',
-												fontWeight: '600',
-												letterSpacing: '0.1rem',
-											}}
+										<Typography
+											component="p"
+											padding="0 0.3rem"
+											color="#fff"
+											fontSize="1rem"
+											textAlign="end"
 										>
-											AGENDAR
-										</a>
-										</Button>
-								</Box> */}
-									<Box
-										width="50%"
+											Facebook
+										</Typography>
+									</IconButton>
+									<IconButton
+										href="https://www.instagram.com/douglascoiffeursp/"
+										aria-label="instagram"
+										color="inherit"
 										sx={{
-											display: 'flex',
-											alignItems: 'center',
-											justifyContent: 'center',
+											'&:hover': {
+												color: '#ffde59',
+											},
 										}}
 									>
-										<IconButton
-											href="https://www.facebook.com/douglascoiffeurr/"
-											aria-label="facebook"
-											color="inherit"
-											sx={{
-												'&:hover': {
-													color: '#ffde59',
-												},
-											}}
+										<InstagramIcon
+											aria-label="Instagram"
+											fontSize="large"
+										/>
+										<Typography
+											component="p"
+											padding="0 0.3rem"
+											color="#fff"
+											fontSize="1rem"
+											textAlign="end"
 										>
-											<FacebookIcon />
-										</IconButton>
-										<IconButton
-											href="https://www.instagram.com/douglascoiffeursp/"
-											aria-label="instagram"
-											color="inherit"
-											sx={{
-												'&:hover': {
-													color: '#ffde59',
-												},
-											}}
+											Instagram
+										</Typography>
+									</IconButton>
+									<IconButton
+										href="https://www.google.com/maps/place/Barbearia+Dougla's+Coiffeur/@-22.6515273,-50.417302,17z/data=!4m8!3m7!1s0x949539104f13fd7d:0xf3996aef55392f08!8m2!3d-22.6515273!4d-50.417302!9m1!1b1!16s%2Fg%2F11g0lf7yt8?entry=ttu"
+										aria-label="Google"
+										color="inherit"
+										sx={{
+											'&:hover': {
+												color: '#ffde59',
+											},
+										}}
+									>
+										<GoogleIcon
+											aria-label="Google"
+											fontSize="large"
+										/>
+										<Typography
+											component="p"
+											padding="0 0.3rem"
+											color="#fff"
+											fontSize="1rem"
+											textAlign="end"
 										>
-											<InstagramIcon />
-										</IconButton>
-									</Box>
-								</Container>
+											Nos avalie
+										</Typography>
+									</IconButton>
+								</Box>
 							</Toolbar>
 						</AppBar>
 						<Box
@@ -203,13 +147,14 @@ export default function Footer() {
 							display="flex"
 							alignItems="center"
 							justifyContent="space-between"
+							padding="2rem 0 2rem 0"
 						>
 							<Typography
 								width="50%"
 								component="p"
-								padding="3rem 0.1rem"
-								color="HighlightText"
-								fontSize="0.9rem"
+								paddingTop="0.9rem"
+								color="#fff"
+								fontSize="1rem"
 							>
 								Copyright © Barbearia Douglas Coiffeur. Todos os
 								Direitos Reservados.
@@ -218,9 +163,9 @@ export default function Footer() {
 							<Typography
 								width="50%"
 								component="p"
-								padding="3rem 0.1rem"
-								color="HighlightText"
-								fontSize="0.7rem"
+								// padding="3rem 0.1rem"
+								color="#fff"
+								fontSize="0.8rem"
 								textAlign="end"
 							>
 								Desenvolvido por:{' '}
@@ -228,7 +173,8 @@ export default function Footer() {
 									style={{
 										backgroundColor: '#000',
 										borderRadius: '3rem',
-										padding: '0.2rem',
+										padding: '0.1rem',
+										color: '#fff',
 									}}
 								>
 									Gabriel Campos Alves

@@ -77,7 +77,7 @@ const AssinaturasMobile = () => {
 				>
 					<Box
 						width="100%"
-						height="9vh"
+						height="100%"
 						border="0.15rem solid #f6b332"
 						borderRadius="0.5rem"
 						position="absolute"
@@ -161,7 +161,7 @@ const AssinaturasMobile = () => {
 				>
 					<Box
 						width="100%"
-						height="9vh"
+						height="100%"
 						border="0.15rem solid #f6b332"
 						borderRadius="0.5rem"
 						position="absolute"

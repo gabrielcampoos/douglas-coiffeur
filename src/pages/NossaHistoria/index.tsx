@@ -1,12 +1,12 @@
 import FloatingButton from '../Home/components/FloatingButton';
 import ButtonAppBar from '../Home/components/Navbar';
-import NossaHistoriaMobile from './components/Historia/HistoriaMobile';
+import Historia from './components/Historia';
 
 const NossaHistoria = () => {
 	return (
 		<>
 			<ButtonAppBar />
-			<NossaHistoriaMobile />
+			<Historia />
 			<FloatingButton />
 		</>
 	);

@@ -6,7 +6,7 @@ import { Box, Container, Typography } from '@mui/material';
 
 import ListaImagens from '../../ListaImagens';
 
-const EstruturaMobile = () => {
+const EstruturaMd = () => {
 	return (
 		<Box component="main" bgcolor="#000">
 			<Container
@@ -223,4 +223,4 @@ const EstruturaMobile = () => {
 	);
 };
 
-export default EstruturaMobile;
+export default EstruturaMd;

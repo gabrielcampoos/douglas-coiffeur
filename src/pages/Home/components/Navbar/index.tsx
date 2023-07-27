@@ -14,7 +14,7 @@ import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Toolbar from '@mui/material/Toolbar';
 
-import Logo from '../../../../assets/images/logo.png';
+import Logo from '../../../../assets/images/logo-douglas.png';
 import Aviso from '../Aviso';
 import NavbarMd from './NavbarMd';
 import SplitButton from './SplitButton';
@@ -62,20 +62,27 @@ const ButtonAppBar = () => {
 											zIndex: '99999',
 										}}
 									>
-										<Box width="15%">
+										<Box width="25%">
 											<img
 												src={Logo}
 												alt="Logo Barbearia"
-												width="60%"
+												width="100%"
 											/>
 										</Box>
 
 										<Grid
 											container
-											spacing={{ xs: 1, md: 5 }}
-											columns={{ xs: 1, sm: 25, md: 20 }}
+											spacing={{ xs: 3, md: 1, lg: 1 }}
+											columns={{
+												xs: 5,
+												sm: 15,
+												md: 24,
+												lg: 72,
+											}}
 											alignItems="center"
 											justifyContent="center"
+											textAlign="center"
+
 											// padding="0 2rem"
 
 											// sx={{
@@ -88,7 +95,13 @@ const ButtonAppBar = () => {
 											// 	letterSpacing: '0.09rem',
 											// }}
 										>
-											<Grid item xs={2} sm={5} md={4}>
+											<Grid
+												item
+												xs={5}
+												sm={5}
+												md={4}
+												lg={12}
+											>
 												<Button
 													sx={{ padding: '0' }}
 													onClick={() => {
@@ -114,7 +127,13 @@ const ButtonAppBar = () => {
 												</Button>
 											</Grid>
 
-											<Grid item xs={2} sm={5} md={4}>
+											<Grid
+												item
+												xs={5}
+												sm={5}
+												md={4}
+												lg={12}
+											>
 												<Button
 													onClick={() => {
 														const MockupApp =
@@ -140,7 +159,13 @@ const ButtonAppBar = () => {
 												</Button>
 											</Grid>
 
-											<Grid item xs={2} sm={5} md={4}>
+											<Grid
+												item
+												xs={5}
+												sm={5}
+												md={4}
+												lg={12}
+											>
 												<Button
 													onClick={() => {
 														const ComoChegar =
@@ -166,7 +191,13 @@ const ButtonAppBar = () => {
 												</Button>
 											</Grid>
 
-											<Grid item xs={2} sm={5} md={4}>
+											<Grid
+												item
+												xs={5}
+												sm={5}
+												md={4}
+												lg={12}
+											>
 												<Button
 													onClick={() => {
 														const Servicos =
@@ -192,7 +223,13 @@ const ButtonAppBar = () => {
 												</Button>
 											</Grid>
 
-											<Grid item xs={2} sm={5} md={4}>
+											<Grid
+												item
+												xs={5}
+												sm={5}
+												md={4}
+												lg={12}
+											>
 												<Button
 													onClick={() => {
 														const MockupApp =
@@ -212,9 +249,9 @@ const ButtonAppBar = () => {
 														sx={{
 															lineHeight: '3vh',
 															textAlign: 'center',
-															backgroundColor:
-																'#f6b332',
-															color: '#000',
+															// backgroundColor:
+															// 	'#f6b332',
+															color: '#fff',
 															fontWeight: 'bold',
 															borderRadius:
 																'0.5rem',
@@ -232,7 +269,13 @@ const ButtonAppBar = () => {
 												</Button>
 											</Grid>
 
-											<Grid item xs={2} sm={5} md={4}>
+											<Grid
+												item
+												xs={5}
+												sm={5}
+												md={4}
+												lg={12}
+											>
 												<Button
 													onClick={() => {
 														const MockupApp =

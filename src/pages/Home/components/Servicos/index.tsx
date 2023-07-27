@@ -53,16 +53,11 @@ const Servicos = () => {
 			{(!smDown && (
 				<>
 					<Box
-						id="Servicos"
+						id="ServicosMobile"
 						component="main"
 						sx={{
 							width: '100%',
 							backgroundColor: '#000',
-							// paddingTop: '8rem',
-							backgroundImage: `url(${NewBannerInterior})`,
-							backgroundSize: 'cover',
-							backgroundPosition: '100% 45%',
-							backgroundRepeat: 'no-repeat',
 						}}
 					>
 						<Container
@@ -71,27 +66,25 @@ const Servicos = () => {
 								width: '100%',
 								// height: '100%',
 								display: 'flex',
+								flexDirection: 'column',
 								alignItems: 'center',
 								justifyContent: 'center',
-								// paddingTop: '2rem',
+								border: 'none',
 							}}
 						>
-							<Box width="50%" component="div">
+							<Box width="100%" component="div">
 								<Section translate="Typography">
 									<Typography
-										component="h2"
+										component="h1"
 										color="#fff"
-										fontSize="3rem"
+										fontSize="4rem"
 										lineHeight="3rem"
 										fontFamily="Khand, sans-serif"
 										fontWeight={900}
-										// position="absolute"
-										paddingTop="11rem"
 										zIndex="1"
-										sx={{
-											WebkitTextStrokeWidth: '0.2rem',
-											WebkitTextStrokeColor: '#000',
-										}}
+										paddingTop="17rem"
+										paddingLeft="1rem"
+										position="absolute"
 									>
 										CORTE DE CABELO <br />
 										<span
@@ -113,18 +106,22 @@ const Servicos = () => {
 										</span>
 									</Typography>
 								</Section>
+								<img
+									src={NewBannerInterior}
+									width="100%"
+									height="100%"
+									style={{ opacity: '50%' }}
+								/>
 							</Box>
-							<Box width="50%" height="100%" component="div">
+							<Box width="100%" component="div">
 								<Section translate="Typography">
 									<Button
 										sx={{
-											position: 'relative',
 											zIndex: '1',
 											backgroundColor: '#f6b332',
 											// padding: '1rem 6rem',
-											top: '-2.5rem',
-											// left: '5rem',
-											marginTop: '30rem',
+											left: '1rem',
+											top: '-1rem',
 											'&:hover': {
 												color: '#fff',
 												backgroundColor:
@@ -138,9 +135,9 @@ const Servicos = () => {
 											href="https://booksy.com/pt-br/instant-experiences/widget/109844?instant_experiences_enabled=true&ig_ix=true&is_fb=1&fbclid=IwAR36ITBFrC5OklYW2VL4KAw8PHKB9vOozRh7pMCfQ6FE4T13569xYHLr-Mc"
 											style={{
 												textDecoration: 'none',
-												color: '#fff',
+												color: '#000',
 												fontFamily: 'Khand, sans-serif',
-												fontSize: '150%',
+												fontSize: '2rem',
 												fontWeight: '600',
 												letterSpacing: '0.1rem',
 											}}
@@ -155,6 +152,7 @@ const Servicos = () => {
 					<Box
 						component="div"
 						width="100%"
+						height="10vh"
 						sx={{
 							backgroundColor: '#000',
 						}}

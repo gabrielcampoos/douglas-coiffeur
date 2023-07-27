@@ -141,7 +141,7 @@ const ComoChegarMd = () => {
 							style={{
 								position: 'relative',
 								zIndex: '1',
-								backgroundColor: 'darkslategray',
+								backgroundColor: '#f6b332',
 								// padding: '1rem 2rem',
 								top: '5rem',
 								left: '6rem',
@@ -151,7 +151,7 @@ const ComoChegarMd = () => {
 								href="https://www.google.com/maps/place/Dougla's+Coiffeur/@-22.6515273,-50.4194907,17z/data=!3m1!4b1!4m5!3m4!1s0x949539104f13fd7d:0xf3996aef55392f08!8m2!3d-22.6515345!4d-50.4173573"
 								style={{
 									textDecoration: 'none',
-									color: '#fff',
+									color: '#000',
 									fontFamily: 'Khand, sans-serif',
 									fontSize: '1.3rem',
 									fontWeight: '600',

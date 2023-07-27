@@ -76,7 +76,7 @@ const AssinaturasMd = () => {
 				>
 					<Box
 						width="100%"
-						height="9vh"
+						height="100%"
 						border="0.15rem solid #f6b332"
 						borderRadius="0.5rem"
 						position="absolute"
@@ -100,6 +100,7 @@ const AssinaturasMd = () => {
 						component="p"
 						color={'whitesmoke'}
 						textAlign="justify"
+						mt={4}
 					>
 						Sabe aquele dia em que você tem um{' '}
 						<span style={{ color: '#f6b332' }}>
@@ -160,7 +161,7 @@ const AssinaturasMd = () => {
 				>
 					<Box
 						width="100%"
-						height="9vh"
+						height="100%"
 						border="0.15rem solid #f6b332"
 						borderRadius="0.5rem"
 						position="absolute"

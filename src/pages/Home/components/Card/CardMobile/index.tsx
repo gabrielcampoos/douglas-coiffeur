@@ -93,7 +93,7 @@ export default function ActionAreaCard() {
 					<Box
 						component="button"
 						width="70%"
-						height="9vh"
+						height="100%"
 						margin="1rem 0"
 						border="none"
 						borderRadius="0.5rem"
@@ -207,7 +207,7 @@ export default function ActionAreaCard() {
 					<Box
 						component="button"
 						width="70%"
-						height="9vh"
+						height="100%"
 						margin="1rem 0"
 						border="none"
 						borderRadius="0.5rem"
@@ -320,7 +320,7 @@ export default function ActionAreaCard() {
 					<Box
 						component="button"
 						width="70%"
-						height="9vh"
+						height="100%"
 						margin="1rem 0"
 						border="none"
 						borderRadius="0.5rem"

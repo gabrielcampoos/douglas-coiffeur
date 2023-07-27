@@ -6,7 +6,7 @@ import Footer from './components/Footer';
 import MockupApp from './components/MockupApp';
 import ButtonAppBar from './components/Navbar';
 import Planos from './components/Planos';
-import QuemSomosMobile from './components/QuemSomos/QuemSomosMobile';
+import QuemSomos from './components/QuemSomos';
 import Servicos from './components/Servicos';
 
 const Home = () => {
@@ -14,7 +14,7 @@ const Home = () => {
 		<>
 			<ButtonAppBar />
 			<CarouselDiv />
-			<QuemSomosMobile />
+			<QuemSomos />
 			<Assinaturas />
 			<Planos />
 			<MockupApp />
