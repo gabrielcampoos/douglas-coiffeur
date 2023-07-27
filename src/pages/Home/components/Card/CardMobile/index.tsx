@@ -247,7 +247,7 @@ export default function ActionAreaCard() {
 				</Container>
 			</Card>
 
-			{/* MEDIUM */}
+			{/* PRO */}
 
 			<Card
 				sx={{
@@ -276,7 +276,7 @@ export default function ActionAreaCard() {
 								letterSpacing="0.1rem"
 								textAlign="center"
 							>
-								MEDIUM
+								PRO
 							</Typography>
 							<Typography
 								gutterBottom
@@ -360,7 +360,7 @@ export default function ActionAreaCard() {
 				</Container>
 			</Card>
 
-			{/* PRO */}
+			{/* GOLD */}
 
 			<Card
 				sx={{
@@ -389,7 +389,7 @@ export default function ActionAreaCard() {
 								letterSpacing="0.1rem"
 								textAlign="center"
 							>
-								PRO
+								GOLD
 							</Typography>
 							<Typography
 								gutterBottom
