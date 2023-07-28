@@ -35,7 +35,6 @@ export default function Footer() {
 							position="static"
 							sx={{
 								backgroundColor: '#000',
-								borderBottom: '1px solid #fff',
 								boxShadow: 'none',
 								paddingTop: '4rem',
 								textAlign: 'center',
@@ -55,7 +54,7 @@ export default function Footer() {
 									<img
 										src={Logo}
 										alt="Logo Barbearia"
-										width="20%"
+										width="10%"
 									/>
 								</Box>
 

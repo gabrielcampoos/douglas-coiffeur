@@ -13,6 +13,7 @@ import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Toolbar from '@mui/material/Toolbar';
+import { useNavigate } from 'react-router-dom';
 
 import Logo from '../../../../assets/images/logo-douglas.png';
 import Aviso from '../Aviso';
@@ -20,6 +21,7 @@ import NavbarMd from './NavbarMd';
 import SplitButton from './SplitButton';
 
 const ButtonAppBar = () => {
+	const navigate = useNavigate();
 	const theme = useTheme();
 	const smDown = useMediaQuery(theme.breakpoints.down('sm'));
 	const mdDown = useMediaQuery(theme.breakpoints.down('md'));
@@ -62,7 +64,15 @@ const ButtonAppBar = () => {
 											zIndex: '99999',
 										}}
 									>
-										<Box width="25%">
+										<Box
+											width="25%"
+											component="button"
+											onClick={() => navigate('/')}
+											border="none"
+											sx={{
+												backgroundColor: 'transparent',
+											}}
+										>
 											<img
 												src={Logo}
 												alt="Logo Barbearia"

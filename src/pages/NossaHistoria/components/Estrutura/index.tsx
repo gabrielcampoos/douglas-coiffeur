@@ -141,7 +141,7 @@ const Estrutura = () => {
 							>
 								<Box width="100%" alignSelf="start">
 									<img
-										width="50%"
+										width="270px"
 										alt="Logo Douglas Coiffeur"
 										src="https://scontent.fmii3-1.fna.fbcdn.net/v/t39.30808-6/348239462_3544405635885761_1688043728463422154_n.jpg?stp=cp0_dst-jpg_e15_p320x320_q65&_nc_cat=106&ccb=1-7&_nc_sid=85a577&_nc_ohc=kIUIeMtK8PoAX8lCwvo&_nc_ht=scontent.fmii3-1.fna&oh=00_AfADJdFXP97sZV8ORkKVuPtKdYWxHh9Kj-ktTp6nQEBKLw&oe=64C37166"
 									/>

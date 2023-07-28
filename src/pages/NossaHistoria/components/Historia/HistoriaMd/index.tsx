@@ -10,7 +10,7 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 
 import Carousel from '../../Carousel';
-import EstruturaMobile from '../../Estrutura/EstruturaMobile';
+import EstruturaMd from '../../Estrutura/EstruturaMd';
 
 const HistoriaMd = () => {
 	return (
@@ -118,7 +118,7 @@ const HistoriaMd = () => {
 							border: '0.15rem solid #000',
 						}}
 					>
-						<CardActionArea>
+						<CardActionArea sx={{ marginBottom: '3rem' }}>
 							<CardContent
 								sx={{
 									display: 'flex',
@@ -206,7 +206,7 @@ const HistoriaMd = () => {
 						<Carousel />
 					</Container>
 				</Card>
-				<EstruturaMobile />
+				<EstruturaMd />
 			</Container>
 		</Box>
 	);

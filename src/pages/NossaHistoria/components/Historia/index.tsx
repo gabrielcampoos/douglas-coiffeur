@@ -149,14 +149,16 @@ const Historia = () => {
 											border: '0.15rem solid #000',
 										}}
 									>
-										<CardActionArea>
+										<CardActionArea
+											sx={{ marginBottom: '4rem' }}
+										>
 											<CardContent
 												sx={{
 													display: 'flex',
 													flexDirection: 'column',
 													alignItems: 'center',
 													justifyContent: 'center',
-													gap: '1rem',
+													gap: '2rem',
 													fontFamily:
 														'Khand, sans-serif',
 													fontWeight: '700',
