@@ -71,6 +71,8 @@ const Servicos = () => {
 							}}
 						>
 							<Container
+								disableGutters
+								maxWidth={false}
 								component="section"
 								sx={{
 									width: '100%',
@@ -116,7 +118,7 @@ const Servicos = () => {
 											</span>
 										</Typography>
 									</Section>
-									<Box height="850px">
+									<Box height="900px">
 										<img
 											src={NewBannerInterior}
 											width="100%"

@@ -58,6 +58,7 @@ const ServicosMd = () => {
 				}}
 			>
 				<Container
+					disableGutters
 					component="section"
 					sx={{
 						width: '100%',

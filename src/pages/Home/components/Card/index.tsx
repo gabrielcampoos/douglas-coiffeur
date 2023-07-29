@@ -9,17 +9,22 @@ import {
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
+import { useState } from 'react';
 
 import {
 	default as ControlledRadioButtonsGroup,
 	default as ListaServico,
 } from '../ListaServico';
+import { Modal } from '../Modal';
 import ActionAreaCard from './CardMobile';
 
 export default function CardGrid() {
 	const theme = useTheme();
 	const smDown = useMediaQuery(theme.breakpoints.down('sm'));
 	const mdDown = useMediaQuery(theme.breakpoints.down('md'));
+	const [open, setOpen] = useState(false);
+	const [link, setLink] = useState('');
+
 	return (
 		<>
 			{(!smDown && (
@@ -52,7 +57,7 @@ export default function CardGrid() {
 										<CardContent>
 											<Typography
 												gutterBottom
-												color={'HighlightText'}
+												color={'#000'}
 												fontFamily="Khand, sans-serif"
 												fontWeight={700}
 												fontSize="2.3rem"
@@ -64,6 +69,7 @@ export default function CardGrid() {
 											<Typography
 												gutterBottom
 												variant="h4"
+												color="#fff"
 												component="div"
 												textAlign="center"
 											>
@@ -75,7 +81,7 @@ export default function CardGrid() {
 											>
 												<span
 													style={{
-														color: 'HighlightText',
+														color: '#000',
 														fontFamily:
 															'Khand, sans-serif',
 														fontWeight: '400',
@@ -89,7 +95,7 @@ export default function CardGrid() {
 												</span>
 												<span
 													style={{
-														color: 'HighlightText',
+														color: '#000',
 														fontFamily:
 															'Khand, sans-serif',
 														fontWeight: '700',
@@ -107,6 +113,22 @@ export default function CardGrid() {
 									<ControlledRadioButtonsGroup />
 
 									<Box
+										id="btnPlus"
+										onClick={(e) => {
+											e.preventDefault();
+											setOpen(true);
+
+											const btnPlus =
+												document.getElementById(
+													'btnPlus',
+												);
+											const plus =
+												'https://api.whatsapp.com/send/?phone=5518997984039&text=Olá, gostaria de saber mais sobre o plano PLUS.&type=phone_number&app_absent=0';
+
+											if (btnPlus?.id === 'btnPlus') {
+												setLink(plus);
+											}
+										}}
 										component="button"
 										width="70%"
 										height="100%"
@@ -119,34 +141,33 @@ export default function CardGrid() {
 											backgroundColor: '#000',
 										}}
 									>
-										<a
-											href="https://api.whatsapp.com/send/?phone=5518997984039&text=Olá, gostaria de saber mais sobre o plano PLUS.&type=phone_number&app_absent=0"
+										{/* <a
+											href={link}
 											style={{ textDecoration: 'none' }}
-										>
-											<Box
-												width="95%"
-												height="90%"
-												border="0.15rem solid #f6b332"
-												borderRadius="0.5rem"
-												position="absolute"
-												top="0.2rem"
-												left="0.3rem"
-												sx={{
-													backgroundColor:
-														'transparent',
-												}}
-											></Box>
+										> */}
+										<Box
+											width="95%"
+											height="90%"
+											border="0.15rem solid #f6b332"
+											borderRadius="0.5rem"
+											position="absolute"
+											top="0.2rem"
+											left="0.3rem"
+											sx={{
+												backgroundColor: 'transparent',
+											}}
+										></Box>
 
-											<Typography
-												color={'whitesmoke'}
-												fontFamily="Khand, sans-serif"
-												fontWeight={700}
-												fontSize="1.5rem"
-												letterSpacing="0.1rem"
-											>
-												ASSINAR
-											</Typography>
-										</a>
+										<Typography
+											color={'whitesmoke'}
+											fontFamily="Khand, sans-serif"
+											fontWeight={700}
+											fontSize="1.5rem"
+											letterSpacing="0.1rem"
+										>
+											ASSINAR
+										</Typography>
+										{/* </a> */}
 									</Box>
 								</Container>
 							</Card>
@@ -175,7 +196,7 @@ export default function CardGrid() {
 										<CardContent>
 											<Typography
 												gutterBottom
-												color={'HighlightText'}
+												color={'#000'}
 												fontFamily="Khand, sans-serif"
 												fontWeight={700}
 												fontSize="2.3rem"
@@ -188,6 +209,7 @@ export default function CardGrid() {
 												gutterBottom
 												variant="h4"
 												component="div"
+												color="#fff"
 												textAlign="center"
 											>
 												4 SERVIÇOS
@@ -198,7 +220,7 @@ export default function CardGrid() {
 											>
 												<span
 													style={{
-														color: 'HighlightText',
+														color: '#000',
 														fontFamily:
 															'Khand, sans-serif',
 														fontWeight: '400',
@@ -212,7 +234,7 @@ export default function CardGrid() {
 												</span>
 												<span
 													style={{
-														color: 'HighlightText',
+														color: '#000',
 														fontFamily:
 															'Khand, sans-serif',
 														fontWeight: '700',
@@ -229,6 +251,7 @@ export default function CardGrid() {
 									</CardActionArea>
 									<ListaServico />
 									<Box
+										id="btnPremium"
 										component="button"
 										width="70%"
 										height="100%"
@@ -240,155 +263,50 @@ export default function CardGrid() {
 										sx={{
 											backgroundColor: '#000',
 										}}
+										onClick={(e) => {
+											e.preventDefault();
+											setOpen(true);
+
+											const btnPremium =
+												document.getElementById(
+													'btnPremium',
+												);
+											const premium =
+												'https://api.whatsapp.com/send/?phone=5518997984039&text=Olá, gostaria de saber mais sobre o plano PREMIUM.&type=phone_number&app_absent=0';
+
+											if (
+												btnPremium?.id === 'btnPremium'
+											) {
+												setLink(premium);
+											}
+										}}
 									>
-										<a
+										{/* <a
 											href="https://api.whatsapp.com/send/?phone=5518997984039&text=Olá, gostaria de saber mais sobre o plano PREMIUM.&type=phone_number&app_absent=0"
 											style={{ textDecoration: 'none' }}
+										> */}
+										<Box
+											width="95%"
+											height="90%"
+											border="0.15rem solid #f6b332"
+											borderRadius="0.5rem"
+											position="absolute"
+											top="0.2rem"
+											left="0.3rem"
+											sx={{
+												backgroundColor: 'transparent',
+											}}
+										></Box>
+										<Typography
+											color={'whitesmoke'}
+											fontFamily="Khand, sans-serif"
+											fontWeight={700}
+											fontSize="1.5rem"
+											letterSpacing="0.1rem"
 										>
-											<Box
-												width="95%"
-												height="90%"
-												border="0.15rem solid #f6b332"
-												borderRadius="0.5rem"
-												position="absolute"
-												top="0.2rem"
-												left="0.3rem"
-												sx={{
-													backgroundColor:
-														'transparent',
-												}}
-											></Box>
-											<Typography
-												color={'whitesmoke'}
-												fontFamily="Khand, sans-serif"
-												fontWeight={700}
-												fontSize="1.5rem"
-												letterSpacing="0.1rem"
-											>
-												ASSINAR
-											</Typography>
-										</a>
-									</Box>
-								</Container>
-							</Card>
-						</Grid>
-
-						<Grid item xs={2} sm={4} md={4}>
-							{/* MEDIUM */}
-
-							<Card
-								sx={{
-									width: '100%',
-									backgroundColor: '#f6b332',
-									padding: '0.2rem 0.2rem',
-								}}
-							>
-								<Container
-									disableGutters
-									sx={{
-										display: 'flex',
-										flexDirection: 'column',
-										alignItems: 'center',
-										border: '0.15rem solid #000',
-									}}
-								>
-									<CardActionArea>
-										<CardContent>
-											<Typography
-												gutterBottom
-												color={'HighlightText'}
-												fontFamily="Khand, sans-serif"
-												fontWeight={700}
-												fontSize="2.3rem"
-												letterSpacing="0.1rem"
-												textAlign="center"
-											>
-												MEDIUM
-											</Typography>
-											<Typography
-												gutterBottom
-												variant="h4"
-												component="div"
-												textAlign="center"
-											>
-												6 SERVIÇOS
-											</Typography>
-											<Typography
-												variant="body2"
-												textAlign="center"
-											>
-												<span
-													style={{
-														color: 'HighlightText',
-														fontFamily:
-															'Khand, sans-serif',
-														fontWeight: '400',
-														fontSize: '1.5rem',
-														letterSpacing: '0.1rem',
-														textAlign: 'center',
-													}}
-												>
-													De 240,00 por
-													<br />
-												</span>
-												<span
-													style={{
-														color: 'HighlightText',
-														fontFamily:
-															'Khand, sans-serif',
-														fontWeight: '700',
-														fontSize: '2rem',
-														letterSpacing: '0.1rem',
-														textAlign: 'center',
-													}}
-												>
-													R$ 180,00 <br />
-													por mês
-												</span>
-											</Typography>
-										</CardContent>
-									</CardActionArea>
-									<ControlledRadioButtonsGroup />
-									<Box
-										component="button"
-										width="70%"
-										height="100%"
-										margin="1rem 0"
-										border="none"
-										borderRadius="0.5rem"
-										zIndex="999999999999"
-										position="relative"
-										sx={{
-											backgroundColor: '#000',
-										}}
-									>
-										<a
-											href="https://api.whatsapp.com/send/?phone=5518997984039&text=Olá, gostaria de saber mais sobre o plano MEDIUM.&type=phone_number&app_absent=0"
-											style={{ textDecoration: 'none' }}
-										>
-											<Box
-												width="95%"
-												height="90%"
-												border="0.15rem solid #f6b332"
-												borderRadius="0.5rem"
-												position="absolute"
-												top="0.2rem"
-												left="0.3rem"
-												sx={{
-													backgroundColor:
-														'transparent',
-												}}
-											></Box>
-											<Typography
-												color={'whitesmoke'}
-												fontFamily="Khand, sans-serif"
-												fontWeight={700}
-												fontSize="1.5rem"
-												letterSpacing="0.1rem"
-											>
-												ASSINAR
-											</Typography>
-										</a>
+											ASSINAR
+										</Typography>
+										{/* </a> */}
 									</Box>
 								</Container>
 							</Card>
@@ -417,7 +335,7 @@ export default function CardGrid() {
 										<CardContent>
 											<Typography
 												gutterBottom
-												color={'HighlightText'}
+												color={'#000'}
 												fontFamily="Khand, sans-serif"
 												fontWeight={700}
 												fontSize="2.3rem"
@@ -429,7 +347,144 @@ export default function CardGrid() {
 											<Typography
 												gutterBottom
 												variant="h4"
+												color="#fff"
 												component="div"
+												textAlign="center"
+											>
+												6 SERVIÇOS
+											</Typography>
+											<Typography
+												variant="body2"
+												textAlign="center"
+											>
+												<span
+													style={{
+														color: '#000',
+														fontFamily:
+															'Khand, sans-serif',
+														fontWeight: '400',
+														fontSize: '1.5rem',
+														letterSpacing: '0.1rem',
+														textAlign: 'center',
+													}}
+												>
+													De 240,00 por
+													<br />
+												</span>
+												<span
+													style={{
+														color: '#000',
+														fontFamily:
+															'Khand, sans-serif',
+														fontWeight: '700',
+														fontSize: '2rem',
+														letterSpacing: '0.1rem',
+														textAlign: 'center',
+													}}
+												>
+													R$ 180,00 <br />
+													por mês
+												</span>
+											</Typography>
+										</CardContent>
+									</CardActionArea>
+									<ControlledRadioButtonsGroup />
+									<Box
+										id="btnPro"
+										component="button"
+										width="70%"
+										height="100%"
+										margin="1rem 0"
+										border="none"
+										borderRadius="0.5rem"
+										zIndex="999999999999"
+										position="relative"
+										sx={{
+											backgroundColor: '#000',
+										}}
+										onClick={(e) => {
+											e.preventDefault();
+											setOpen(true);
+
+											const btnPro =
+												document.getElementById(
+													'btnPro',
+												);
+											const pro =
+												'https://api.whatsapp.com/send/?phone=5518997984039&text=Olá, gostaria de saber mais sobre o plano PRO.&type=phone_number&app_absent=0';
+											if (btnPro?.id === 'btnPro') {
+												setLink(pro);
+											}
+										}}
+									>
+										{/* <a
+											href="https://api.whatsapp.com/send/?phone=5518997984039&text=Olá, gostaria de saber mais sobre o plano MEDIUM.&type=phone_number&app_absent=0"
+											style={{ textDecoration: 'none' }}
+										> */}
+										<Box
+											width="95%"
+											height="90%"
+											border="0.15rem solid #f6b332"
+											borderRadius="0.5rem"
+											position="absolute"
+											top="0.2rem"
+											left="0.3rem"
+											sx={{
+												backgroundColor: 'transparent',
+											}}
+										></Box>
+										<Typography
+											color={'whitesmoke'}
+											fontFamily="Khand, sans-serif"
+											fontWeight={700}
+											fontSize="1.5rem"
+											letterSpacing="0.1rem"
+										>
+											ASSINAR
+										</Typography>
+										{/* </a> */}
+									</Box>
+								</Container>
+							</Card>
+						</Grid>
+
+						<Grid item xs={2} sm={4} md={4}>
+							{/* GOLD */}
+
+							<Card
+								sx={{
+									width: '100%',
+									backgroundColor: '#f6b332',
+									padding: '0.2rem 0.2rem',
+								}}
+							>
+								<Container
+									disableGutters
+									sx={{
+										display: 'flex',
+										flexDirection: 'column',
+										alignItems: 'center',
+										border: '0.15rem solid #000',
+									}}
+								>
+									<CardActionArea>
+										<CardContent>
+											<Typography
+												gutterBottom
+												color={'#000'}
+												fontFamily="Khand, sans-serif"
+												fontWeight={700}
+												fontSize="2.3rem"
+												letterSpacing="0.1rem"
+												textAlign="center"
+											>
+												GOLD
+											</Typography>
+											<Typography
+												gutterBottom
+												variant="h4"
+												component="div"
+												color="#fff"
 												textAlign="center"
 											>
 												8 SERVIÇOS
@@ -440,7 +495,7 @@ export default function CardGrid() {
 											>
 												<span
 													style={{
-														color: 'HighlightText',
+														color: '#000',
 														fontFamily:
 															'Khand, sans-serif',
 														fontWeight: '400',
@@ -454,7 +509,7 @@ export default function CardGrid() {
 												</span>
 												<span
 													style={{
-														color: 'HighlightText',
+														color: '#000',
 														fontFamily:
 															'Khand, sans-serif',
 														fontWeight: '700',
@@ -471,6 +526,7 @@ export default function CardGrid() {
 									</CardActionArea>
 									<ControlledRadioButtonsGroup />
 									<Box
+										id="btnGold"
 										component="button"
 										width="70%"
 										height="100%"
@@ -482,39 +538,59 @@ export default function CardGrid() {
 										sx={{
 											backgroundColor: '#000',
 										}}
+										onClick={(e) => {
+											e.preventDefault();
+											setOpen(true);
+
+											const btnGold =
+												document.getElementById(
+													'btnGold',
+												);
+											const gold =
+												'https://api.whatsapp.com/send/?phone=5518997984039&text=Olá, gostaria de saber mais sobre o plano GOLD.&type=phone_number&app_absent=0';
+
+											if (btnGold?.id === 'btnGold') {
+												setLink(gold);
+											}
+										}}
 									>
-										<a
+										{/* <a
 											href="https://api.whatsapp.com/send/?phone=5518997984039&text=Olá, gostaria de saber mais sobre o plano PRO.&type=phone_number&app_absent=0"
 											style={{ textDecoration: 'none' }}
+										> */}
+										<Box
+											width="95%"
+											height="90%"
+											border="0.15rem solid #f6b332"
+											borderRadius="0.5rem"
+											position="absolute"
+											top="0.2rem"
+											left="0.3rem"
+											sx={{
+												backgroundColor: 'transparent',
+											}}
+										></Box>
+										<Typography
+											color={'whitesmoke'}
+											fontFamily="Khand, sans-serif"
+											fontWeight={700}
+											fontSize="1.5rem"
+											letterSpacing="0.1rem"
 										>
-											<Box
-												width="95%"
-												height="90%"
-												border="0.15rem solid #f6b332"
-												borderRadius="0.5rem"
-												position="absolute"
-												top="0.2rem"
-												left="0.3rem"
-												sx={{
-													backgroundColor:
-														'transparent',
-												}}
-											></Box>
-											<Typography
-												color={'whitesmoke'}
-												fontFamily="Khand, sans-serif"
-												fontWeight={700}
-												fontSize="1.5rem"
-												letterSpacing="0.1rem"
-											>
-												ASSINAR
-											</Typography>
-										</a>
+											ASSINAR
+										</Typography>
+										{/* </a> */}
 									</Box>
 								</Container>
 							</Card>
 						</Grid>
 					</Grid>
+					<Modal
+						open={open}
+						setOpen={setOpen}
+						link={link}
+						setLink={setLink}
+					/>
 				</>
 			)) || <ActionAreaCard />}
 		</>
