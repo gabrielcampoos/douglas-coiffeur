@@ -118,7 +118,7 @@ const Servicos = () => {
 											</span>
 										</Typography>
 									</Section>
-									<Box height="900px">
+									<Box height="1000px">
 										<img
 											src={NewBannerInterior}
 											width="100%"
