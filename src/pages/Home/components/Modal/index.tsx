@@ -1,3 +1,4 @@
+import { useMediaQuery, useTheme } from '@mui/material';
 import Button from '@mui/material/Button';
 import Dialog from '@mui/material/Dialog';
 import DialogActions from '@mui/material/DialogActions';
@@ -16,6 +17,9 @@ interface IModal {
 }
 
 export const Modal: React.FC<IModal> = ({ open, setOpen, link, setLink }) => {
+	const theme = useTheme();
+	const smDown = useMediaQuery(theme.breakpoints.down('sm'));
+	const mdDown = useMediaQuery(theme.breakpoints.down('md'));
 	// const btnPlus = document.getElementById('btnPlus');
 	// const btnPremium = document.getElementById('btnPremium');
 	// const btnPro = document.getElementById('btnPro');
@@ -54,20 +58,55 @@ export const Modal: React.FC<IModal> = ({ open, setOpen, link, setLink }) => {
 				{'ATENÇÃO!'}
 			</DialogTitle>
 			<DialogContent>
-				<DialogContentText
-					id="alert-dialog-description"
-					color="#000"
-					fontFamily="Khand, sans-serif"
-					fontWeight="700"
-					fontSize="1.1rem"
-					// letterSpacing="0.1rem"
-					textAlign="justify"
-				>
-					Em caso de cancelamento, pedimos que nos informe com no
-					mínimo <span style={{ color: 'red' }}>TRÊS HORAS</span> de
-					antecedência ou o serviço será debitado normalmente por
-					falta de aviso.
-				</DialogContentText>
+				{(smDown && (
+					<DialogContentText
+						id="alert-dialog-description"
+						color="#000"
+						fontFamily="Khand, sans-serif"
+						fontWeight="700"
+						fontSize="1rem"
+						// letterSpacing="0.1rem"
+						textAlign="justify"
+					>
+						Em caso de cancelamento, pedimos que nos informe com no
+						mínimo <span style={{ color: 'red' }}>TRÊS HORAS</span>{' '}
+						de antecedência ou o serviço será debitado normalmente
+						por falta de aviso.
+					</DialogContentText>
+				)) ||
+					(mdDown && (
+						<DialogContentText
+							id="alert-dialog-description"
+							color="#000"
+							fontFamily="Khand, sans-serif"
+							fontWeight="700"
+							fontSize="1.1rem"
+							// letterSpacing="0.1rem"
+							textAlign="justify"
+						>
+							Em caso de cancelamento, pedimos que nos informe com
+							no mínimo{' '}
+							<span style={{ color: 'red' }}>TRÊS HORAS</span> de
+							antecedência ou o serviço será debitado normalmente
+							por falta de aviso.
+						</DialogContentText>
+					)) || (
+						<DialogContentText
+							id="alert-dialog-description"
+							color="#000"
+							fontFamily="Khand, sans-serif"
+							fontWeight="700"
+							fontSize="1.1rem"
+							// letterSpacing="0.1rem"
+							textAlign="justify"
+						>
+							Em caso de cancelamento, pedimos que nos informe com
+							no mínimo{' '}
+							<span style={{ color: 'red' }}>TRÊS HORAS</span> de
+							antecedência ou o serviço será debitado normalmente
+							por falta de aviso.
+						</DialogContentText>
+					)}
 			</DialogContent>
 			<DialogActions>
 				<Button
