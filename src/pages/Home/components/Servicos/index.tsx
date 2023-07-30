@@ -97,7 +97,7 @@ const Servicos = () => {
 											fontFamily="Khand, sans-serif"
 											fontWeight={900}
 											zIndex="1"
-											paddingTop="25rem"
+											paddingTop="30rem"
 											paddingLeft="1rem"
 											position="absolute"
 										>
@@ -212,7 +212,7 @@ const Servicos = () => {
 											fontFamily="Khand, sans-serif"
 											fontWeight={900}
 											zIndex="1"
-											paddingTop="25rem"
+											paddingTop="35rem"
 											paddingLeft="1rem"
 											position="absolute"
 										>
