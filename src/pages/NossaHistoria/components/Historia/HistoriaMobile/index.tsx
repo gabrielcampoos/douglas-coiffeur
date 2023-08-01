@@ -9,6 +9,7 @@ import {
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 
+import Logo from '../../../../../assets/images/logo-def.jpg';
 import CarouselMobile from '../../Carousel/CarouselMobile';
 import EstruturaMobile from '../../Estrutura/EstruturaMobile';
 
@@ -185,18 +186,18 @@ const HistoriaMobile = () => {
 										fontFamily="Khand, sans-serif"
 										fontSize="1.2rem"
 									>
-										<Box width="15%">
+										<Box width="8%">
 											<img
 												width="100%"
 												alt="Logo Douglas Coiffeur"
-												src="https://scontent.fmii3-1.fna.fbcdn.net/v/t39.30808-6/348239462_3544405635885761_1688043728463422154_n.jpg?stp=cp0_dst-jpg_e15_p320x320_q65&_nc_cat=106&ccb=1-7&_nc_sid=85a577&_nc_ohc=kIUIeMtK8PoAX8lCwvo&_nc_ht=scontent.fmii3-1.fna&oh=00_AfADJdFXP97sZV8ORkKVuPtKdYWxHh9Kj-ktTp6nQEBKLw&oe=64C37166"
+												src={Logo}
 												style={{
 													borderRadius: '2rem',
 												}}
 											/>
 										</Box>
 
-										<Box width="80%">
+										<Box width="60%">
 											Nos siga no instagram.
 										</Box>
 									</Typography>
