@@ -15,7 +15,7 @@ import {
 	default as ControlledRadioButtonsGroup,
 	default as ListaServico,
 } from '../ListaServico';
-import { Modal } from '../Modal';
+import SnackbarCookies from '../Snackbar';
 import ActionAreaCard from './CardMobile';
 
 export default function CardGrid() {
@@ -69,7 +69,7 @@ export default function CardGrid() {
 											<Typography
 												gutterBottom
 												variant="h4"
-												color="#fff"
+												color="#000"
 												component="div"
 												textAlign="center"
 											>
@@ -98,13 +98,26 @@ export default function CardGrid() {
 														color: '#000',
 														fontFamily:
 															'Khand, sans-serif',
-														fontWeight: '700',
-														fontSize: '2rem',
+														fontWeight: '400',
+														fontSize: '1.5rem',
 														letterSpacing: '0.1rem',
 														textAlign: 'center',
 													}}
 												>
-													R$ 70,00 <br />
+													<span
+														style={{
+															color: '#fff',
+															fontWeight: '700',
+															fontSize: '2rem',
+															WebkitTextStrokeWidth:
+																'1px',
+															WebkitTextStrokeColor:
+																'#000',
+														}}
+													>
+														R$ 70,00
+													</span>{' '}
+													<br />
 													por mês
 												</span>
 											</Typography>
@@ -209,7 +222,7 @@ export default function CardGrid() {
 												gutterBottom
 												variant="h4"
 												component="div"
-												color="#fff"
+												color="#000"
 												textAlign="center"
 											>
 												4 SERVIÇOS
@@ -231,19 +244,24 @@ export default function CardGrid() {
 												>
 													De 160,00 por
 													<br />
-												</span>
-												<span
-													style={{
-														color: '#000',
-														fontFamily:
-															'Khand, sans-serif',
-														fontWeight: '700',
-														fontSize: '2rem',
-														letterSpacing: '0.1rem',
-														textAlign: 'center',
-													}}
-												>
-													R$ 120,00 <br />
+													<span
+														style={{
+															color: '#fff',
+															fontFamily:
+																'Khand, sans-serif',
+															fontWeight: '700',
+															fontSize: '2rem',
+															letterSpacing:
+																'0.1rem',
+															textAlign: 'center',
+															WebkitTextStrokeWidth:
+																'1px',
+															WebkitTextStrokeColor:
+																'#000',
+														}}
+													>
+														R$ 120,00 <br />
+													</span>
 													por mês
 												</span>
 											</Typography>
@@ -347,7 +365,7 @@ export default function CardGrid() {
 											<Typography
 												gutterBottom
 												variant="h4"
-												color="#fff"
+												color="#000"
 												component="div"
 												textAlign="center"
 											>
@@ -370,19 +388,24 @@ export default function CardGrid() {
 												>
 													De 240,00 por
 													<br />
-												</span>
-												<span
-													style={{
-														color: '#000',
-														fontFamily:
-															'Khand, sans-serif',
-														fontWeight: '700',
-														fontSize: '2rem',
-														letterSpacing: '0.1rem',
-														textAlign: 'center',
-													}}
-												>
-													R$ 180,00 <br />
+													<span
+														style={{
+															color: '#fff',
+															fontFamily:
+																'Khand, sans-serif',
+															fontWeight: '700',
+															fontSize: '2rem',
+															letterSpacing:
+																'0.1rem',
+															textAlign: 'center',
+															WebkitTextStrokeWidth:
+																'1px',
+															WebkitTextStrokeColor:
+																'#000',
+														}}
+													>
+														R$ 180,00 <br />
+													</span>
 													por mês
 												</span>
 											</Typography>
@@ -484,7 +507,7 @@ export default function CardGrid() {
 												gutterBottom
 												variant="h4"
 												component="div"
-												color="#fff"
+												color="#000"
 												textAlign="center"
 											>
 												8 SERVIÇOS
@@ -506,19 +529,24 @@ export default function CardGrid() {
 												>
 													De 320,00 por
 													<br />
-												</span>
-												<span
-													style={{
-														color: '#000',
-														fontFamily:
-															'Khand, sans-serif',
-														fontWeight: '700',
-														fontSize: '2rem',
-														letterSpacing: '0.1rem',
-														textAlign: 'center',
-													}}
-												>
-													R$ 240,00 <br />
+													<span
+														style={{
+															color: '#fff',
+															fontFamily:
+																'Khand, sans-serif',
+															fontWeight: '700',
+															fontSize: '2rem',
+															letterSpacing:
+																'0.1rem',
+															textAlign: 'center',
+															WebkitTextStrokeWidth:
+																'1px',
+															WebkitTextStrokeColor:
+																'#000',
+														}}
+													>
+														R$ 240,00 <br />
+													</span>
 													por mês
 												</span>
 											</Typography>
@@ -585,7 +613,13 @@ export default function CardGrid() {
 							</Card>
 						</Grid>
 					</Grid>
-					<Modal
+					{/* <Modal
+						open={open}
+						setOpen={setOpen}
+						link={link}
+						setLink={setLink}
+					/> */}
+					<SnackbarCookies
 						open={open}
 						setOpen={setOpen}
 						link={link}

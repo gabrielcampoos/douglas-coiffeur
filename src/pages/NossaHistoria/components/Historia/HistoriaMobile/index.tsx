@@ -68,35 +68,40 @@ const HistoriaMobile = () => {
 						textAlign="justify"
 						mb={5}
 					>
-						Lorem ipsum dolor sit amet, consectetur adipisicing
-						elit. Laboriosam, aliquid? Illum iusto fuga nisi nam
-						quam ducimus eum iste quibusdam voluptatibus cum porro
-						autem, consequatur rem dolorem quod consectetur
-						asperiores temporibus delectus quisquam. Mollitia nam
-						non voluptatem, repellendus ipsa consequuntur at
-						voluptatibus beatae, aut nostrum labore atque? Mollitia
-						quo amet, neque nihil saepe minima possimus hic libero,
-						quam qui, illo quasi earum quidem ex odit!
-						Exercitationem molestiae a iste maiores, dolorem debitis
-						distinctio est tempore asperiores inventore quas! Veniam
-						eos commodi corporis quos, ratione optio ipsam ex quis
-						assumenda, beatae eligendi quaerat. Ipsa inventore
-						architecto beatae voluptate temporibus dolores,
-						consequatur, ullam autem sed at corporis nesciunt qui ad
-						voluptatibus, corrupti labore cum. Totam excepturi earum
-						accusamus quos vero, exercitationem numquam amet
-						distinctio accusantium repellat neque necessitatibus nam
-						tempore asperiores tempora voluptatem aperiam itaque ad
-						dolore eaque quidem iure aliquid. Quod quaerat
-						laboriosam maiores pariatur eos minima consectetur
-						deleniti quasi. Fugit, laboriosam. Sequi quasi
-						laudantium, enim commodi numquam accusamus quos omnis
-						rem quas voluptate! Soluta eum iure ducimus corrupti
-						esse, cupiditate quos temporibus perferendis. Eius,
-						possimus qui quasi deserunt necessitatibus quae quis
-						blanditiis, velit quidem itaque rerum culpa incidunt
-						illum recusandae saepe amet aliquid fuga nemo, corrupti
-						corporis minus. Tempore, sint.
+						Bem-vindo à nossa barbearia! Desde que abrimos nossas
+						portas em 2018, estamos empenhados em proporcionar uma
+						experiência excepcional de cuidados masculinos. Nosso
+						compromisso com a excelência nos levou a buscar
+						constantemente elevar o padrão dos nossos serviços a
+						cada ano. Aqui na nossa barbearia, não nos contentamos
+						com o status quo. Nossa missão é ser a referência
+						definitiva na cidade quando se trata de serviços de
+						barbearia e cuidados pessoais para homens. Para alcançar
+						esse objetivo, nos esforçamos para oferecer cortes e
+						barbas impecáveis, estilos inovadores e um atendimento
+						personalizado que supera as expectativas dos nossos
+						clientes. Cada visita à nossa barbearia é uma
+						oportunidade para nos aprimorarmos e crescermos junto
+						com a nossa comunidade. Apreciamos e valorizamos a
+						confiança que nossos clientes depositam em nós, e é por
+						isso que trabalhamos incansavelmente para garantir que
+						cada cliente saia satisfeito e confiante com sua
+						aparência. Nossa equipe de barbeiros altamente
+						qualificados e dedicados. <br />
+						<br />
+						Nossa equipe está pronta para oferecer os melhores
+						serviços e cuidados, utilizando técnicas modernas e
+						produtos de alta qualidade.
+						<br />
+						<br />
+						Venha fazer parte da nossa jornada de crescimento e
+						descubra por que somos mais do que uma simples
+						barbearia. Somos uma comunidade de homens que valorizam
+						a aparência e o bem-estar, e estamos ansiosos para
+						recebê-lo com os braços abertos. Junte-se a nós e
+						experimente a diferença de uma barbearia que se esforça
+						continuamente para subir de nível e se destacar como
+						referência na cidade.
 					</Typography>
 				</Box>
 

@@ -40,6 +40,7 @@ export const Modal: React.FC<IModal> = ({ open, setOpen, link, setLink }) => {
 		<Dialog
 			sx={{ zIndex: '9999999999' }}
 			fullWidth
+			maxWidth="xl"
 			open={open}
 			onClose={() => setOpen(false)}
 			aria-labelledby="alert-dialog-title"

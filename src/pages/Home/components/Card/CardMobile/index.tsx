@@ -14,7 +14,7 @@ import {
 	default as ControlledRadioButtonsGroup,
 	default as ListaServico,
 } from '../../ListaServico';
-import { Modal } from '../../Modal';
+import SnackbarCookies from '../../Snackbar';
 
 export default function ActionAreaCard() {
 	const theme = useTheme();
@@ -75,18 +75,20 @@ export default function ActionAreaCard() {
 								>
 									De 80,00 por
 									<br />
-								</span>
-								<span
-									style={{
-										color: '#000',
-										fontFamily: 'Khand, sans-serif',
-										fontWeight: '700',
-										fontSize: '2rem',
-										letterSpacing: '0.1rem',
-										textAlign: 'center',
-									}}
-								>
-									R$ 70,00 <br />
+									<span
+										style={{
+											color: '#fff',
+											fontFamily: 'Khand, sans-serif',
+											fontWeight: '700',
+											fontSize: '2rem',
+											letterSpacing: '0.1rem',
+											textAlign: 'center',
+											WebkitTextStrokeWidth: '1px',
+											WebkitTextStrokeColor: '#000',
+										}}
+									>
+										R$ 70,00 <br />
+									</span>
 									por mês
 								</span>
 							</Typography>
@@ -203,18 +205,20 @@ export default function ActionAreaCard() {
 								>
 									De 160,00 por
 									<br />
-								</span>
-								<span
-									style={{
-										color: '#000',
-										fontFamily: 'Khand, sans-serif',
-										fontWeight: '700',
-										fontSize: '2rem',
-										letterSpacing: '0.1rem',
-										textAlign: 'center',
-									}}
-								>
-									R$ 120,00 <br />
+									<span
+										style={{
+											color: '#fff',
+											fontFamily: 'Khand, sans-serif',
+											fontWeight: '700',
+											fontSize: '2rem',
+											letterSpacing: '0.1rem',
+											textAlign: 'center',
+											WebkitTextStrokeWidth: '1px',
+											WebkitTextStrokeColor: '#000',
+										}}
+									>
+										R$ 120,00 <br />
+									</span>
 									por mês
 								</span>
 							</Typography>
@@ -330,18 +334,20 @@ export default function ActionAreaCard() {
 								>
 									De 240,00 por
 									<br />
-								</span>
-								<span
-									style={{
-										color: '#000',
-										fontFamily: 'Khand, sans-serif',
-										fontWeight: '700',
-										fontSize: '2rem',
-										letterSpacing: '0.1rem',
-										textAlign: 'center',
-									}}
-								>
-									R$ 180,00 <br />
+									<span
+										style={{
+											color: '#fff',
+											fontFamily: 'Khand, sans-serif',
+											fontWeight: '700',
+											fontSize: '2rem',
+											letterSpacing: '0.1rem',
+											textAlign: 'center',
+											WebkitTextStrokeWidth: '1px',
+											WebkitTextStrokeColor: '#000',
+										}}
+									>
+										R$ 180,00 <br />
+									</span>
 									por mês
 								</span>
 							</Typography>
@@ -455,18 +461,20 @@ export default function ActionAreaCard() {
 								>
 									De 320,00 por
 									<br />
-								</span>
-								<span
-									style={{
-										color: '#000',
-										fontFamily: 'Khand, sans-serif',
-										fontWeight: '700',
-										fontSize: '2rem',
-										letterSpacing: '0.1rem',
-										textAlign: 'center',
-									}}
-								>
-									R$ 240,00 <br />
+									<span
+										style={{
+											color: '#fff',
+											fontFamily: 'Khand, sans-serif',
+											fontWeight: '700',
+											fontSize: '2rem',
+											letterSpacing: '0.1rem',
+											textAlign: 'center',
+											WebkitTextStrokeWidth: '1px',
+											WebkitTextStrokeColor: '#000',
+										}}
+									>
+										R$ 240,00 <br />
+									</span>
 									por mês
 								</span>
 							</Typography>
@@ -528,7 +536,13 @@ export default function ActionAreaCard() {
 					</Box>
 				</Container>
 			</Card>
-			<Modal
+			{/* <Modal
+				open={open}
+				setOpen={setOpen}
+				link={link}
+				setLink={setLink}
+			/> */}
+			<SnackbarCookies
 				open={open}
 				setOpen={setOpen}
 				link={link}

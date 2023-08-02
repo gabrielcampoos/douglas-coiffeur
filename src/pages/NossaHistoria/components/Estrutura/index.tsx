@@ -10,6 +10,7 @@ import {
 	useTheme,
 } from '@mui/material';
 
+import Logo from '../../../../assets/images/logo.png';
 import ListaImagens from '../ListaImagens';
 import EstruturaMd from './EstruturaMd';
 import EstruturaMobile from './EstruturaMobile';
@@ -85,47 +86,58 @@ const Estrutura = () => {
 										textAlign="justify"
 										mb={5}
 									>
-										Lorem ipsum dolor sit amet, consectetur
-										adipisicing elit. Laboriosam, aliquid?
-										Illum iusto fuga nisi nam quam ducimus
-										eum iste quibusdam voluptatibus cum
-										porro autem, consequatur rem dolorem
-										quod consectetur asperiores temporibus
-										delectus quisquam. Mollitia nam non
-										voluptatem, repellendus ipsa
-										consequuntur at voluptatibus beatae, aut
-										nostrum labore atque? Mollitia quo amet,
-										neque nihil saepe minima possimus hic
-										libero, quam qui, illo quasi earum
-										quidem ex odit! Exercitationem molestiae
-										a iste maiores, dolorem debitis
-										distinctio est tempore asperiores
-										inventore quas! Veniam eos commodi
-										corporis quos, ratione optio ipsam ex
-										quis assumenda, beatae eligendi quaerat.
-										Ipsa inventore architecto beatae
-										voluptate temporibus dolores,
-										consequatur, ullam autem sed at corporis
-										nesciunt qui ad voluptatibus, corrupti
-										labore cum. Totam excepturi earum
-										accusamus quos vero, exercitationem
-										numquam amet distinctio accusantium
-										repellat neque necessitatibus nam
-										tempore asperiores tempora voluptatem
-										aperiam itaque ad dolore eaque quidem
-										iure aliquid. Quod quaerat laboriosam
-										maiores pariatur eos minima consectetur
-										deleniti quasi. Fugit, laboriosam. Sequi
-										quasi laudantium, enim commodi numquam
-										accusamus quos omnis rem quas voluptate!
-										Soluta eum iure ducimus corrupti esse,
-										cupiditate quos temporibus perferendis.
-										Eius, possimus qui quasi deserunt
-										necessitatibus quae quis blanditiis,
-										velit quidem itaque rerum culpa incidunt
-										illum recusandae saepe amet aliquid fuga
-										nemo, corrupti corporis minus. Tempore,
-										sint.
+										Bem-vindo à nossa barbearia, onde o
+										estilo vintage encontra a modernidade em
+										perfeita harmonia! Nossa estrutura foi
+										cuidadosamente projetada para
+										proporcionar a você uma experiência
+										única de cuidados pessoais.
+										<br />
+										<br />
+										Ao entrar em nosso espaço, você será
+										imerso em um ambiente acolhedor e
+										descontraído. As cores neutras e o
+										design vintage moderno criam uma
+										atmosfera elegante e sofisticada,
+										tornando a sua visita não apenas um
+										corte de cabelo, mas uma verdadeira
+										experiência.
+										<br />
+										<br />
+										Nosso ambiente climatizado garante o
+										máximo conforto em todas as estações,
+										para que você se sinta relaxado e à
+										vontade durante todo o serviço. E para
+										tornar sua experiência ainda mais
+										agradável, oferecemos um café moído na
+										hora para os amantes dessa bebida
+										estimulante, além de uma cerveja gelada
+										para quem prefere um brinde especial
+										durante o tratamento.
+										<br />
+										<br />
+										Nossas cadeiras de barbeiro de altíssima
+										qualidade foram selecionadas para
+										garantir o máximo de conforto e precisão
+										em cada corte e barba. Nossos barbeiros
+										altamente habilidosos estão prontos para
+										transformar sua aparência e realçar sua
+										melhor versão.
+										<br />
+										<br />
+										Venha desfrutar de uma recepção calorosa
+										em nosso espaço aconchegante e desfrute
+										de uma experiência de barbearia que
+										transcende o simples ato de cuidar da
+										aparência. Aqui, você encontrará uma
+										combinação perfeita entre o passado e o
+										presente, onde a tradição e a
+										modernidade se unem para oferecer a você
+										uma experiência verdadeiramente
+										memorável. Estamos ansiosos para
+										recebê-lo em nossa barbearia e
+										compartilhar momentos especiais enquanto
+										cuidamos do seu estilo e bem-estar.
 									</Typography>
 								</Box>
 							</Container>
@@ -139,11 +151,11 @@ const Estrutura = () => {
 									justifyContent: 'center',
 								}}
 							>
-								<Box width="100%" alignSelf="start">
+								<Box width="100%" padding="0 1rem" m="2rem 0">
 									<img
-										width="270px"
+										width="70px"
 										alt="Logo Douglas Coiffeur"
-										src="https://scontent.fmii3-1.fna.fbcdn.net/v/t39.30808-6/348239462_3544405635885761_1688043728463422154_n.jpg?stp=cp0_dst-jpg_e15_p320x320_q65&_nc_cat=106&ccb=1-7&_nc_sid=85a577&_nc_ohc=kIUIeMtK8PoAX8lCwvo&_nc_ht=scontent.fmii3-1.fna&oh=00_AfADJdFXP97sZV8ORkKVuPtKdYWxHh9Kj-ktTp6nQEBKLw&oe=64C37166"
+										src={Logo}
 									/>
 								</Box>
 								<Box
