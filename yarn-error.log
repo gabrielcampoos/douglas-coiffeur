@@ -1,26 +1,26 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Users\User\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add @types/react-grid-carousel
+  C:\Program Files\nodejs\node.exe C:\Users\gabri\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add -D @types/react-player
 
 PATH: 
-  C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Users\User\AppData\Local\Microsoft\WindowsApps;;C:\Users\User\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\User\AppData\Roaming\npm
+  C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\Program Files\nodejs;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Users\gabri\AppData\Local\Microsoft\WindowsApps;C:\Users\gabri\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\gabri\AppData\Roaming\Composer\vendor\bin;C:\Program Files\Git\bin;C:\Users\gabri\AppData\Roaming\npm
 
 Yarn version: 
   1.22.19
 
 Node version: 
-  18.16.1
+  18.15.0
 
 Platform: 
   win32 x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/@types%2freact-grid-carousel: Not found
-      at params.callback [as _callback] (C:\Users\User\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:66145:18)
-      at self.callback (C:\Users\User\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:140890:22)
+  Error: https://registry.yarnpkg.com/@types%2freact-player: Not found
+      at params.callback [as _callback] (C:\Users\gabri\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:66145:18)
+      at self.callback (C:\Users\gabri\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:140890:22)
       at Request.emit (node:events:513:28)
-      at Request.<anonymous> (C:\Users\User\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:141862:10)
+      at Request.<anonymous> (C:\Users\gabri\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:141862:10)
       at Request.emit (node:events:513:28)
-      at IncomingMessage.<anonymous> (C:\Users\User\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:141784:12)
+      at IncomingMessage.<anonymous> (C:\Users\gabri\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:141784:12)
       at Object.onceWrapper (node:events:627:28)
       at IncomingMessage.emit (node:events:525:35)
       at endReadableNT (node:internal/streams/readable:1359:12)
@@ -43,6 +43,7 @@ npm manifest:
   		"format": "npm run prettier:fix && npm run lint:fix"
   	},
   	"dependencies": {
+  		"3d-react-carousal": "^5.0.0",
   		"@emotion/react": "^11.11.1",
   		"@emotion/styled": "^11.10.6",
   		"@motionone/utils": "^10.15.1",
@@ -55,30 +56,36 @@ npm manifest:
   		"@types/react-router-dom": "^5.3.3",
   		"@types/react-swipeable-views": "^0.13.2",
   		"@types/react-swipeable-views-utils": "^0.13.4",
-  		"3d-react-carousal": "^5.0.0",
   		"axios": "^1.4.0",
   		"bootstrap": "^5.3.0",
   		"framer-motion": "^10.12.22",
   		"react": "^18.2.0",
+  		"react-alice-carousel": "^2.7.1",
   		"react-awesome-reveal": "^4.2.5",
   		"react-awesome-slider": "^4.1.0",
   		"react-bootstrap": "^2.8.0",
   		"react-dom": "^18.2.0",
   		"react-grid-carousel": "^1.0.1",
   		"react-multi-carousel": "^2.8.4",
+  		"react-player": "^2.12.0",
   		"react-redux": "^8.0.5",
   		"react-reveal": "^1.2.2",
   		"react-router-dom": "^6.14.2",
+  		"react-simply-carousel": "^9.0.4",
   		"react-swipeable": "^7.0.1",
+  		"react-touch-carousel": "^0.10.2",
+  		"redux": "^4.2.1",
   		"redux-persist": "^6.0.0",
   		"styled-components": "^5.3.9",
-  		"uuid": "^9.0.0"
+  		"uuid": "^9.0.0",
+  		"video-react": "^0.16.0"
   	},
   	"devDependencies": {
   		"@types/react": "^18.2.15",
   		"@types/react-dom": "^18.0.11",
   		"@types/styled-components": "^5.1.26",
   		"@types/uuid": "^9.0.2",
+  		"@types/video-react": "^0.15.1",
   		"@typescript-eslint/eslint-plugin": "^5.58.0",
   		"@typescript-eslint/parser": "^5.58.0",
   		"@vitejs/plugin-react": "^3.1.0",
@@ -298,7 +305,7 @@ Lockfile:
     dependencies:
       "@babel/helper-plugin-utils" "^7.19.0"
   
-  "@babel/runtime@^7.12.1", "@babel/runtime@^7.12.5", "@babel/runtime@^7.18.3", "@babel/runtime@^7.21.0", "@babel/runtime@^7.22.5", "@babel/runtime@^7.22.6", "@babel/runtime@^7.5.5", "@babel/runtime@^7.6.3", "@babel/runtime@^7.8.7", "@babel/runtime@^7.9.2":
+  "@babel/runtime@^7.12.1", "@babel/runtime@^7.12.5", "@babel/runtime@^7.18.3", "@babel/runtime@^7.21.0", "@babel/runtime@^7.22.5", "@babel/runtime@^7.22.6", "@babel/runtime@^7.4.5", "@babel/runtime@^7.5.5", "@babel/runtime@^7.6.3", "@babel/runtime@^7.8.7", "@babel/runtime@^7.9.2":
     version "7.22.6"
     resolved "https://registry.npmjs.org/@babel/runtime/-/runtime-7.22.6.tgz"
     integrity sha512-wDb5pWm4WDdF6LFUde3Jl8WzPA+3ZbxYqkC6xAXuD3irdEHN1k0NfTRrJD8ZD378SJ61miMLCqIOXYhd8x+AJQ==
@@ -833,6 +840,45 @@ Lockfile:
     dependencies:
       "@swc/helpers" "^0.5.0"
   
+  "@react-spring/animated@~9.7.3":
+    version "9.7.3"
+    resolved "https://registry.npmjs.org/@react-spring/animated/-/animated-9.7.3.tgz"
+    integrity sha512-5CWeNJt9pNgyvuSzQH+uy2pvTg8Y4/OisoscZIR8/ZNLIOI+CatFBhGZpDGTF/OzdNFsAoGk3wiUYTwoJ0YIvw==
+    dependencies:
+      "@react-spring/shared" "~9.7.3"
+      "@react-spring/types" "~9.7.3"
+  
+  "@react-spring/core@~9.7.3":
+    version "9.7.3"
+    resolved "https://registry.npmjs.org/@react-spring/core/-/core-9.7.3.tgz"
+    integrity sha512-IqFdPVf3ZOC1Cx7+M0cXf4odNLxDC+n7IN3MDcVCTIOSBfqEcBebSv+vlY5AhM0zw05PDbjKrNmBpzv/AqpjnQ==
+    dependencies:
+      "@react-spring/animated" "~9.7.3"
+      "@react-spring/shared" "~9.7.3"
+      "@react-spring/types" "~9.7.3"
+  
+  "@react-spring/shared@~9.7.3":
+    version "9.7.3"
+    resolved "https://registry.npmjs.org/@react-spring/shared/-/shared-9.7.3.tgz"
+    integrity sha512-NEopD+9S5xYyQ0pGtioacLhL2luflh6HACSSDUZOwLHoxA5eku1UPuqcJqjwSD6luKjjLfiLOspxo43FUHKKSA==
+    dependencies:
+      "@react-spring/types" "~9.7.3"
+  
+  "@react-spring/types@~9.7.3":
+    version "9.7.3"
+    resolved "https://registry.npmjs.org/@react-spring/types/-/types-9.7.3.tgz"
+    integrity sha512-Kpx/fQ/ZFX31OtlqVEFfgaD1ACzul4NksrvIgYfIFq9JpDHFwQkMVZ10tbo0FU/grje4rcL4EIrjekl3kYwgWw==
+  
+  "@react-spring/web@^9.2.4":
+    version "9.7.3"
+    resolved "https://registry.npmjs.org/@react-spring/web/-/web-9.7.3.tgz"
+    integrity sha512-BXt6BpS9aJL/QdVqEIX9YoUy8CE6TJrU0mNCqSoxdXlIeNcEBWOfIyE6B14ENNsyQKS3wOWkiJfco0tCr/9tUg==
+    dependencies:
+      "@react-spring/animated" "~9.7.3"
+      "@react-spring/core" "~9.7.3"
+      "@react-spring/shared" "~9.7.3"
+      "@react-spring/types" "~9.7.3"
+  
   "@reduxjs/toolkit@^1.9.5":
     version "1.9.5"
     resolved "https://registry.npmjs.org/@reduxjs/toolkit/-/toolkit-1.9.5.tgz"
@@ -1025,6 +1071,13 @@ Lockfile:
     version "9.0.2"
     resolved "https://registry.npmjs.org/@types/uuid/-/uuid-9.0.2.tgz"
     integrity sha512-kNnC1GFBLuhImSnV7w4njQkUiJi0ZXUycu1rUaouPqiKlXkh77JKgdRnTAp1x5eBwcIwbtI+3otwzuIDEuDoxQ==
+  
+  "@types/video-react@^0.15.1":
+    version "0.15.1"
+    resolved "https://registry.yarnpkg.com/@types/video-react/-/video-react-0.15.1.tgz#b706b642356e367bfff4da87aea28fbaf4a8cf6b"
+    integrity sha512-OFndW9sVCX7yTHnt6cGWE88IAVMm6RcS4YN15N+i0o5yYDFQhPc3ChmiyNkQXk6HuBBLQDu6Fyy5FH3Dv/F5IA==
+    dependencies:
+      "@types/react" "*"
   
   "@types/warning@^3.0.0":
     version "3.0.0"
@@ -1323,7 +1376,7 @@ Lockfile:
       ansi-styles "^4.1.0"
       supports-color "^7.1.0"
   
-  classnames@^2.3.2:
+  classnames@^2.2.6, classnames@^2.3.2:
     version "2.3.2"
     resolved "https://registry.npmjs.org/classnames/-/classnames-2.3.2.tgz"
     integrity sha512-CSbhY4cFEJRe6/GQzIk5qXZ4Jeg5pcsP7b5peFSDpffpe1cqjASH/n9UTjBwOp6XpMSTwQ8Za2K5V02ueA7Tmw==
@@ -1440,6 +1493,11 @@ Lockfile:
     version "0.1.4"
     resolved "https://registry.npmjs.org/deep-is/-/deep-is-0.1.4.tgz"
     integrity sha512-oIPzksmTg4/MriiaYGO+okXDT7ztn/w3Eptv/+gSIdMdKsJo0u4CfYNFJPy+4SKMuCqGw2wxnA+URMg3t8a/bQ==
+  
+  deepmerge@^4.0.0:
+    version "4.3.1"
+    resolved "https://registry.yarnpkg.com/deepmerge/-/deepmerge-4.3.1.tgz#44b5f2147cd3b00d4b56137685966f26fd25dd4a"
+    integrity sha512-3sUqbMEc77XqpdNO7FRyRog+eW3ph+GYCbj+rK+uYyRMuwsVy0rMiVtPn+QJlKFvWP/1PYpapqYn0Me2knFn+A==
   
   define-lazy-prop@^2.0.0:
     version "2.0.0"
@@ -2372,6 +2430,11 @@ Lockfile:
     resolved "https://registry.npmjs.org/lines-and-columns/-/lines-and-columns-1.2.4.tgz"
     integrity sha512-7ylylesZQ/PV29jhEDl3Ufjo6ZX7gCqJr5F7PKrqc93v7fzSymt1BpwEU8nAUXs8qzzvqhbjhK5QZg6Mt/HkBg==
   
+  load-script@^1.0.0:
+    version "1.0.0"
+    resolved "https://registry.yarnpkg.com/load-script/-/load-script-1.0.0.tgz#0491939e0bee5643ee494a7e3da3d2bac70c6ca4"
+    integrity sha512-kPEjMFtZvwL9TaZo0uZ2ml+Ye9HUMmPwbYRJ324qF9tqMejwykJ5ggTyvzmrbBeapCAbk98BSbTeovHEEP1uCA==
+  
   locate-path@^6.0.0:
     version "6.0.0"
     resolved "https://registry.npmjs.org/locate-path/-/locate-path-6.0.0.tgz"
@@ -2388,6 +2451,11 @@ Lockfile:
     version "4.6.2"
     resolved "https://registry.npmjs.org/lodash.merge/-/lodash.merge-4.6.2.tgz"
     integrity sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ==
+  
+  lodash.throttle@^4.1.1:
+    version "4.1.1"
+    resolved "https://registry.yarnpkg.com/lodash.throttle/-/lodash.throttle-4.1.1.tgz#c23e91b710242ac70c37f1e1cda9274cc39bf2f4"
+    integrity sha512-wIkUCfVKpVsWo3JSZlc+8MB5it+2AN5W8J7YVMST30UrvcQNZ1Okbj+rbVniijTWE6FGYy4XJq/rHkas8qJMLQ==
   
   lodash@^4.17.21:
     version "4.17.21"
@@ -2422,7 +2490,7 @@ Lockfile:
     dependencies:
       "@jridgewell/sourcemap-codec" "^1.4.13"
   
-  memoize-one@^5.0.0:
+  memoize-one@^5.0.0, memoize-one@^5.1.1:
     version "5.2.1"
     resolved "https://registry.npmjs.org/memoize-one/-/memoize-one-5.2.1.tgz"
     integrity sha512-zYiwtZUcYyXKo/np96AGZAckk+FWWsUdJ3cHGGmld7+AhvcWmQyGCYUh1hc4Q/pkOhb65dQR/pqCyK0cOaHz4Q==
@@ -2713,6 +2781,13 @@ Lockfile:
     resolved "https://registry.npmjs.org/queue-microtask/-/queue-microtask-1.2.3.tgz"
     integrity sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==
   
+  react-alice-carousel@^2.7.1:
+    version "2.7.1"
+    resolved "https://registry.npmjs.org/react-alice-carousel/-/react-alice-carousel-2.7.1.tgz"
+    integrity sha512-8ljKi5y+eqlsRkO4qRxEXIP0067w/4zvZvpJ66w+eAbeF0hIgC3iLeSmVtNc+F6ISzFsEJX0cOx7jIawXs0G8A==
+    dependencies:
+      vanilla-swipe "^2.4.1"
+  
   react-awesome-reveal@^4.2.5:
     version "4.2.5"
     resolved "https://registry.npmjs.org/react-awesome-reveal/-/react-awesome-reveal-4.2.5.tgz"
@@ -2748,13 +2823,13 @@ Lockfile:
   
   react-dom@^18.2.0:
     version "18.2.0"
-    resolved "https://registry.npmjs.org/react-dom/-/react-dom-18.2.0.tgz"
+    resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-18.2.0.tgz#22aaf38708db2674ed9ada224ca4aa708d821e3d"
     integrity sha512-6IMTriUmvsjHUjNtEDudZfuDQUoWXVxKHhlEGSk81n4YFS+r/Kl99wXiwlVXtPBtJenozv2P+hxDsw9eA7Xo6g==
     dependencies:
       loose-envify "^1.1.0"
       scheduler "^0.23.0"
   
-  react-fast-compare@^3.2.0:
+  react-fast-compare@^3.0.1, react-fast-compare@^3.2.0:
     version "3.2.2"
     resolved "https://registry.npmjs.org/react-fast-compare/-/react-fast-compare-3.2.2.tgz"
     integrity sha512-nsO+KSNgo1SbJqJEYRE9ERzo7YtYbou/OqjSQKxV7jcKox7+usiUVZOAC+XnDOABXggQTno0Y1CpVnuWEc1boQ==
@@ -2793,6 +2868,17 @@ Lockfile:
     version "2.8.4"
     resolved "https://registry.npmjs.org/react-multi-carousel/-/react-multi-carousel-2.8.4.tgz"
     integrity sha512-7Is5Wr+m2ebkR+oq2Su2tjUdBwpVtB2O6Tjb74KDNfxWe/FrsTQwezTJTk/r9cKCrRp9Li308v822/5bZm7XKg==
+  
+  react-player@^2.12.0:
+    version "2.12.0"
+    resolved "https://registry.yarnpkg.com/react-player/-/react-player-2.12.0.tgz#2fc05dbfec234c829292fbca563b544064bd14f0"
+    integrity sha512-rymLRz/2GJJD+Wc01S7S+i9pGMFYnNmQibR2gVE3KmHJCBNN8BhPAlOPTGZtn1uKpJ6p4RPLlzPQ1OLreXd8gw==
+    dependencies:
+      deepmerge "^4.0.0"
+      load-script "^1.0.0"
+      memoize-one "^5.1.1"
+      prop-types "^15.7.2"
+      react-fast-compare "^3.0.1"
   
   react-redux@^8.0.5:
     version "8.0.5"
@@ -2833,6 +2919,11 @@ Lockfile:
     dependencies:
       "@remix-run/router" "1.7.2"
   
+  react-simply-carousel@^9.0.4:
+    version "9.0.4"
+    resolved "https://registry.yarnpkg.com/react-simply-carousel/-/react-simply-carousel-9.0.4.tgz#0d30b87e5bade2f7335958434e37fa708c7cc9c3"
+    integrity sha512-5ZPntrLTU4KHu2OKetOrrf9NRtjjBG4GiLO5I7Hu6AD39gpfO3LhIo2JbfvbQf63ZlG2msB9z1dyrWmsg9P3Pw==
+  
   react-swipeable@^6.1.2:
     version "6.2.2"
     resolved "https://registry.npmjs.org/react-swipeable/-/react-swipeable-6.2.2.tgz"
@@ -2842,6 +2933,13 @@ Lockfile:
     version "7.0.1"
     resolved "https://registry.npmjs.org/react-swipeable/-/react-swipeable-7.0.1.tgz"
     integrity sha512-RKB17JdQzvECfnVj9yDZsiYn3vH0eyva/ZbrCZXZR0qp66PBRhtg4F9yJcJTWYT5Adadi+x4NoG53BxKHwIYLQ==
+  
+  react-touch-carousel@^0.10.2:
+    version "0.10.2"
+    resolved "https://registry.npmjs.org/react-touch-carousel/-/react-touch-carousel-0.10.2.tgz"
+    integrity sha512-nZnZsfHLvOTsb6VITdykY6nvhlOSFWRWqV9l72E/wXv8bNLSmwg71luaq4D0R5+BeY1eLSJC7PUrafJyzdftow==
+    dependencies:
+      "@react-spring/web" "^9.2.4"
   
   react-transition-group@^4.4.5:
     version "4.4.5"
@@ -2855,7 +2953,7 @@ Lockfile:
   
   react@^18.2.0:
     version "18.2.0"
-    resolved "https://registry.npmjs.org/react/-/react-18.2.0.tgz"
+    resolved "https://registry.yarnpkg.com/react/-/react-18.2.0.tgz#555bd98592883255fa00de14f1151a917b5d77d5"
     integrity sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ==
     dependencies:
       loose-envify "^1.1.0"
@@ -2870,9 +2968,9 @@ Lockfile:
     resolved "https://registry.npmjs.org/redux-thunk/-/redux-thunk-2.4.2.tgz"
     integrity sha512-+P3TjtnP0k/FEjcBL5FZpoovtvrTNT/UXd4/sluaSyrURlSlhLSzEdfsTBW7WsKB6yPvgd7q/iZPICFjW4o57Q==
   
-  redux@^4.2.1:
+  redux@^4.0.1, redux@^4.2.1:
     version "4.2.1"
-    resolved "https://registry.npmjs.org/redux/-/redux-4.2.1.tgz"
+    resolved "https://registry.yarnpkg.com/redux/-/redux-4.2.1.tgz#c08f4306826c49b5e9dc901dee0452ea8fce6197"
     integrity sha512-LAUYz4lc+Do8/g7aeRa8JkyDErK6ekstQaqWQrNRW//MY1TvCEpMtpTWvlQ+FPbWCx+Xixu/6SHt5N0HR+SB4w==
     dependencies:
       "@babel/runtime" "^7.9.2"
@@ -3271,6 +3369,22 @@ Lockfile:
     version "9.0.0"
     resolved "https://registry.npmjs.org/uuid/-/uuid-9.0.0.tgz"
     integrity sha512-MXcSTerfPa4uqyzStbRoTgt5XIe3x5+42+q1sDuy3R5MDk66URdLMOZe5aPX/SQd+kuYAh0FdP/pO28IkQyTeg==
+  
+  vanilla-swipe@^2.4.1:
+    version "2.4.1"
+    resolved "https://registry.npmjs.org/vanilla-swipe/-/vanilla-swipe-2.4.1.tgz"
+    integrity sha512-o6pfI0dipet88ZnPLV4Jx04Ia+U3xANh14vhROW2TOe/mrwk2JGG68+Z0BPoD1YUcQQEnK4SZBXkqFe+K1l7/w==
+  
+  video-react@^0.16.0:
+    version "0.16.0"
+    resolved "https://registry.yarnpkg.com/video-react/-/video-react-0.16.0.tgz#dea71e9c4782eb088059c42225d189c437607911"
+    integrity sha512-138NHPS8bmgqCYVCdbv2GVFhXntemNHWGw9AN8iJSzr3jizXMmWJd2LTBppr4hZJUbyW1A1tPZ3CQXZUaexMVA==
+    dependencies:
+      "@babel/runtime" "^7.4.5"
+      classnames "^2.2.6"
+      lodash.throttle "^4.1.1"
+      prop-types "^15.7.2"
+      redux "^4.0.1"
   
   vite@^4.2.0:
     version "4.4.2"
