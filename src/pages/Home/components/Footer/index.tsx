@@ -12,7 +12,7 @@ import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 
-import Logo from '../../../../assets/images/logo.png';
+import Logo from '../../../../assets/images/douglascoiffeur-logo.png';
 import FooterMobile from './FooterMobile';
 
 export default function Footer() {
@@ -54,7 +54,7 @@ export default function Footer() {
 									<img
 										src={Logo}
 										alt="Logo Barbearia"
-										width="10%"
+										width="20%"
 									/>
 								</Box>
 
@@ -155,8 +155,8 @@ export default function Footer() {
 								color="#fff"
 								fontSize="1rem"
 							>
-								Copyright © Barbearia Douglas Coiffeur. Todos os
-								Direitos Reservados.
+								Copyright © Barbearia Douglet&apos;s Barbearia.
+								Todos os Direitos Reservados.
 							</Typography>
 
 							<Typography

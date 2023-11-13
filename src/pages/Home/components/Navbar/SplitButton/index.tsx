@@ -12,7 +12,7 @@ import Paper from '@mui/material/Paper';
 import Popper from '@mui/material/Popper';
 import * as React from 'react';
 
-import Logo from '../../../../../assets/images/logo-douglas.png';
+import Logo from '../../../../../assets/images/douglascoiffeur-logo.png';
 import Aviso from '../../Aviso';
 
 const options = [
@@ -157,9 +157,9 @@ const SplitButton = () => {
 								</Typography> */}
 
 								<img
-									width="100%"
+									width="70%"
 									// height="100vh"
-									alt="Logo Douglas Coiffeur"
+									alt="Logo Douglet's Barbearia"
 									src={Logo}
 									style={{
 										padding: '3.3rem 0 2rem 3rem',

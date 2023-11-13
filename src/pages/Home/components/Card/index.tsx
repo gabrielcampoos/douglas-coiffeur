@@ -12,16 +12,18 @@ import Typography from '@mui/material/Typography';
 import { useState } from 'react';
 
 import {
-	default as ControlledRadioButtonsGroup,
-	default as ListaServico,
+	default as ControlledRadioButtonsGroupBasic,
+	default as ControlledRadioButtonsGroupIndividual,
 } from '../ListaServico';
+import ListaServicoBlack from '../ListaServico/ListaServicoBlack';
+import ListaServicoGold from '../ListaServico/ListaServicoGold';
+import ListaServicoPlatinum from '../ListaServico/ListaServicoPlatinum';
 import SnackbarCookies from '../Snackbar';
 import ActionAreaCard from './CardMobile';
 
 export default function CardGrid() {
 	const theme = useTheme();
 	const smDown = useMediaQuery(theme.breakpoints.down('sm'));
-	const mdDown = useMediaQuery(theme.breakpoints.down('md'));
 	const [open, setOpen] = useState(false);
 	const [link, setLink] = useState('');
 
@@ -36,7 +38,7 @@ export default function CardGrid() {
 						pt={3}
 					>
 						<Grid item xs={2} sm={4} md={4}>
-							{/* PLUS */}
+							{/* INDIVUDUAL */}
 							<Card
 								sx={{
 									width: '100%',
@@ -64,17 +66,9 @@ export default function CardGrid() {
 												letterSpacing="0.1rem"
 												textAlign="center"
 											>
-												PLUS
+												PLANO INDIVIDUAL
 											</Typography>
-											<Typography
-												gutterBottom
-												variant="h4"
-												color="#000"
-												component="div"
-												textAlign="center"
-											>
-												2 SERVIÇOS
-											</Typography>
+
 											<Typography
 												variant="body2"
 												textAlign="center"
@@ -84,62 +78,54 @@ export default function CardGrid() {
 														color: '#000',
 														fontFamily:
 															'Khand, sans-serif',
-														fontWeight: '400',
-														fontSize: '1.5rem',
+														fontWeight: '700',
+														fontSize: '1.7rem',
 														letterSpacing: '0.1rem',
 														textAlign: 'center',
 													}}
 												>
-													De 80,00 por
 													<br />
-												</span>
-												<span
-													style={{
-														color: '#000',
-														fontFamily:
-															'Khand, sans-serif',
-														fontWeight: '400',
-														fontSize: '1.5rem',
-														letterSpacing: '0.1rem',
-														textAlign: 'center',
-													}}
-												>
 													<span
 														style={{
-															color: '#fff',
-															fontWeight: '700',
-															fontSize: '2rem',
-															WebkitTextStrokeWidth:
-																'1px',
-															WebkitTextStrokeColor:
-																'#000',
+															color: '#000',
+															fontFamily:
+																'Khand, sans-serif',
+															fontWeight: '400',
+															fontSize: '1.7rem',
+															letterSpacing:
+																'0.1rem',
+															textAlign: 'center',
+															// WebkitTextStrokeWidth: '1px',
+															// WebkitTextStrokeColor: '#000',
 														}}
 													>
-														R$ 70,00
-													</span>{' '}
-													<br />
-													por mês
+														R$ 119,97 <br />
+													</span>
+													Mensal
 												</span>
 											</Typography>
 										</CardContent>
 									</CardActionArea>
-									<ControlledRadioButtonsGroup />
+									<ControlledRadioButtonsGroupIndividual />
 
 									<Box
-										id="btnPlus"
+										id="btnIndividual"
 										onClick={(e) => {
 											e.preventDefault();
 											setOpen(true);
 
-											const btnPlus =
+											const btnIndivudual =
 												document.getElementById(
-													'btnPlus',
+													'btnIndividual',
 												);
-											const plus =
-												'https://api.whatsapp.com/send/?phone=5518997984039&text=Olá, gostaria de saber mais sobre o plano PLUS.&type=phone_number&app_absent=0';
+											const indivudual =
+												'https://sistema.appbarber.com.br/assinatura/?tk=e8cc69948558c6f17645f955c4bdf4c1';
 
-											if (btnPlus?.id === 'btnPlus') {
-												setLink(plus);
+											if (
+												btnIndivudual?.id ===
+												'btnIndividual'
+											) {
+												setLink(indivudual);
 											}
 										}}
 										component="button"
@@ -187,8 +173,7 @@ export default function CardGrid() {
 						</Grid>
 
 						<Grid item xs={2} sm={4} md={4}>
-							{/* PREMIUM */}
-
+							{/* BASIC */}
 							<Card
 								sx={{
 									width: '100%',
@@ -216,17 +201,9 @@ export default function CardGrid() {
 												letterSpacing="0.1rem"
 												textAlign="center"
 											>
-												PREMIUM
+												PLANO BASIC
 											</Typography>
-											<Typography
-												gutterBottom
-												variant="h4"
-												component="div"
-												color="#000"
-												textAlign="center"
-											>
-												4 SERVIÇOS
-											</Typography>
+
 											<Typography
 												variant="body2"
 												textAlign="center"
@@ -236,40 +213,53 @@ export default function CardGrid() {
 														color: '#000',
 														fontFamily:
 															'Khand, sans-serif',
-														fontWeight: '400',
-														fontSize: '1.5rem',
+														fontWeight: '700',
+														fontSize: '1.7rem',
 														letterSpacing: '0.1rem',
 														textAlign: 'center',
 													}}
 												>
-													De 160,00 por
 													<br />
 													<span
 														style={{
-															color: '#fff',
+															color: '#000',
 															fontFamily:
 																'Khand, sans-serif',
-															fontWeight: '700',
-															fontSize: '2rem',
+															fontWeight: '400',
+															fontSize: '1.7rem',
 															letterSpacing:
 																'0.1rem',
 															textAlign: 'center',
-															WebkitTextStrokeWidth:
-																'1px',
-															WebkitTextStrokeColor:
-																'#000',
+															// WebkitTextStrokeWidth: '1px',
+															// WebkitTextStrokeColor: '#000',
 														}}
 													>
-														R$ 120,00 <br />
+														R$ 150,00 <br />
 													</span>
-													por mês
+													Mensal
 												</span>
 											</Typography>
 										</CardContent>
 									</CardActionArea>
-									<ListaServico />
+									<ControlledRadioButtonsGroupBasic />
+
 									<Box
-										id="btnPremium"
+										id="btnBasic"
+										onClick={(e) => {
+											e.preventDefault();
+											setOpen(true);
+
+											const btnBasic =
+												document.getElementById(
+													'btnBasic',
+												);
+											const basic =
+												'https://sistema.appbarber.com.br/assinatura/?tk=e8cc69948558c6f17645f955c4bdf4c1';
+
+											if (btnBasic?.id === 'btnBasic') {
+												setLink(basic);
+											}
+										}}
 										component="button"
 										width="70%"
 										height="100%"
@@ -281,26 +271,9 @@ export default function CardGrid() {
 										sx={{
 											backgroundColor: '#000',
 										}}
-										onClick={(e) => {
-											e.preventDefault();
-											setOpen(true);
-
-											const btnPremium =
-												document.getElementById(
-													'btnPremium',
-												);
-											const premium =
-												'https://api.whatsapp.com/send/?phone=5518997984039&text=Olá, gostaria de saber mais sobre o plano PREMIUM.&type=phone_number&app_absent=0';
-
-											if (
-												btnPremium?.id === 'btnPremium'
-											) {
-												setLink(premium);
-											}
-										}}
 									>
 										{/* <a
-											href="https://api.whatsapp.com/send/?phone=5518997984039&text=Olá, gostaria de saber mais sobre o plano PREMIUM.&type=phone_number&app_absent=0"
+											href={link}
 											style={{ textDecoration: 'none' }}
 										> */}
 										<Box
@@ -315,147 +288,7 @@ export default function CardGrid() {
 												backgroundColor: 'transparent',
 											}}
 										></Box>
-										<Typography
-											color={'whitesmoke'}
-											fontFamily="Khand, sans-serif"
-											fontWeight={700}
-											fontSize="1.5rem"
-											letterSpacing="0.1rem"
-										>
-											ASSINAR
-										</Typography>
-										{/* </a> */}
-									</Box>
-								</Container>
-							</Card>
-						</Grid>
 
-						<Grid item xs={2} sm={4} md={4}>
-							{/* PRO */}
-
-							<Card
-								sx={{
-									width: '100%',
-									backgroundColor: '#f6b332',
-									padding: '0.2rem 0.2rem',
-								}}
-							>
-								<Container
-									disableGutters
-									sx={{
-										display: 'flex',
-										flexDirection: 'column',
-										alignItems: 'center',
-										border: '0.15rem solid #000',
-									}}
-								>
-									<CardActionArea>
-										<CardContent>
-											<Typography
-												gutterBottom
-												color={'#000'}
-												fontFamily="Khand, sans-serif"
-												fontWeight={700}
-												fontSize="2.3rem"
-												letterSpacing="0.1rem"
-												textAlign="center"
-											>
-												PRO
-											</Typography>
-											<Typography
-												gutterBottom
-												variant="h4"
-												color="#000"
-												component="div"
-												textAlign="center"
-											>
-												6 SERVIÇOS
-											</Typography>
-											<Typography
-												variant="body2"
-												textAlign="center"
-											>
-												<span
-													style={{
-														color: '#000',
-														fontFamily:
-															'Khand, sans-serif',
-														fontWeight: '400',
-														fontSize: '1.5rem',
-														letterSpacing: '0.1rem',
-														textAlign: 'center',
-													}}
-												>
-													De 240,00 por
-													<br />
-													<span
-														style={{
-															color: '#fff',
-															fontFamily:
-																'Khand, sans-serif',
-															fontWeight: '700',
-															fontSize: '2rem',
-															letterSpacing:
-																'0.1rem',
-															textAlign: 'center',
-															WebkitTextStrokeWidth:
-																'1px',
-															WebkitTextStrokeColor:
-																'#000',
-														}}
-													>
-														R$ 180,00 <br />
-													</span>
-													por mês
-												</span>
-											</Typography>
-										</CardContent>
-									</CardActionArea>
-									<ControlledRadioButtonsGroup />
-									<Box
-										id="btnPro"
-										component="button"
-										width="70%"
-										height="100%"
-										margin="1rem 0"
-										border="none"
-										borderRadius="0.5rem"
-										zIndex="999999999999"
-										position="relative"
-										sx={{
-											backgroundColor: '#000',
-										}}
-										onClick={(e) => {
-											e.preventDefault();
-											setOpen(true);
-
-											const btnPro =
-												document.getElementById(
-													'btnPro',
-												);
-											const pro =
-												'https://api.whatsapp.com/send/?phone=5518997984039&text=Olá, gostaria de saber mais sobre o plano PRO.&type=phone_number&app_absent=0';
-											if (btnPro?.id === 'btnPro') {
-												setLink(pro);
-											}
-										}}
-									>
-										{/* <a
-											href="https://api.whatsapp.com/send/?phone=5518997984039&text=Olá, gostaria de saber mais sobre o plano MEDIUM.&type=phone_number&app_absent=0"
-											style={{ textDecoration: 'none' }}
-										> */}
-										<Box
-											width="95%"
-											height="90%"
-											border="0.15rem solid #f6b332"
-											borderRadius="0.5rem"
-											position="absolute"
-											top="0.2rem"
-											left="0.3rem"
-											sx={{
-												backgroundColor: 'transparent',
-											}}
-										></Box>
 										<Typography
 											color={'whitesmoke'}
 											fontFamily="Khand, sans-serif"
@@ -501,17 +334,9 @@ export default function CardGrid() {
 												letterSpacing="0.1rem"
 												textAlign="center"
 											>
-												GOLD
+												PLANO GOLD
 											</Typography>
-											<Typography
-												gutterBottom
-												variant="h4"
-												component="div"
-												color="#000"
-												textAlign="center"
-											>
-												8 SERVIÇOS
-											</Typography>
+
 											<Typography
 												variant="body2"
 												textAlign="center"
@@ -521,38 +346,35 @@ export default function CardGrid() {
 														color: '#000',
 														fontFamily:
 															'Khand, sans-serif',
-														fontWeight: '400',
-														fontSize: '1.5rem',
+														fontWeight: '700',
+														fontSize: '1.7rem',
 														letterSpacing: '0.1rem',
 														textAlign: 'center',
 													}}
 												>
-													De 320,00 por
 													<br />
 													<span
 														style={{
-															color: '#fff',
+															color: '#000',
 															fontFamily:
 																'Khand, sans-serif',
-															fontWeight: '700',
-															fontSize: '2rem',
+															fontWeight: '400',
+															fontSize: '1.7rem',
 															letterSpacing:
 																'0.1rem',
 															textAlign: 'center',
-															WebkitTextStrokeWidth:
-																'1px',
-															WebkitTextStrokeColor:
-																'#000',
+															// WebkitTextStrokeWidth: '1px',
+															// WebkitTextStrokeColor: '#000',
 														}}
 													>
-														R$ 240,00 <br />
+														R$ 225,00 <br />
 													</span>
-													por mês
+													Mensal
 												</span>
 											</Typography>
 										</CardContent>
 									</CardActionArea>
-									<ControlledRadioButtonsGroup />
+									<ListaServicoGold />
 									<Box
 										id="btnGold"
 										component="button"
@@ -575,10 +397,274 @@ export default function CardGrid() {
 													'btnGold',
 												);
 											const gold =
-												'https://api.whatsapp.com/send/?phone=5518997984039&text=Olá, gostaria de saber mais sobre o plano GOLD.&type=phone_number&app_absent=0';
+												'https://sistema.appbarber.com.br/assinatura/?tk=e8cc69948558c6f17645f955c4bdf4c1';
 
 											if (btnGold?.id === 'btnGold') {
 												setLink(gold);
+											}
+										}}
+									>
+										{/* <a
+											href="https://api.whatsapp.com/send/?phone=5518997984039&text=Olá, gostaria de saber mais sobre o plano PREMIUM.&type=phone_number&app_absent=0"
+											style={{ textDecoration: 'none' }}
+										> */}
+										<Box
+											width="95%"
+											height="90%"
+											border="0.15rem solid #f6b332"
+											borderRadius="0.5rem"
+											position="absolute"
+											top="0.2rem"
+											left="0.3rem"
+											sx={{
+												backgroundColor: 'transparent',
+											}}
+										></Box>
+										<Typography
+											color={'whitesmoke'}
+											fontFamily="Khand, sans-serif"
+											fontWeight={700}
+											fontSize="1.5rem"
+											letterSpacing="0.1rem"
+										>
+											ASSINAR
+										</Typography>
+										{/* </a> */}
+									</Box>
+								</Container>
+							</Card>
+						</Grid>
+
+						<Grid item xs={2} sm={4} md={4}>
+							{/* PLATINUM */}
+
+							<Card
+								sx={{
+									width: '100%',
+									backgroundColor: '#f6b332',
+									padding: '0.2rem 0.2rem',
+								}}
+							>
+								<Container
+									disableGutters
+									sx={{
+										display: 'flex',
+										flexDirection: 'column',
+										alignItems: 'center',
+										border: '0.15rem solid #000',
+									}}
+								>
+									<CardActionArea>
+										<CardContent>
+											<Typography
+												gutterBottom
+												color={'#000'}
+												fontFamily="Khand, sans-serif"
+												fontWeight={700}
+												fontSize="2.3rem"
+												letterSpacing="0.1rem"
+												textAlign="center"
+											>
+												PLANO PLATINUM
+											</Typography>
+
+											<Typography
+												variant="body2"
+												textAlign="center"
+											>
+												<span
+													style={{
+														color: '#000',
+														fontFamily:
+															'Khand, sans-serif',
+														fontWeight: '700',
+														fontSize: '1.7rem',
+														letterSpacing: '0.1rem',
+														textAlign: 'center',
+													}}
+												>
+													<br />
+													<span
+														style={{
+															color: '#000',
+															fontFamily:
+																'Khand, sans-serif',
+															fontWeight: '400',
+															fontSize: '1.7rem',
+															letterSpacing:
+																'0.1rem',
+															textAlign: 'center',
+															// WebkitTextStrokeWidth: '1px',
+															// WebkitTextStrokeColor: '#000',
+														}}
+													>
+														R$ 300,00 <br />
+													</span>
+													Mensal
+												</span>
+											</Typography>
+										</CardContent>
+									</CardActionArea>
+									<ListaServicoPlatinum />
+									<Box
+										id="btnPlatinum"
+										component="button"
+										width="70%"
+										height="100%"
+										margin="1rem 0"
+										border="none"
+										borderRadius="0.5rem"
+										zIndex="999999999999"
+										position="relative"
+										sx={{
+											backgroundColor: '#000',
+										}}
+										onClick={(e) => {
+											e.preventDefault();
+											setOpen(true);
+
+											const btnPlatinum =
+												document.getElementById(
+													'btnPlatinum',
+												);
+											const platinum =
+												'https://sistema.appbarber.com.br/assinatura/?tk=e8cc69948558c6f17645f955c4bdf4c1';
+											if (
+												btnPlatinum?.id ===
+												'btnPlatinum'
+											) {
+												setLink(platinum);
+											}
+										}}
+									>
+										{/* <a
+											href="https://api.whatsapp.com/send/?phone=5518997984039&text=Olá, gostaria de saber mais sobre o plano MEDIUM.&type=phone_number&app_absent=0"
+											style={{ textDecoration: 'none' }}
+										> */}
+										<Box
+											width="95%"
+											height="90%"
+											border="0.15rem solid #f6b332"
+											borderRadius="0.5rem"
+											position="absolute"
+											top="0.2rem"
+											left="0.3rem"
+											sx={{
+												backgroundColor: 'transparent',
+											}}
+										></Box>
+										<Typography
+											color={'whitesmoke'}
+											fontFamily="Khand, sans-serif"
+											fontWeight={700}
+											fontSize="1.5rem"
+											letterSpacing="0.1rem"
+										>
+											ASSINAR
+										</Typography>
+										{/* </a> */}
+									</Box>
+								</Container>
+							</Card>
+						</Grid>
+
+						<Grid item xs={2} sm={4} md={4}>
+							{/* BLACK */}
+
+							<Card
+								sx={{
+									width: '100%',
+									backgroundColor: '#f6b332',
+									padding: '0.2rem 0.2rem',
+								}}
+							>
+								<Container
+									disableGutters
+									sx={{
+										display: 'flex',
+										flexDirection: 'column',
+										alignItems: 'center',
+										border: '0.15rem solid #000',
+									}}
+								>
+									<CardActionArea>
+										<CardContent>
+											<Typography
+												gutterBottom
+												color={'#000'}
+												fontFamily="Khand, sans-serif"
+												fontWeight={700}
+												fontSize="2.3rem"
+												letterSpacing="0.1rem"
+												textAlign="center"
+											>
+												PLANO BLACK
+											</Typography>
+
+											<Typography
+												variant="body2"
+												textAlign="center"
+											>
+												<span
+													style={{
+														color: '#000',
+														fontFamily:
+															'Khand, sans-serif',
+														fontWeight: '700',
+														fontSize: '1.7rem',
+														letterSpacing: '0.1rem',
+														textAlign: 'center',
+													}}
+												>
+													<br />
+													<span
+														style={{
+															color: '#000',
+															fontFamily:
+																'Khand, sans-serif',
+															fontWeight: '400',
+															fontSize: '1.7rem',
+															letterSpacing:
+																'0.1rem',
+															textAlign: 'center',
+															// WebkitTextStrokeWidth: '1px',
+															// WebkitTextStrokeColor: '#000',
+														}}
+													>
+														R$ 349,90 <br />
+													</span>
+													Mensal
+												</span>
+											</Typography>
+										</CardContent>
+									</CardActionArea>
+									<ListaServicoBlack />
+									<Box
+										id="btnBlack"
+										component="button"
+										width="70%"
+										height="100%"
+										margin="1rem 0"
+										border="none"
+										borderRadius="0.5rem"
+										zIndex="999999999999"
+										position="relative"
+										sx={{
+											backgroundColor: '#000',
+										}}
+										onClick={(e) => {
+											e.preventDefault();
+											setOpen(true);
+
+											const btnBlack =
+												document.getElementById(
+													'btnBlack',
+												);
+											const black =
+												'https://sistema.appbarber.com.br/assinatura/?tk=e8cc69948558c6f17645f955c4bdf4c1';
+
+											if (btnBlack?.id === 'btnBlack') {
+												setLink(black);
 											}
 										}}
 									>

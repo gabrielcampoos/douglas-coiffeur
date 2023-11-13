@@ -15,7 +15,7 @@ import Grid from '@mui/material/Grid';
 import Toolbar from '@mui/material/Toolbar';
 import { useNavigate } from 'react-router-dom';
 
-import Logo from '../../../../assets/images/logo-douglas.png';
+import Logo from '../../../../assets/images/douglascoiffeur-logo.png';
 import Aviso from '../Aviso';
 import NavbarMd from './NavbarMd';
 import SplitButton from './SplitButton';

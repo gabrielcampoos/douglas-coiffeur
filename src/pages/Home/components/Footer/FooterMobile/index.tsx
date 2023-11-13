@@ -10,7 +10,7 @@ import {
 	Typography,
 } from '@mui/material';
 
-import Logo from '../../../../../assets/images/logo.png';
+import Logo from '../../../../../assets/images/douglascoiffeur-logo.png';
 
 const FooterMobile = () => {
 	return (
@@ -133,7 +133,7 @@ const FooterMobile = () => {
 						color="#fff"
 						fontSize="0.6rem"
 					>
-						Copyright © Barbearia Douglas Coiffeur. Todos os
+						Copyright © Barbearia Douglet&apos;s Barbearia. Todos os
 						Direitos Reservados.
 					</Typography>
 

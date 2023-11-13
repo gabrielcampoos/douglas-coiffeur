@@ -103,8 +103,9 @@ const ComoChegarMd = () => {
 									color: '#f6b332',
 								}}
 							>
-								DOUGLAS <br />
-								COIFFEUR
+								DOUGLET&apos;s
+								<br />
+								BARBEARIA
 							</span>
 						</Typography>
 					</Section>

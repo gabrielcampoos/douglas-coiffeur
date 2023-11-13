@@ -1,8 +1,6 @@
 import { Box, Container, Typography } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 
-import Media from '../../CardMedia';
-
 const QuemSomosMd = () => {
 	const navigate = useNavigate();
 
@@ -53,9 +51,7 @@ const QuemSomosMd = () => {
 						QUEM SOMOS
 					</Typography>
 				</Box>
-				<Box>
-					<Media />
-				</Box>
+				<Box>{/* <Media /> */}</Box>
 
 				{/* CARD INSTAGRAM */}
 

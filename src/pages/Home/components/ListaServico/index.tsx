@@ -26,40 +26,40 @@ const ListaServico = () => {
 				<ListItemIcon>
 					<CircleIcon />
 				</ListItemIcon>
-				<ListItemText primary="Cabelo" />
+				<ListItemText primary=/* "Cabelo" */ "Disponibilidade de três serviços" />
 			</ListItem>
 
 			<ListItem>
 				<ListItemIcon>
 					<CircleIcon />
 				</ListItemIcon>
-				<ListItemText primary="Barba" />
+				<ListItemText primary=/* "Barba" */ "Individual" />
 			</ListItem>
 
 			<ListItem>
 				<ListItemIcon>
 					<CircleIcon />
 				</ListItemIcon>
-				<ListItemText primary="Hidratação" />
+				<ListItemText primary=/* "Hidratação" */ "10% na compra de produtos" />
 			</ListItem>
 			<ListItem>
 				<ListItemIcon>
 					<CircleIcon />
 				</ListItemIcon>
-				<ListItemText primary="Limpeza de pele" />
+				<ListItemText primary=/* "Limpeza de pele" */ "20% de descontos em serviços adicionais" />
+			</ListItem>
+			{/* <ListItem>
+				<ListItemIcon>
+					<CircleIcon />
+				</ListItemIcon>
+				<ListItemText primary= "Depilação nariz / orelha" />
 			</ListItem>
 			<ListItem>
 				<ListItemIcon>
 					<CircleIcon />
 				</ListItemIcon>
-				<ListItemText primary="Depilação nariz / orelha" />
-			</ListItem>
-			<ListItem>
-				<ListItemIcon>
-					<CircleIcon />
-				</ListItemIcon>
-				<ListItemText primary="Desconto produtos e serviços" />
-			</ListItem>
+				<ListItemText primary=  "Desconto produtos e serviços"  />
+			</ListItem> */}
 		</Grid>
 	);
 };

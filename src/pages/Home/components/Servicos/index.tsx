@@ -326,8 +326,8 @@ const Servicos = () => {
 											fontFamily="Khand, sans-serif"
 											fontWeight={900}
 											zIndex="1"
-											paddingTop="45rem"
-											paddingLeft="1rem"
+											paddingTop="28rem"
+											paddingLeft="21rem"
 											position="absolute"
 										>
 											CORTE DE CABELO <br />
@@ -351,10 +351,16 @@ const Servicos = () => {
 										</Typography>
 									</Section>
 
-									<Box height="1400px">
+									<Box
+										height="1000px"
+										padding="0 10rem"
+										display="flex"
+										alignItems="center"
+										justifyContent="center"
+									>
 										<img
 											src={NewBannerInterior}
-											width="100%"
+											width="80%"
 											height="100%"
 											style={{ opacity: '50%' }}
 										/>
@@ -367,7 +373,7 @@ const Servicos = () => {
 												zIndex: '1',
 												backgroundColor: '#f6b332',
 												// padding: '1rem 6rem',
-												left: '1rem',
+												left: '21rem',
 												top: '-1rem',
 												'&:hover': {
 													color: '#fff',

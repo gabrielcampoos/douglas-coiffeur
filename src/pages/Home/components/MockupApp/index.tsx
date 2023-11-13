@@ -1,3 +1,4 @@
+import { makeStyles } from '@material-ui/styles';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import {
 	Box,
@@ -10,12 +11,18 @@ import {
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
 
-import Mockup from '../../../../assets/images/mockup-app.png';
+import Mockup from '../../../../assets/images/mockup.png';
 import MockupAppMobile from './MockupAppMobile';
 
 interface Props {
 	children: React.ReactNode;
 }
+
+const useStyles = makeStyles((theme) => ({
+	customHoverFocus: {
+		'&:hover, &.Mui-focusVisible': { backgroundColor: 'yellow' },
+	},
+}));
 
 const MockupApp = () => {
 	const Section: React.FC<Props> = ({ children }) => {
@@ -39,6 +46,7 @@ const MockupApp = () => {
 	const theme = useTheme();
 	const smDown = useMediaQuery(theme.breakpoints.down('sm'));
 	const mdDown = useMediaQuery(theme.breakpoints.down('md'));
+	const classes = useStyles();
 
 	return (
 		<>
@@ -49,8 +57,10 @@ const MockupApp = () => {
 						component="main"
 						sx={{
 							width: '100%',
+							background:
+								'linear-gradient(150deg, #757575 15%, #c2c0c0 70%, #ebebeb 94%)',
 							// height: '70vh',
-							backgroundColor: '#ffde59',
+							// backgroundColor: '#ffde59',
 							// position: 'absolute',
 							// top: '90%',
 							padding: '2rem 0',
@@ -84,8 +94,8 @@ const MockupApp = () => {
 								>
 									AGENDE ATRAVÉS <br />
 									DO APP{' '}
-									<span style={{ color: '#2596be' }}>
-										BOOSKY
+									<span style={{ color: '#00233c' }}>
+										BARBER
 									</span>
 								</Typography>
 								<Typography component="p">
@@ -127,7 +137,7 @@ const MockupApp = () => {
 										// height="11%"
 										border="none"
 										borderRadius="0.5rem"
-										sx={{ backgroundColor: '#2596be' }}
+										sx={{ backgroundColor: '#00233c' }}
 									>
 										<a
 											href="https://booksy.com/pt-br/instant-experiences/widget/109844?instant_experiences_enabled=true&ig_ix=true&is_fb=1&fbclid=IwAR36ITBFrC5OklYW2VL4KAw8PHKB9vOozRh7pMCfQ6FE4T13569xYHLr-Mc"
@@ -272,7 +282,7 @@ const MockupApp = () => {
 											// height="11%"
 											border="none"
 											borderRadius="0.5rem"
-											sx={{ backgroundColor: '#2596be' }}
+											sx={{ backgroundColor: '#00233c' }}
 										>
 											{/* <Box component="a" width="50%">
 								<a href="https://api.whatsapp.com/send/?phone=5518997984039&text&type=phone_number&app_absent=0">

@@ -10,7 +10,7 @@ import {
 	useTheme,
 } from '@mui/material';
 
-import Logo from '../../../../assets/images/logo.png';
+import Logo from '../../../../assets/images/douglascoiffeur-logo.png';
 import ListaImagens from '../ListaImagens';
 import EstruturaMd from './EstruturaMd';
 import EstruturaMobile from './EstruturaMobile';
@@ -151,10 +151,10 @@ const Estrutura = () => {
 									justifyContent: 'center',
 								}}
 							>
-								<Box width="100%" padding="0 1rem" m="2rem 0">
+								<Box width="100%" padding="0 1rem" m="1rem 0">
 									<img
-										width="70px"
-										alt="Logo Douglas Coiffeur"
+										width="165px"
+										alt="Logo Douglet's Barbearia"
 										src={Logo}
 									/>
 								</Box>
@@ -177,7 +177,7 @@ const Estrutura = () => {
 										letterSpacing="0.09rem"
 										ml={2}
 									>
-										Dougla&apos;s Coiffeur
+										Douglet&apos;s Barbearia
 									</Typography>
 								</Box>
 								<Box width="100%" padding="0 1.3rem" mb={2}>
@@ -249,8 +249,8 @@ const Estrutura = () => {
 										color="#fff"
 										fontSize="1rem"
 									>
-										Copyright © Barbearia Douglas Coiffeur.
-										Todos os Direitos Reservados.
+										Copyright © Barbearia Douglet&apos;s
+										Barbearia. Todos os Direitos Reservados.
 									</Typography>
 
 									<Typography

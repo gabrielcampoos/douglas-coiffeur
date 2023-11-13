@@ -1,7 +1,16 @@
+import { makeStyles } from '@material-ui/styles';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import { Box, Container, IconButton, Typography } from '@mui/material';
 
+const useStyles = makeStyles((theme) => ({
+	customColor: {
+		color: '#fff',
+	},
+}));
+
 const MockupAppMobile = () => {
+	const classes = useStyles();
+
 	return (
 		<Box
 			id="MockupMobileRef"
@@ -9,7 +18,9 @@ const MockupAppMobile = () => {
 			sx={{
 				width: '100%',
 				height: '100%',
-				backgroundColor: '#ffde59',
+				background:
+					'linear-gradient(150deg, #757575 15%, #c2c0c0 70%, #ebebeb 94%)',
+				// backgroundColor: '#ffde59',
 				paddingTop: '3rem',
 			}}
 		>
@@ -41,7 +52,7 @@ const MockupAppMobile = () => {
 						fontWeight={700}
 					>
 						AGENDE ATRAVÉS <br />
-						DO APP <span style={{ color: '#2596be' }}>BOOSKY</span>
+						DO APP <span style={{ color: '#00233c' }}>BARBER</span>
 					</Typography>
 					<Typography component="p">
 						Ser atendido por ordem de chegada gera filas, isso se
@@ -82,7 +93,7 @@ const MockupAppMobile = () => {
 							height="11%"
 							border="none"
 							borderRadius="0.5rem"
-							sx={{ backgroundColor: '#2596be' }}
+							sx={{ backgroundColor: '#00233c' }}
 						>
 							<a
 								href="https://booksy.com/pt-br/instant-experiences/widget/109844?instant_experiences_enabled=true&ig_ix=true&is_fb=1&fbclid=IwAR36ITBFrC5OklYW2VL4KAw8PHKB9vOozRh7pMCfQ6FE4T13569xYHLr-Mc"
@@ -178,7 +189,7 @@ const MockupAppMobile = () => {
 							height="11%"
 							border="none"
 							borderRadius="0.5rem"
-							sx={{ backgroundColor: '#2596be' }}
+							sx={{ backgroundColor: '#00233c' }}
 						>
 							{/* <Box component="a" width="50%">
 								<a href="https://api.whatsapp.com/send/?phone=5518997984039&text&type=phone_number&app_absent=0">
@@ -199,7 +210,6 @@ const MockupAppMobile = () => {
 							<IconButton
 								href="https://api.whatsapp.com/send/?phone=5518997984039&text&type=phone_number&app_absent=0"
 								aria-label="Whatsapp"
-								color="inherit"
 								// sx={{
 								// 	'&:hover': {
 								// 		color: '#ffde59',
@@ -209,6 +219,7 @@ const MockupAppMobile = () => {
 								<WhatsAppIcon
 									fontSize="large"
 									aria-label="Whatsapp"
+									className={classes.customColor}
 								/>
 								<Typography
 									component="p"

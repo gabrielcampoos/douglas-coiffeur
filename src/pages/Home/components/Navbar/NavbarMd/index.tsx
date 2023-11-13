@@ -6,7 +6,7 @@ import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Toolbar from '@mui/material/Toolbar';
 
-import Logo from '../../../../../assets/images/logo-douglas.png';
+import Logo from '../../../../../assets/images/douglascoiffeur-logo.png';
 import Aviso from '../../Aviso';
 
 const NavbarMd = () => {

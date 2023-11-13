@@ -4,7 +4,7 @@ import LocationOnIcon from '@mui/icons-material/LocationOn';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import { Box, Container, Typography } from '@mui/material';
 
-import Logo from '../../../../../assets/images/logo.png';
+import Logo from '../../../../../assets/images/douglascoiffeur-logo.png';
 import ListaImagens from '../../ListaImagens';
 
 const EstruturaMd = () => {
@@ -114,8 +114,12 @@ const EstruturaMd = () => {
 					justifyContent: 'center',
 				}}
 			>
-				<Box width="100%" padding="0 1rem" m="1rem 0">
-					<img width="50px" alt="Logo Douglas Coiffeur" src={Logo} />
+				<Box width="100%" padding="0 1rem" m="0.8rem 0">
+					<img
+						width="150px"
+						alt="Logo Douglet's Barbearia"
+						src={Logo}
+					/>
 				</Box>
 				<Box
 					width="100%"
@@ -133,7 +137,7 @@ const EstruturaMd = () => {
 						letterSpacing="0.09rem"
 						ml={1}
 					>
-						Dougla&apos;s Coiffeur
+						Douglet&apos;s Barbearia
 					</Typography>
 				</Box>
 				<Box width="100%" padding="0 1.3rem" mb={1}>
@@ -199,7 +203,7 @@ const EstruturaMd = () => {
 						color="#fff"
 						fontSize="0.6rem"
 					>
-						Copyright © Barbearia Douglas Coiffeur. Todos os
+						Copyright © Barbearia Douglet&apos;s Barbearia. Todos os
 						Direitos Reservados.
 					</Typography>
 

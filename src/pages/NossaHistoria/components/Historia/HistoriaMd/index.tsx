@@ -9,7 +9,7 @@ import {
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 
-import Logo from '../../../../../assets/images/logo-def.jpg';
+import Logo from '../../../../../assets/images/douglascoiffeur-logo.png';
 import Carousel from '../../Carousel';
 import EstruturaMd from '../../Estrutura/EstruturaMd';
 
@@ -165,7 +165,7 @@ const HistoriaMd = () => {
 								>
 									Acompanhe a{' '}
 									<span style={{ fontWeight: '700' }}>
-										Dougla&apos;s Coiffeur
+										Douglet&apos;s Barbearia
 									</span>{' '}
 									pelo <br />
 									Instagram.
@@ -194,7 +194,7 @@ const HistoriaMd = () => {
 										<Box width="5%">
 											<img
 												width="100%"
-												alt="Logo Douglas Coiffeur"
+												alt="Logo Douglet's Barbearia"
 												src={Logo}
 												style={{
 													borderRadius: '2rem',
